@@ -1,149 +1,183 @@
 {% load static %}
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    {% block title %} {% endblock %}
-    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" />
-    <script src="{% static 'js/bootstrap.js' %}"></script>
-    <script
-      src="https://kit.fontawesome.com/95568bc73a.js"
-      crossorigin="anonymous"
-    ></script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    {% block style %} {% endblock %}
-  </head>
 
-  <body>
-    <section>
-      <style>
-        .message-container {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 100%;
-          position: fixed;
-          top: 10rem;
-        }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% block title %}
+  {% endblock %}
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Font Awesome CDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Google Fonts CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
 
-        .message-content {
-          position: absolute;
-          right: 0;
-          padding: 10px;
-          background: #f8f9fa;
-          border-radius: 8px;
-          font-weight: 500;
-          font-size: 14px;
-        }
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">
+        <a href="{% url 'index' %}" class="logo-link">
+          <img src="{% static 'stanintegratedservices_app/img/sis_logo.jpeg' %}" alt="Logo" width="50" height="50"
+            loading="lazy">
+        </a>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <svg id="hamburger-icon" width="40px" height="40px" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+            <path d="M4 6H20M4 12H20M4 18H20" stroke="#03134f" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round"></path>
+          </g>
+        </svg>
+      </div>
 
-        @media (min-width: 320px) and (max-width: 1024px) {
-          .message-container {
-            position: relative;
-            z-index: 100;
-            left: 17rem;
-            top: 10rem;
-            transform: translate(-50%, 50%);
-          }
-        }
-      </style>
 
-      {% if messages %}
-        <div class="message-container">
-          {% for message in messages %}
-            <div
-              class="message-content {% if 'error' in message.tags %} text-danger {% else %} text-success{% endif %}"
-            >
-              <i
-                class="fas {% if 'error' in message.tags %} fa-exclamation-circle text-danger {% else %} fa-check-circle text-success {% endif %} me-2"
-              ></i>
-              {{ message }}
+      <!-- Slide-in menu -->
+      <div class="navbar-links" id="nav-links">
+        <div class="close-btn-container">
+          <div class="close-btn" id="close-btn">
+            <svg id="close-icon" width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M20.7457 3.32851C20.3552 2.93798 19.722 2.93798 19.3315 3.32851L12.0371 10.6229L4.74275 3.32851C4.35223 2.93798 3.71906 2.93798 3.32854 3.32851C2.93801 3.71903 2.93801 4.3522 3.32854 4.74272L10.6229 12.0371L3.32856 19.3314C2.93803 19.722 2.93803 20.3551 3.32856 20.7457C3.71908 21.1362 4.35225 21.1362 4.74277 20.7457L12.0371 13.4513L19.3315 20.7457C19.722 21.1362 20.3552 21.1362 20.7457 20.7457C21.1362 20.3551 21.1362 19.722 20.7457 19.3315L13.4513 12.0371L20.7457 4.74272C21.1362 4.3522 21.1362 3.71903 20.7457 3.32851Z"
+                  fill="#03134f"></path>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <ul>
+          <li><a href="{% url 'index' %}">Home</a></li>
+          <li><a href="{% url 'about' %}">About Us</a></li>
+          <li><a href="{% url 'hostels' %}">Hostels</a></li>
+          <li><a href="{% url 'property_services' %}">Property Services</a></li>
+          <li><a href="{% url 'contact_us' %}">Contact Us</a></li>
+          <li><a href="{% url 'book_now' %}">Book a Stay</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+  </header>
+  <main>
+    {% block content %}
+    {% endblock %}
+  </main>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-wrapper">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3 footer-logo">
+            <img src="{% static 'store/img/Xeloos_logo_black.jpg' %}" alt="logo">
+            <h4>GRACE GLOBAL CONSULT LIMITED</h4>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 quick-links-company">
+            <h5>Quick Links</h5>
+            <nav>
+              <ul>
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About Us</a></li>
+                <li><a href="{% url 'hostels' %}">Hostels</a></li>
+                <li><a href="{% url 'property_services' %}">Property Services</a></li>
+                <li><a href="{% url 'contact_us' %}">Contact Us</a></li>
+                <li><a href="{% url 'book_now' %}">Book a Stay</a></li>
+              </ul>
+            </nav>
+
+          </div>
+          <div class=" col-12 col-md-6 col-lg-3 quick-links-product">
+            <h5>Our Services</h5>
+            <nav>
+              <ul>
+                <li>Youth Accommodation</li>
+                <li>Real Estate Management</li>
+                <li>General Cleaning Services</li>
+                <li>Office Administrative Support</li>
+              </ul>
+            </nav>
+
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 contact-us">
+            <h5>Contact Info</h5>
+            <div class="contact-details">
+              <div class="via-phone d-flex align-items-center gap-3">
+                <i class="fa-solid fa-phone" style="color:#b03aff;;"></i>
+                <div class="phone-details d-flex flex-column">
+                  <span>+234-201-636-7000</span>
+                  <span>+234-201-636-7000</span>
+                </div>
+
+              </div>
+              <div class="via-email d-flex align-items-center gap-3">
+                <i class="fa-solid fa-envelope" style="color:#b03aff;;"></i>
+                <a href="mailto:info@xeloos.com">info@xeloos.com</a>
+              </div>
+              <div class="via-address d-flex gap-3">
+                <i class="fa-solid fa-location-dot" style="color:#b03aff;"></i>
+                <p>MWS HK LTD 9th Floor,<br>
+                  Amtel Building<br>
+                  148 Des Voeux Road Central<br>
+                  Hong Kong</p>
+              </div>
             </div>
-          {% endfor %}
-        </div>
-      {% endif %}
-    </section>
-    <div class="container-fluid">
-      <!-- <div class="contact-container d-flex flex-wrap justify-content-end">
-      <div class="mail mb-2 me-3">
-        <a href="mailto:info@devbros.com" id="link"><i class="fa-solid fa-envelope fa-lg"
-            style="color: #1578db;"></i></a>
-        <a href="mailto:info@devbros.com">Info@devbros.com</a>
-      </div>
-      <div class="call mb-2">
-        <a href="tel:+2348113384484" id="link"><i class="fa-solid fa-phone fa-lg" style="color: #1578db;"></i></a>
-        <a href="tel:+2348113384484">+234-811-338-4484</a>
-      </div>
-    </div> -->
-
-      <nav
-        class="navbar navbar-expand-lg navbar-light bg-white"
-        style="position: sticky; top: 2px; z-index: 1000"
-      >
-        <div class="container-fluid">
-          <div class="logo">
-            <a class="navbar-brand" href="#"
-              ><i
-                class="fa-solid fa-dice-d20 fa-spin-pulse fa-lg"
-                style="color: #000000; display: inline-block"
-              ></i>
-              <h5 style="display: inline-block">DevBros Inc.</h5>
-            </a>
-          </div>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item" id="home">
-                <a style="color: rgb(69, 68, 68)" class="nav-link" href="#"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item" id="rest">
-                <a
-                  style="color: rgb(69, 68, 68)"
-                  class="nav-link"
-                  href="{% url 'about' %}"
-                  >About</a
-                >
-              </li>
-              <li class="nav-item" id="rest">
-                <a
-                  style="color: rgb(69, 68, 68)"
-                  class="nav-link"
-                  href="{% url 'services' %}"
-                  >Services</a
-                >
-              </li>
-              <li class="nav-item" id="rest">
-                <a
-                  style="color: rgb(69, 68, 68)"
-                  class="nav-link"
-                  href="{% url 'contact_us' %}"
-                  >Contact Us</a
-                >
-              </li>
-              <li class="nav-item" id="rest">
-                <a
-                  style="color: rgb(69, 68, 68)"
-                  class="nav-link"
-                  href="{% url 'faq' %}"
-                  >FAQ</a
-                >
-              </li>
-            </ul>
           </div>
         </div>
-      </nav>
+      </div>
     </div>
-    {% block content %} {% endblock %}
-  </body>
+  </footer>
+
+  <script>
+    document.querySelectorAll("nav a:not(.logo-link)").forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add("active");
+      }
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("nav-links");
+      const closeIcon = document.getElementById("close-btn");
+      const overlay = document.getElementById("overlay");
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        overlay.classList.toggle("active");
+      });
+
+      closeIcon.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+        overlay.classList.remove("active");
+      });
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"
+    integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+"
+    crossorigin="anonymous"></script>
+
+</body>
+
 </html>

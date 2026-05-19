@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+
 # from .models import Consult
 from django.contrib import messages
 
@@ -34,7 +35,7 @@ def contact_us_view(request):
                 request,
                 "Your message was successfully sent, sit back our response is on it's way to you!",
             )
-            next_url = request.POST.get('next', '/')
+            next_url = request.POST.get("next", "/")
 
             return redirect(next_url)
 
@@ -45,9 +46,13 @@ def contact_us_view(request):
     return render(request, "contact_us.html")
 
 
-def services_view(request):
-    return render(request, "services.html")
+def property_services_view(request):
+    return render(request, "property_services.html")
 
 
-def faq_view(request):
-    return render(request, "faq.html")
+def hostels_view(request):
+    return render(request, "hostels.html")
+
+
+def booking_view(request):
+    return render(request, "booking.html")

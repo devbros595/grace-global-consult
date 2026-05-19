@@ -1,0 +1,7 @@
+| Purpose   | Color         | Hex       |
+| --------- | ------------- | --------- |
+| Primary   | Royal Blue    | `#1565C0` |
+| Secondary | Emerald Green | `#0A8F3D` |
+| Dark      | Navy          | `#0B1F3A` |
+| Light     | Soft White    | `#F8FAFC` |
+| Neutral   | Light Gray    | `#E5E7EB` |
