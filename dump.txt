@@ -5,3 +5,93 @@
 | Dark      | Navy          | `#0B1F3A` |
 | Light     | Soft White    | `#F8FAFC` |
 | Neutral   | Light Gray    | `#E5E7EB` |
+
+
+
+
+ <footer class="footer">
+      <div class="footer-container">
+        <div class="try">
+          <div class="col col-12 col-md-6 col-lg-3">
+            <div class="footer-logo-container">
+              <div class="footer-logo">
+                <img
+                  src="{% static 'img/like.png' %}"
+                  width="50"
+                  height="50"
+                  alt="logo"
+                />
+                <h4>GRACE GLOBAL<br />CONSULT LIMITED</h4>
+              </div>
+              <p>
+                Hospitality and Property Services Solutions designed to meet
+                modern needs with comfort, efficiency and professionalism.
+              </p>
+            </div>
+          </div>
+          <div class="col col-12 col-md-6 col-lg-3">
+            <div class="quick-links">
+              <h5>Quick Links</h5>
+              <nav>
+                <ul>
+                  <li><a href="{% url 'index' %}">Home</a></li>
+                  <li><a href="{% url 'about' %}">About Us</a></li>
+                  <li><a href="{% url 'hostels' %}">Hostels</a></li>
+                  <li>
+                    <a href="{% url 'property_services' %}"
+                      >Property Services</a
+                    >
+                  </li>
+                  <li><a href="{% url 'contact_us' %}">Contact Us</a></li>
+                  <li><a href="{% url 'book_now' %}">Book a Stay</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="col col-12 col-md-6 col-lg-3 quick-links-product">
+            <h5>Our Services</h5>
+            <nav>
+              <ul>
+                <li>Youth Accommodation</li>
+                <li>Real Estate Management</li>
+                <li>General Cleaning Services</li>
+                <li>Office Administrative Support</li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col col-12 col-md-6 col-lg-3 contact-us">
+            <h5>Contact Info</h5>
+            <div class="contact-details">
+              <div class="via-phone d-flex align-items-center gap-3">
+                <i class="fa-solid fa-phone" style="color: #b03aff"></i>
+                <div class="phone-details d-flex flex-column">
+                  <span>+234-201-636-7000</span>
+                  <span>+234-201-636-7000</span>
+                </div>
+              </div>
+              <div class="via-email d-flex align-items-center gap-3">
+                <i class="fa-solid fa-envelope" style="color: #b03aff"></i>
+                <a href="mailto:info@xeloos.com">info@xeloos.com</a>
+              </div>
+              <div class="via-address d-flex gap-3">
+                <i class="fa-solid fa-location-dot" style="color: #b03aff"></i>
+                <p>
+                  MWS HK LTD 9th Floor,<br />
+                  Amtel Building<br />
+                  148 Des Voeux Road Central<br />
+                  Hong Kong
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col col-12 col-md-6 col-lg-3 contact-us">
+            <h5>Legal</h5>
+            <nav>
+              <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+              </ul>
+            </nav>
+          </div>
+      </div>
+    </footer>
