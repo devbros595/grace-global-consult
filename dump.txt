@@ -7,6 +7,13 @@
 | Neutral   | Light Gray    | `#E5E7EB` |
 
 
+576px   /* large phones */
+768px   /* tablets */
+992px   /* laptops */
+1200px  /* desktops */
+1400px  /* large monitors */
+
+
 
 
   <footer>
