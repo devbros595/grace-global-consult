@@ -1,79 +1,110 @@
-{% extends "base.html" %}
-{% load static %}
-{% block title %}
+{% extends "base.html" %} {% load static %} {% block title %}
 <title>Grace global consult</title>
-{% endblock %}
-{% block content %}
+{% endblock %} {% block content %}
 
 <script>
-    const swiper = new Swiper(".swiper", {
-        loop: true,
+  const swiper = new Swiper(".swiper", {
+    loop: true,
 
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
 
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        autoplay: {
-            delay: 1000,
-        },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    autoplay: {
+      delay: 1000,
+    },
 
+    slidesPerView: 3,
+
+    spaceBetween: 20,
+
+    centeredSlides: true,
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+      },
+      1024: {
         slidesPerView: 3,
-
-        spaceBetween: 20,
-
-        centeredSlides: true,
-        breakpoints: {
-            640: {
-                slidesPerView: 1,
-            },
-            1024: {
-                slidesPerView: 3,
-            },
-        }
-    });
+      },
+    },
+  });
 </script>
 <section>
-    <div class="container">
-        <div class="hero-swiper">
-            <div class="swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"></div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
-                </div>
-
-                <div class="swiper-pagination"></div>
-
-                <!-- <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div> -->
-            </div>
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h3>Hospitality & Property<br>Service Solutions</h3>
-                    <p>Quality accommodation and reliable property support services tailored to your need</p>
-                </div>
-                <div class="cta-btns">
-                    <a class="btn cta-primary" href="#">Book a Stay</a>
-                    <a class="btn cta-secondary" href="#">Request a Service</a>
-                </div>
-            </div>
+  <div class="container">
+    <div class="hero-swiper">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"></div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
         </div>
 
+        <div class="swiper-pagination"></div>
 
+        <!-- <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> -->
+      </div>
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <div class="hero-text">
+          <h2>Hospitality & Property<br />Service Solutions</h2>
+          <p>
+            Quality accommodation and reliable property support services
+            tailored to your need
+          </p>
+        </div>
+        <div class="cta-btns">
+          <a class="btn cta-primary" href="#">Book a Stay</a>
+          <a class="btn cta-secondary" href="#">Request a Service</a>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 <section>
-    <div class="container">
-        <div class="our-divisions">
-            <div class="our-divisions-heading">
-                <h3>Our Divisions</h3>
+  <div class="container">
+    <div class="our-divisions">
+      <div class="text-center our-divisions-heading">
+        <h3>Our Divisions</h3>
+      </div>
+      <div class="divisions-content">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="card">
+              <div class="card-icon">
+                <img src="" alt="icon" />
+              </div>
+              <div class="card-details">
+                <div class="card-title">Grace Hostels</div>
+                <div class="card-description">
+                  Affordable, clean and welcoming youth accommodation
+                </div>
+                <a href="#">Learn More</a>
+              </div>
             </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="card">
+              <div class="card-icon">
+                <img src="" alt="icon" />
+              </div>
+              <div class="card-details">
+                <div class="card-title">Grace Property Services</div>
+                <div class="card-description">
+                  Professional support for property owners and business.
+                </div>
+                <a href="#">Learn More</a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="section-divider"></div>
     </div>
 </section>
 {% endblock %}
