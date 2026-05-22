@@ -69,42 +69,208 @@
 <section>
   <div class="container">
     <div class="our-divisions">
-      <div class="text-center our-divisions-heading">
+      <div class="text-center section-heading">
         <h3>Our Divisions</h3>
       </div>
-      <div class="divisions-content">
+      <div class="section-content">
         <div class="row">
           <div class="col-12 col-md-6">
-            <div class="card">
+            <div class="card shadow-lg">
               <div class="card-icon">
-                <img src="" alt="icon" />
+                <img src="{% static 'svg/hostel.svg' %}" alt="icon" />
               </div>
               <div class="card-details">
                 <div class="card-title">Grace Hostels</div>
                 <div class="card-description">
                   Affordable, clean and welcoming youth accommodation
                 </div>
-                <a href="#">Learn More</a>
+                <a href="#">Learn More <i class="fa-solid fa-angles-right ms-2" style="color: #d4b401;"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6">
-            <div class="card">
+            <div class="card shadow-lg">
               <div class="card-icon">
-                <img src="" alt="icon" />
+                <img src="{% static 'svg/real-estate.svg' %}" alt="icon" />
               </div>
               <div class="card-details">
                 <div class="card-title">Grace Property Services</div>
                 <div class="card-description">
                   Professional support for property owners and business.
                 </div>
-                <a href="#">Learn More</a>
+                <a href="#">Learn More <i class="fa-solid fa-angles-right ms-2" style="color: #d4b401;"></i></a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="section-divider"></div>
     </div>
+    <div class="section-divider"></div>
+    <div class="why-us">
+      <div class="text-center section-heading">
+        <h3>Why Choose Us</h3>
+      </div>
+      <div class="section-content-grid">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-icon">
+              <img src="{% static 'svg/trusted.svg' %}" alt="icon" />
+            </div>
+            <div class="card-title">
+              <span>Reliable & Professional</span>
+
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <div class="card-icon">
+              <img src="{% static 'svg/customer-focused.svg' %}" alt="icon" />
+            </div>
+            <div class="card-title">Customer Focused</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <div class="card-icon">
+              <img src="{% static 'svg/solutions.svg' %}" alt="icon" />
+            </div>
+            <div class="card-title">Flexible Solutions</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <img src="{% static 'svg/quality.svg' %}" alt="icon" />
+            <div class="card-title">
+              <span>Quality & Efficiency</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="partner-banner">
+      <div class="banner-header">Partner with us or stay with us today.</div>
+      <div class="banner-description">Let Grace Global Consult Limited take care of needs.</div>
+      <div class="banner-cta">
+        <a class="btn cta-primary" href="#">Book a Stay</a>
+        <a class="btn cta-secondary" href="#">Request a Service</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="featured-hostels py-5">
+  <div class="container">
+
+    <div class="text-center mb-4">
+      <h2 class="fw-bold">Featured Hostels</h2>
+
+      <div class="section-line mx-auto"></div>
+    </div>
+
+    <div class="hostel-scroll d-flex gap-3">
+
+      <div class="hostel-card">
+        <img src="images/hostel1.jpg" alt="">
+        <h6 class="mt-2">Grace Hostel 1</h6>
+      </div>
+
+      <div class="hostel-card">
+        <img src="images/hostel2.jpg" alt="">
+        <h6 class="mt-2">Grace Hostel 2</h6>
+      </div>
+
+      <div class="hostel-card">
+        <img src="images/hostel3.jpg" alt="">
+        <h6 class="mt-2">Grace Hostel 3</h6>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="testimonials py-5">
+  <div class="container">
+
+    <div class="text-center mb-4">
+      <h2 class="fw-bold">What Our Clients Say</h2>
+    </div>
+
+    <div id="testimonialCarousel"
+         class="carousel slide"
+         data-bs-ride="carousel">
+
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+
+        <button type="button"
+                data-bs-target="#testimonialCarousel"
+                data-bs-slide-to="0"
+                class="active"></button>
+
+        <button type="button"
+                data-bs-target="#testimonialCarousel"
+                data-bs-slide-to="1"></button>
+
+        <button type="button"
+                data-bs-target="#testimonialCarousel"
+                data-bs-slide-to="2"></button>
+
+      </div>
+
+      <!-- Slides -->
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+
+          <div class="testimonial-card">
+
+            <div class="quote-icon">“</div>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Praesent libero.
+            </p>
+
+            <h6>— Client Name</h6>
+
+          </div>
+
+        </div>
+
+        <div class="carousel-item">
+
+          <div class="testimonial-card">
+
+            <div class="quote-icon">“</div>
+
+            <p>
+              Amazing hostel experience and great
+              customer support.
+            </p>
+
+            <h6>— Jane Doe</h6>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<section class="newsletter py-5">
+  <div class="container">
+    <h4>Stay Updated</h4>
+    <span>Subscribe to our newsletter</span>
+    <form action="">
+      <input type="text" name="" id="" placeholder="Enter your email">
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
 </section>
 {% endblock %}

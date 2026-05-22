@@ -14,6 +14,15 @@
 1400px  /* large monitors */
 
 
+<i class="fa-solid fa-users"></i>
+<i class="fa-regular fa-building"></i>
+<i class="fa-regular fa-calendar-plus"></i>
+<i class="fa-solid fa-headset"></i>
+<i class="fa-solid fa-check-double"></i>
+<i class="fa-solid fa-check"></i>
+<i class="fa-solid fa-user-group"></i>
+
+
 
 
   <footer>
