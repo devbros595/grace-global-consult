@@ -34,36 +34,35 @@
     },
   });
 </script>
-<section>
-  <div class="container">
-    <div class="hero-swiper">
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"></div>
-          <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div>
-        </div>
-
-        <div class="swiper-pagination"></div>
-
-        <!-- <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div> -->
+<section class="hero-section">
+  <div class="hero-swiper">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
       </div>
-      <div class="overlay"></div>
-      <div class="hero-content">
-        <div class="hero-text">
-          <h2>Hospitality & Property<br />Service Solutions</h2>
-          <p>
-            Quality accommodation and reliable property support services
-            tailored to your need
-          </p>
-        </div>
-        <div class="cta-btns">
-          <a class="btn cta-primary" href="#">Book a Stay</a>
-          <a class="btn cta-secondary" href="#">Request a Service</a>
-        </div>
+
+      <div class="swiper-pagination"></div>
+
+      <!-- <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> -->
+    </div>
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <h2>Hospitality & Property<br />Service Solutions</h2>
+        <p>
+          Quality accommodation and reliable property support services
+          tailored to your need
+        </p>
+      </div>
+      <div class="cta-btns">
+        <a class="btn cta-primary" href="#">Book a Stay</a>
+        <a class="btn cta-secondary" href="#">Request a Service</a>
       </div>
     </div>
+  </div>
   </div>
 </section>
 <section>
@@ -71,6 +70,7 @@
     <div class="our-divisions">
       <div class="text-center section-heading">
         <h3>Our Divisions</h3>
+        <div class="section-line mx-auto"></div>
       </div>
       <div class="section-content">
         <div class="row">
@@ -84,7 +84,8 @@
                 <div class="card-description">
                   Affordable, clean and welcoming youth accommodation
                 </div>
-                <a href="#">Learn More <i class="fa-solid fa-angles-right ms-2" style="color: #d4b401;"></i></a>
+                <a class="learn-more-btn" href="#">Learn More <i class="fa-solid fa-angles-right ms-2"
+                    style="color: #d4b401;"></i></a>
               </div>
             </div>
           </div>
@@ -98,7 +99,8 @@
                 <div class="card-description">
                   Professional support for property owners and business.
                 </div>
-                <a href="#">Learn More <i class="fa-solid fa-angles-right ms-2" style="color: #d4b401;"></i></a>
+                <a class="learn-more-btn" href="#">Learn More <i class="fa-solid fa-angles-right ms-2"
+                    style="color: #d4b401;"></i></a>
               </div>
             </div>
           </div>
@@ -106,51 +108,140 @@
       </div>
     </div>
     <div class="section-divider"></div>
-    <div class="why-us">
-      <div class="text-center section-heading">
-        <h3>Why Choose Us</h3>
+  </div>
+</section>
+<section class="company-stat d-none d-md-block">
+  <div class="stat-container">
+    <div class="stat-item">
+      <div class="stat-icon">
+        <i class="fa-solid fa-user-group fa-2xl" style="color:#d4b401;"></i>
       </div>
-      <div class="section-content-grid">
-        <div class="card">
-          <div class="card-content">
-            <div class="card-icon">
-              <img src="{% static 'svg/trusted.svg' %}" alt="icon" />
-            </div>
-            <div class="card-title">
-              <span>Reliable & Professional</span>
+      <div class="stat-num">
+        <h3>500+</h3>
+      </div>
+      <div class="stat-text">
+        <span>Happy Guests</span>
+      </div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-icon">
+        <i class="fa-regular fa-building fa-2xl" style="color:#d4b401;"></i>
+      </div>
+      <div class="stat-num">
+        <h3>20+</h3>
+      </div>
+      <div class="stat-text">
+        <span>Properties Managed</span>
+      </div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-icon">
+        <i class="fa-regular fa-calendar-plus fa-2xl" style="color:#d4b401;"></i>
+      </div>
+      <div class="stat-num">
+        <h3>10+</h3>
+      </div>
+      <div class="stat-text">
+        <span>Years Experience</span>
+      </div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-icon">
+        <i class="fa-solid fa-headset fa-2xl" style="color:#d4b401;"></i>
+      </div>
+      <div class="stat-num">
+        <h3>24/7</h3>
+      </div>
+      <div class="stat-text">
+        <span>Customer Support</span>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="d-none d-md-block">
+  <div class="why-us">
+    <div class="text-center section-heading">
+      <h3>Why Choose Us</h3>
+      <div class="section-line mx-auto"></div>
+    </div>
+    <div class="why-us-content">
+      <div class="why-us-item">
+        <div class="why-us-icon">
+          <img src="{% static 'svg/trusted.svg' %}" alt="icon" />
+        </div>
+        <div class="why-us-item-title">Reliable & Professional</div>
+        <div class="why-us-item-text">We deliver top notch services you can trust.</div>
+      </div>
+      <div class="why-us-item">
+        <div class="why-us-icon">
+          <img src="{% static 'svg/customer-focused.svg' %}" alt="icon" />
+        </div>
+        <div class="why-us-item-title">Customer Focused</div>
+        <div class="why-us-item-text">We put our clients and guests first in everyting we do.</div>
+      </div>
+      <div class="why-us-item">
+        <div class="why-us-icon">
+          <img src="{% static 'svg/solutions.svg' %}" alt="icon" />
+        </div>
+        <div class="why-us-item-title">Flexible Solutions</div>
+        <div class="why-us-item-text">Tailored services that fit your unique needs.</div>
+      </div>
+      <div class="why-us-item">
+        <div class="why-us-icon">
+          <img src="{% static 'svg/quality.svg' %}" alt="icon" />
+        </div>
+        <div class="why-us-item-title">Quality & Efficiency</div>
+        <div class="why-us-item-text">We are committed to excellence in every detail.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="d-block d-md-none">
+  <div class="why-us">
+    <div class="text-center section-heading">
+      <h3>Why Choose Us</h3>
+      <div class="section-line mx-auto"></div>
+    </div>
+    <div class="section-content-grid">
+      <div class="card">
+        <div class="card-content">
+          <div class="card-icon">
+            <img src="{% static 'svg/trusted.svg' %}" alt="icon" />
+          </div>
+          <div class="card-title">
+            <span>Reliable & Professional</span>
 
-            </div>
           </div>
         </div>
-        <div class="card">
-          <div class="card-content">
-            <div class="card-icon">
-              <img src="{% static 'svg/customer-focused.svg' %}" alt="icon" />
-            </div>
-            <div class="card-title">Customer Focused</div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <div class="card-icon">
+            <img src="{% static 'svg/customer-focused.svg' %}" alt="icon" />
           </div>
+          <div class="card-title">Customer Focused</div>
         </div>
-        <div class="card">
-          <div class="card-content">
-            <div class="card-icon">
-              <img src="{% static 'svg/solutions.svg' %}" alt="icon" />
-            </div>
-            <div class="card-title">Flexible Solutions</div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <div class="card-icon">
+            <img src="{% static 'svg/solutions.svg' %}" alt="icon" />
           </div>
+          <div class="card-title">Flexible Solutions</div>
         </div>
-        <div class="card">
-          <div class="card-content">
-            <img src="{% static 'svg/quality.svg' %}" alt="icon" />
-            <div class="card-title">
-              <span>Quality & Efficiency</span>
-            </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <img src="{% static 'svg/quality.svg' %}" alt="icon" />
+          <div class="card-title">
+            <span>Quality & Efficiency</span>
           </div>
         </div>
       </div>
     </div>
   </div>
-  </div>
 </section>
+
 <section>
   <div class="container">
     <div class="partner-banner">
@@ -163,99 +254,125 @@
     </div>
   </div>
 </section>
-<section class="featured-hostels py-5">
+<section class="featured-hostels">
   <div class="container">
-
-    <div class="text-center mb-4">
-      <h2 class="fw-bold">Featured Hostels</h2>
-
+    <div class="text-center section-heading">
+      <h3>Featured Hostels</h3>
       <div class="section-line mx-auto"></div>
     </div>
 
-    <div class="hostel-scroll d-flex gap-3">
+    <div class="hostel-scroll d-flex align-items-center gap-4">
 
       <div class="hostel-card">
-        <img src="images/hostel1.jpg" alt="">
+        <img src="{% static 'img/hostel-1.jpeg' %}" alt="">
         <h6 class="mt-2">Grace Hostel 1</h6>
       </div>
 
       <div class="hostel-card">
-        <img src="images/hostel2.jpg" alt="">
+        <img src="{% static 'img/hostel-2.jpeg' %}" alt="">
         <h6 class="mt-2">Grace Hostel 2</h6>
       </div>
 
       <div class="hostel-card">
-        <img src="images/hostel3.jpg" alt="">
+        <img src="{% static 'img/hostel-3.jpeg' %}" alt="">
         <h6 class="mt-2">Grace Hostel 3</h6>
+      </div>
+      <div class="hostel-card">
+        <img src="{% static 'img/hostel-4.jpeg' %}" alt="">
+        <h6 class="mt-2">Grace Hostel 3</h6>
+      </div>
+      <div class="hostel-card link">
+        <a href="#">View All <i class="fa-solid fa-angles-right ms-2" style="color: #d4b401;"></i></a>
       </div>
     </div>
   </div>
 </section>
-<section class="testimonials py-5">
+<section class="testimonials">
   <div class="container">
 
-    <div class="text-center mb-4">
-      <h2 class="fw-bold">What Our Clients Say</h2>
+    <div class="text-center section-heading">
+      <h3>What Our Clients Say</h3>
     </div>
 
-    <div id="testimonialCarousel"
-         class="carousel slide"
-         data-bs-ride="carousel">
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
 
-      <!-- Indicators -->
-      <div class="carousel-indicators">
 
-        <button type="button"
-                data-bs-target="#testimonialCarousel"
-                data-bs-slide-to="0"
-                class="active"></button>
-
-        <button type="button"
-                data-bs-target="#testimonialCarousel"
-                data-bs-slide-to="1"></button>
-
-        <button type="button"
-                data-bs-target="#testimonialCarousel"
-                data-bs-slide-to="2"></button>
-
-      </div>
 
       <!-- Slides -->
-      <div class="carousel-inner">
+      <div class="carousel-inner shadow">
 
         <div class="carousel-item active">
 
           <div class="testimonial-card">
 
-            <div class="quote-icon">“</div>
+            <div class="quote-icon">
+              <i class="fa-solid fa-quote-left" style="color: #ccc;"></i>
+            </div>
 
             <p>
               Lorem ipsum dolor sit amet consectetur
               adipisicing elit. Praesent libero.
             </p>
 
+            <div class="text-end quote-icon">
+              <i class="fa-solid fa-quote-right" style="color: #ccc;"></i>
+            </div>
+
             <h6>— Client Name</h6>
 
           </div>
 
         </div>
-
         <div class="carousel-item">
-
           <div class="testimonial-card">
 
-            <div class="quote-icon">“</div>
+            <div class="quote-icon">
+              <i class="fa-solid fa-quote-left" style="color: #ccc;"></i>
+            </div>
 
             <p>
-              Amazing hostel experience and great
-              customer support.
+              Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Praesent libero.
             </p>
 
-            <h6>— Jane Doe</h6>
+            <div class="text-end quote-icon">
+              <i class="fa-solid fa-quote-right" style="color: #ccc;"></i>
+            </div>
+
+            <h6>— Client Name</h6>
 
           </div>
-
         </div>
+        <div class="carousel-item">
+          <div class="testimonial-card">
+
+            <div class="quote-icon">
+              <i class="fa-solid fa-quote-left" style="color: #ccc;"></i>
+            </div>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Praesent libero.
+            </p>
+
+            <div class="text-end quote-icon">
+              <i class="fa-solid fa-quote-right" style="color: #ccc;"></i>
+            </div>
+
+            <h6>— Client Name</h6>
+
+          </div>
+        </div>
+
+      </div>
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
+
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"></button>
 
       </div>
 
@@ -263,14 +380,16 @@
 
   </div>
 </section>
-<section class="newsletter py-5">
+<section class="newsletter">
   <div class="container">
-    <h4>Stay Updated</h4>
-    <span>Subscribe to our newsletter</span>
-    <form action="">
-      <input type="text" name="" id="" placeholder="Enter your email">
-      <button type="submit">Subscribe</button>
-    </form>
+    <div class="newsletter-content">
+      <h4>Stay Updated</h4>
+      <span>Subscribe to our newsletter</span>
+      <form action="">
+        <input type="text" name="" id="" placeholder="Enter your email">
+        <button class="btn" type="submit">Subscribe</button>
+      </form>
+    </div>
   </div>
 </section>
 {% endblock %}

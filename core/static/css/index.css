@@ -1,8 +1,3 @@
-.container {
-  padding: 0;
-  margin: 0;
-}
-
 .swiper {
   width: 100%;
   height: 500px;
@@ -49,19 +44,19 @@
 }
 
 .cta-primary {
-  background: #0a8f3d;
-  color: #f8fafc;
+  background: #d4b401;
+  border: 1.5px solid #d4b401;
+  color: #ffffff;
 }
 .cta-secondary {
   background: transparent;
   color: #ffffff;
-  border: 1px solid #f8fafc;
+  border: 1.5px solid #ffffff;
 }
 
 .our-divisions,
 .why-us {
-  padding-top: 2rem;
-  padding: 3rem 1rem 2rem;
+  padding: 1rem 1rem 2rem;
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
@@ -70,30 +65,18 @@
 .section-heading h3 {
   color: #0b1f3a;
   font-family: "Inter" sans-serif;
-  position: relative;
-}
-.section-heading h3::after {
-  content: "";
-  background: rgb(212, 180, 1);
-  position: absolute;
-  bottom: -0.6rem;
-  left: 9rem;
-  transform: translate(50%, 50%);
-  height: 0.2rem;
-  width: 3rem;
-  border-radius: 3rem;
 }
 
 .section-content .row {
-  gap: 2rem;
+  row-gap: 2rem;
 }
 
-.card {
+.our-divisions .card {
   flex-direction: row;
+  align-items: center;
   gap: 2rem;
   padding: 2rem;
   border: none;
-  /* box-shadow: -5px 5px 2px #e5e7eb; */
 }
 
 .card-details {
@@ -121,12 +104,47 @@
   font-size: 15px;
 }
 
+.learn-more-btn {
+  max-width: max-content;
+  background: #e5e7eb88;
+  border: 1px solid #e5e7eb;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
 .section-divider {
   background: #e5e7eb;
   margin: 0 1rem;
   height: 3px;
   border-radius: 2rem;
   opacity: 1;
+}
+
+.company-stat {
+  background: #0b1f3a;
+  padding: 3rem;
+}
+
+.stat-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+}
+
+.stat-num h3 {
+  margin: 0;
+  color: #e4e4e4;
+}
+
+.stat-text span {
+  margin: 0;
+  color: #e4e4e4;
 }
 
 .section-content-grid {
@@ -142,6 +160,13 @@
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+}
+
+.why-us .card {
+  flex-direction: row;
+  gap: 2rem;
+  padding: 2rem;
+  border: 1.5px solid #fff4b8c0;
 }
 
 .card-content .card-title {
@@ -181,6 +206,7 @@
 
 .banner-cta .cta-primary {
   background-color: #d4b401;
+  border: 1.5px solid #d4b401;
   font-weight: 500;
   font-size: 14px;
 }
@@ -188,16 +214,22 @@
 .banner-cta .cta-secondary {
   font-weight: 500;
   font-size: 14px;
+  border: 1.5px solid #ffffff;
+}
+
+.featured-hostels {
+  padding: 4rem 1rem 0;
 }
 
 .section-line {
-  width: 60px;
-  height: 4px;
-  background: #d4a017;
-  border-radius: 10px;
+  background: rgb(212, 180, 1);
+  height: 0.2rem;
+  width: 3rem;
+  border-radius: 3rem;
 }
 
 .hostel-scroll {
+  margin-top: 2rem;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   padding-bottom: 10px;
@@ -213,11 +245,35 @@
   scroll-snap-align: start;
 }
 
+.hostel-scroll .link {
+  margin: 0 1rem;
+  min-width: max-content;
+}
+
+.hostel-card a {
+  text-decoration: none;
+  color: #0b1f3a;
+  font-size: 14px;
+  font-weight: 500;
+  background: #e5e7eb88;
+  border: 1px solid #e5e7eb;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
 .hostel-card img {
   width: 100%;
   height: 140px;
   object-fit: cover;
   border-radius: 12px;
+}
+
+.testimonials {
+  padding: 2rem 2rem 0;
+}
+
+.testimonials .section-heading {
+  margin-bottom: 2rem;
 }
 
 .testimonial-card {
@@ -229,9 +285,12 @@
 }
 
 .quote-icon {
-  font-size: 60px;
-  color: #ccc;
+  font-size: 1.5rem;
   line-height: 1;
+}
+
+.carousel-inner {
+  border-radius: 1rem;
 }
 
 .carousel-indicators {
@@ -244,4 +303,118 @@
   height: 10px !important;
   border-radius: 50%;
   background-color: #d4a017 !important;
+}
+
+.newsletter {
+  padding: 0 1rem 2rem;
+  background: #e5e7eb;
+  color: #0b1f3a;
+}
+
+.newsletter .newsletter-content {
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.newsletter-content span {
+  font-size: 14px;
+}
+
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 100%;
+  margin-top: 0.5rem;
+}
+
+form input {
+  background-color: #f8fafc;
+  border: 2px solid #e5e7eb;
+  font-size: 16px;
+  color: #0000009b;
+  border-radius: 0.4rem;
+  padding: 1rem;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+form input:focus {
+  border-color: #d4b401;
+}
+
+.newsletter button {
+  background-color: #d4b401;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .swiper {
+    max-height: 400px;
+  }
+
+  .cta-btns {
+    flex-direction: row;
+  }
+
+  .our-divisions {
+    padding-top: 3rem;
+  }
+
+  .our-divisions .card {
+    flex-direction: column;
+  }
+
+  .our-divisions .card-details {
+    align-items: center;
+  }
+
+  .our-divisions .card-description {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .why-us{
+    padding: 2rem;
+  }
+
+  .why-us-content{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 50%);
+    gap: 1rem;
+    padding: 2rem;
+  }
+
+  .why-us-item{
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+    padding: 2rem 2rem 1rem;
+    border: 1.5px solid #fff4b8c0;
+    border-radius: 1rem;
+  }
+
+  .why-us-item-title{
+    color: #0B1F3A;
+    font-size: 19px;
+    font-weight: 500;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .why-us-item-text{
+    color: #0B1F3A;
+    font-size: 16px;
+    text-align: center;
+    line-height: 2;
+  }
 }
