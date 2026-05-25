@@ -5,7 +5,7 @@
 | Dark      | Navy          | `#0B1F3A` |
 | Light     | Soft White    | `#F8FAFC` |
 | Neutral   | Light Gray    | `#E5E7EB` |
-
+| Accent.   | Soft gold.    | '#d4b401'
 
 576px   /* large phones */
 768px   /* tablets */

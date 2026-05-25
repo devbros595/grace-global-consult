@@ -54,6 +54,10 @@
   border: 1.5px solid #ffffff;
 }
 
+.sections {
+  background: #f8fafc;
+}
+
 .our-divisions,
 .why-us {
   padding: 1rem 1rem 2rem;
@@ -352,6 +356,7 @@ form input:focus {
   font-weight: 500;
   font-size: 15px;
   padding: 1rem;
+  transition: all 0.5s ease;
 }
 
 @media (min-width: 768px) {
@@ -380,11 +385,11 @@ form input:focus {
     font-size: 15px;
   }
 
-  .why-us{
+  .why-us {
     padding: 2rem;
   }
 
-  .why-us-content{
+  .why-us-content {
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(2, 50%);
@@ -392,29 +397,134 @@ form input:focus {
     padding: 2rem;
   }
 
-  .why-us-item{
+  .why-us-item {
     background: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 1rem;
     padding: 2rem 2rem 1rem;
-    border: 1.5px solid #fff4b8c0;
+    border: 1px solid #0a8f3d40;
     border-radius: 1rem;
   }
 
-  .why-us-item-title{
-    color: #0B1F3A;
+  .why-us-item-title {
+    color: #0b1f3a;
     font-size: 19px;
     font-weight: 500;
     margin-top: 1rem;
     text-align: center;
   }
 
-  .why-us-item-text{
-    color: #0B1F3A;
+  .why-us-item-text {
+    color: #0b1f3a;
     font-size: 16px;
     text-align: center;
     line-height: 2;
+  }
+
+  .featured-hostels {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin: 0;
+  }
+
+  .featured-hostels .section-heading {
+    margin-bottom: 3em;
+  }
+
+  .featured-hostels .d-md-block {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .featured-hostels .d-md-block a {
+    text-decoration: none;
+    color: #0b1f3a;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+
+  .featured-hostels .d-md-block a:hover {
+    color: #d4b401;
+  }
+
+  .mini-hero {
+    border: 1px solid #000;
+    background-color: #0b1f3a;
+    color: #fff;
+    padding: 1rem 0 2rem;
+  }
+
+  .mini-hero .mini-hero-content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .mini-hero .mini-hero-content .hero-header {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .mini-hero .banner-cta {
+    flex-direction: row;
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  .mini-hero .banner-cta .btn {
+    padding: 0.8rem 2.1rem;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 0.3rem;
+  }
+
+  .mini-hero .banner-cta .cta-primary {
+    border: 1px solid #f1d534;
+    background-color: #d4b401eb;
+    transition: all 0.5s ease;
+  }
+  .mini-hero .banner-cta .cta-primary:hover {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+  }
+
+  .mini-hero .banner-cta .cta-secondary {
+    border: 1px solid #fcfcfc;
+    transition: all 0.5s ease;
+  }
+
+  .mini-hero .banner-cta .cta-secondary:hover {
+    background-color: #d4b401eb;
+    border: 1px solid #d4b401eb;
+    color: #ffffff;
+  }
+
+  .newsletter-content form {
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    padding: 0 2rem;
+    margin-top: 1rem;
+  }
+
+  .newsletter-content form input {
+    min-width: 70%;
+    border: 1px solid #bcbdbf;
+  }
+
+  .newsletter-content .btn {
+    width: 30%;
+    border: 2px solid #f1d534;
+    font-size: 16px;
+  }
+  .newsletter-content .btn:hover {
+    border: 2px solid #d4b401;
   }
 }
