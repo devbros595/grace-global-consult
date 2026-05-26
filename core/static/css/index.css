@@ -71,49 +71,38 @@
   font-family: "Inter" sans-serif;
 }
 
-.section-content .row {
-  row-gap: 2rem;
+.our-divisions .row {
+  row-gap: 1rem;
 }
 
 .our-divisions .card {
-  flex-direction: row;
-  align-items: center;
-  gap: 2rem;
-  padding: 2rem;
-  border: none;
+  border: 1px solid #a1a2a37b;
 }
 
-.card-details {
+.our-divisions .card-content {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+.our-divisions .card-details {
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
-}
-
-.card-title {
-  font-size: 1.2rem;
-  font-weight: 500;
+  gap: 0.7rem;
   color: #0b1f3a;
 }
 
-.card-description {
-  font-size: 15px;
-  color: #000000cd;
+.our-divisions .card-title {
+  color: #0b1f3a;
 }
 
-.card-details a {
+.our-divisions .card-details a {
   text-decoration: none;
   color: #0b1f3a;
   font-weight: 500;
-  margin-top: 1rem;
-  font-size: 15px;
-}
-
-.learn-more-btn {
-  max-width: max-content;
-  background: #e5e7eb88;
-  border: 1px solid #e5e7eb;
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
+  font-size: 14px;
+  margin-top: 0.5rem;
 }
 
 .section-divider {
@@ -173,9 +162,13 @@
   border: 1.5px solid #fff4b8c0;
 }
 
-.card-content .card-title {
+.why-us .card-content .card-title {
   font-size: 13px;
   text-align: center;
+}
+
+.why-section {
+  display: none;
 }
 
 .partner-banner {
@@ -372,17 +365,8 @@ form input:focus {
     padding-top: 3rem;
   }
 
-  .our-divisions .card {
-    flex-direction: column;
-  }
-
-  .our-divisions .card-details {
-    align-items: center;
-  }
-
-  .our-divisions .card-description {
-    text-align: center;
-    font-size: 15px;
+  .our-divisions .card-content {
+    padding: 1rem 0;
   }
 
   .why-us {
@@ -526,5 +510,114 @@ form input:focus {
   }
   .newsletter-content .btn:hover {
     border: 2px solid #d4b401;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-content {
+    bottom: 1rem;
+    transform: translate(5%, -10%);
+  }
+
+  .hero-text h2 {
+    font-size: 3rem;
+  }
+
+  .hero-text p {
+    max-width: 500px;
+    font-size: 18px;
+  }
+
+  .our-divisions ul {
+    padding: 0;
+    display: flex !important;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+
+  .our-divisions ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+  }
+
+  .our-divisions ul li span {
+    font-size: 14px;
+  }
+
+  .what-we-offer .why-us-content {
+    display: flex;
+    padding: 0;
+  }
+
+  .what-we-offer .why-us-item {
+    padding: 2rem;
+  }
+
+  .what-we-offer h5 {
+    text-align: center;
+  }
+  .what-we-offer p {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .why-section {
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .why-section .why-us-lg {
+    background-color: #ebebebb6;
+    color: #0b1f3a;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 100%;
+    transition: 0.5s ease;
+  }
+
+  .why-section .why-us-lg:hover {
+    transform: scale(0.95);
+  }
+
+  .why-section h5 {
+    margin-bottom: 2rem;
+  }
+
+  .why-section ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+
+  .why-section ul li {
+    list-style: none;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .who-for {
+    background-color: #0b1f3a;
+    color: #f8fafc;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 100%;
+    transition: 0.5s ease;
+  }
+
+  .who-for:hover {
+    transform: scale(0.95);
+  }
+
+  .mini-hero-lg{
+    background-color: #0b1f3a;
+    color: #F8FAFC;
   }
 }

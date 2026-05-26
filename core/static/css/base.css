@@ -294,3 +294,14 @@ footer hr {
     padding: 1rem;
   }
 }
+
+@media (min-width: 1024px) {
+
+  header{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  
+  
+}

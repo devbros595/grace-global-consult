@@ -74,43 +74,72 @@
         </div>
         <div class="section-content">
           <div class="row">
-            <div class="col-12 col-md-6">
-              <div class="card shadow-lg">
-                <div class="card-icon">
-                  <img src="{% static 'svg/hostel.svg' %}" alt="icon" />
-                </div>
-                <div class="card-details">
-                  <div class="card-title">Grace Hostels</div>
-                  <div class="card-description">
-                    Affordable, clean and welcoming youth accommodation
+            <div class="col-12 col-md-6 d-flex">
+              <div class="card w-100 shadow-lg">
+                <div class="card-body">
+                  <div class="card-content">
+                    <div class="card-icon">
+                      <img src="{% static 'svg/hostel.svg' %}" alt="icon" />
+                    </div>
+                    <div class="card-details">
+                      <h5 class="card-title">Hostels</h5>
+                      <p class="card-description d-block d-lg-none">
+                        Affordable, clean and welcoming youth accommodation.
+                      </p>
+                      <p class="card-description d-none d-lg-block">
+                        Affordable, clean and welcoming youth accommodation designed for comfort and community.
+                      </p>
+                      <ul class="d-none d-lg-block">
+                        <li>
+                          <i class="fa-solid fa-check-double"></i>
+                          <span>Modern facilities</span>
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-check-double"></i>
+                          <span>Safe and secure environment</span>
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-check-double"></i>
+                          <span>Ideal for travellers, students and groups</span>
+                        </li>
+                      </ul>
+                      <a class="learn-more-btn" href="#">Learn More
+                        <i class="fa-solid fa-angles-right ms-2" style="color: #d4b401"></i></a>
+                    </div>
                   </div>
-                  <a class="learn-more-btn" href="#"
-                    >Learn More
-                    <i
-                      class="fa-solid fa-angles-right ms-2"
-                      style="color: #d4b401"
-                    ></i
-                  ></a>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6">
-              <div class="card shadow-lg">
-                <div class="card-icon">
-                  <img src="{% static 'svg/real-estate.svg' %}" alt="icon" />
-                </div>
-                <div class="card-details">
-                  <div class="card-title">Grace Property Services</div>
-                  <div class="card-description">
-                    Professional support for property owners and business.
+            <div class="col-12 col-md-6 d-flex">
+              <div class="card w-100 shadow-lg">
+                <div class="card-body">
+                  <div class="card-content">
+                    <div class="card-icon">
+                      <img src="{% static 'svg/real-estate.svg' %}" alt="icon" />
+                    </div>
+                    <div class="card-details">
+                      <h5 class="card-title">Property Services</h5>
+                      <p class="card-description">
+                        Professional support for property owners and business.
+                      </p>
+                      <ul class="d-none d-lg-block">
+                        <li>
+                          <i class="fa-solid fa-check-double"></i>
+                          <span>Real esate management</span>
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-check-double"></i>
+                          <span>General building clearing</span>
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-check-double"></i>
+                          <span>Office administrative support</span>
+                        </li>
+                      </ul>
+                      <a class="learn-more-btn" href="#">Learn More
+                        <i class="fa-solid fa-angles-right ms-2" style="color: #d4b401"></i></a>
+                    </div>
                   </div>
-                  <a class="learn-more-btn" href="#"
-                    >Learn More
-                    <i
-                      class="fa-solid fa-angles-right ms-2"
-                      style="color: #d4b401"
-                    ></i
-                  ></a>
                 </div>
               </div>
             </div>
@@ -148,10 +177,7 @@
 
       <div class="stat-item">
         <div class="stat-icon">
-          <i
-            class="fa-regular fa-calendar-plus fa-2xl"
-            style="color: #d4b401"
-          ></i>
+          <i class="fa-regular fa-calendar-plus fa-2xl" style="color: #d4b401"></i>
         </div>
         <div class="stat-num">
           <h3 class="counter" data-target="10">0</h3>
@@ -174,7 +200,103 @@
       </div>
     </div>
   </section>
-  <section class="d-none d-md-block why-choose-us">
+  <section class="what-we-offer d-none d-lg-block">
+    <div class="why-us">
+      <div class="text-center section-heading">
+        <h3>What We Offer</h3>
+        <div class="section-line mx-auto"></div>
+      </div>
+      <div class="why-us-content">
+        <div class="why-us-item">
+          <div class="why-us-icon">
+            <img src="{% static 'svg/bed.svg' %}" alt="icon" />
+          </div>
+          <h5>Clean & Comfortable Room</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          </p>
+        </div>
+        <div class="why-us-item">
+          <div class="why-us-icon">
+            <img src="{% static 'svg/key.svg' %}" alt="icon" />
+          </div>
+          <h5>Shared & Private Options</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          </p>
+        </div>
+        <div class="why-us-item">
+          <div class="why-us-icon">
+            <img src="{% static 'svg/secure-shield.svg' %}" alt="icon" />
+          </div>
+          <h5>Secure Environment</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          </p>
+        </div>
+        <div class="why-us-item">
+          <div class="why-us-icon">
+            <img src="{% static 'svg/friendly.svg' %}" alt="icon" />
+          </div>
+          <h5>Friendly & Supportive Staff</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="why-section">
+    <div class="why-us-lg shadow">
+      <h5>Why Choose Us?</h5>
+      <div class="d-flex align-items-end justify-content-between">
+        <ul>
+          <li>
+            <i class="fa-solid fa-check"></i>
+            <span>Reliable and professional service</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-check"></i>
+            <span>Customer-focused approach</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-check"></i>
+            <span>Flexible and scalable solutions</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-check"></i>
+            <span>Commitment to quality and efficiency</span>
+          </li>
+        </ul>
+        <img src="{% static 'svg/question.svg' %}" alt="">
+      </div>
+    </div>
+    <div class="who-for shadow">
+      <h5>Who It's For</h5>
+      <div class="d-flex align-items-end justify-content-between">
+        <ul>
+          <li>
+            <i class="fa-solid fa-check"></i>
+            <span>Students</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-check"></i>
+            <span>Travelers</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-check"></i>
+            <span>Backpackers</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-check"></i>
+            <span>Groups</span>
+          </li>
+        </ul>
+        <img src="{% static 'svg/users.svg' %}" alt="">
+      </div>
+    </div>
+  </section>
+  <section class="d-none d-md-block d-lg-none why-choose-us">
     <div class="why-us">
       <div class="text-center section-heading">
         <h3>Why Choose Us</h3>
@@ -284,9 +406,7 @@
         <h3>Featured Hostels</h3>
         <div class="section-line mx-auto"></div>
       </div>
-      <div
-        class="hostel-scroll d-flex align-items-center justify-content-center gap-4"
-      >
+      <div class="hostel-scroll d-flex align-items-center justify-content-center gap-4">
         <div class="hostel-card">
           <img src="{% static 'img/hostel-1.jpeg' %}" alt="" />
           <h6 class="mt-2">Grace Hostel 1</h6>
@@ -306,31 +426,22 @@
           <h6 class="mt-2">Grace Hostel 4</h6>
         </div>
         <div class="hostel-card link d-block d-md-none">
-          <a href="#"
-            >View All
-            <i class="fa-solid fa-angles-right ms-2" style="color: #d4b401"></i
-          ></a>
+          <a href="#">View All
+            <i class="fa-solid fa-angles-right ms-2" style="color: #d4b401"></i></a>
         </div>
       </div>
       <div class="d-none d-md-block">
-        <a href="#"
-          >View All
-          <i class="fa-solid fa-angles-right ms-2" style="color: #d4b401"></i
-        ></a>
+        <a href="#">View All
+          <i class="fa-solid fa-angles-right ms-2" style="color: #d4b401"></i></a>
       </div>
     </div>
   </section>
-  <section class="testimonials">
+  <section class="testimonials d-block d-lg-none">
     <div class="container">
       <div class="text-center section-heading">
         <h3>What Our Clients Say</h3>
       </div>
-
-      <div
-        id="testimonialCarousel"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
         <!-- Slides -->
         <div class="carousel-inner shadow">
           <div class="carousel-item active">
@@ -338,16 +449,13 @@
               <div class="quote-icon">
                 <i class="fa-solid fa-quote-left" style="color: #ccc"></i>
               </div>
-
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Praesent libero.
               </p>
-
               <div class="text-end quote-icon">
                 <i class="fa-solid fa-quote-right" style="color: #ccc"></i>
               </div>
-
               <h6>— Client Name</h6>
             </div>
           </div>
@@ -390,29 +498,165 @@
         </div>
         <!-- Indicators -->
         <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#testimonialCarousel"
-            data-bs-slide-to="0"
-            class="active"
-          ></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
 
-          <button
-            type="button"
-            data-bs-target="#testimonialCarousel"
-            data-bs-slide-to="1"
-          ></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
 
-          <button
-            type="button"
-            data-bs-target="#testimonialCarousel"
-            data-bs-slide-to="2"
-          ></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"></button>
         </div>
       </div>
     </div>
   </section>
-  <section class="d-none d-md-block mini-hero">
+  <section class="testimonials d-none d-lg-block">
+    <div class="container">
+      <div class="text-center section-heading">
+        <h3>What Our Clients Say</h3>
+      </div>
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <!-- Slides -->
+        <div class="carousel-inner">
+          <div class="carousel-item active gap-3">
+            <div class="d-flex gap-3">
+              <div class="testimonial-card">
+                <div class="quote-icon">
+                  <i class="fa-solid fa-quote-left" style="color: #ccc"></i>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Praesent libero.
+                </p>
+                <div class="text-end quote-icon">
+                  <i class="fa-solid fa-quote-right" style="color: #ccc"></i>
+                </div>
+                <h6>— Client Name</h6>
+              </div>
+              <div class="testimonial-card">
+                <div class="quote-icon">
+                  <i class="fa-solid fa-quote-left" style="color: #ccc"></i>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Praesent libero.
+                </p>
+                <div class="text-end quote-icon">
+                  <i class="fa-solid fa-quote-right" style="color: #ccc"></i>
+                </div>
+                <h6>— Client Name</h6>
+              </div>
+              <div class="testimonial-card">
+                <div class="quote-icon">
+                  <i class="fa-solid fa-quote-left" style="color: #ccc"></i>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Praesent libero.
+                </p>
+                <div class="text-end quote-icon">
+                  <i class="fa-solid fa-quote-right" style="color: #ccc"></i>
+                </div>
+                <h6>— Client Name</h6>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item gap-3">
+            <div class="d-flex gap-3">
+              <div class="testimonial-card">
+                <div class="quote-icon">
+                  <i class="fa-solid fa-quote-left" style="color: #ccc"></i>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Praesent libero.
+                </p>
+                <div class="text-end quote-icon">
+                  <i class="fa-solid fa-quote-right" style="color: #ccc"></i>
+                </div>
+                <h6>— Client Name</h6>
+              </div>
+              <div class="testimonial-card">
+                <div class="quote-icon">
+                  <i class="fa-solid fa-quote-left" style="color: #ccc"></i>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Praesent libero.
+                </p>
+                <div class="text-end quote-icon">
+                  <i class="fa-solid fa-quote-right" style="color: #ccc"></i>
+                </div>
+                <h6>— Client Name</h6>
+              </div>
+              <div class="testimonial-card">
+                <div class="quote-icon">
+                  <i class="fa-solid fa-quote-left" style="color: #ccc"></i>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Praesent libero.
+                </p>
+                <div class="text-end quote-icon">
+                  <i class="fa-solid fa-quote-right" style="color: #ccc"></i>
+                </div>
+                <h6>— Client Name</h6>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item gap-3">
+            <div class="d-flex gap-3">
+              <div class="testimonial-card">
+                <div class="quote-icon">
+                  <i class="fa-solid fa-quote-left" style="color: #ccc"></i>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Praesent libero.
+                </p>
+                <div class="text-end quote-icon">
+                  <i class="fa-solid fa-quote-right" style="color: #ccc"></i>
+                </div>
+                <h6>— Client Name</h6>
+              </div>
+              <div class="testimonial-card">
+                <div class="quote-icon">
+                  <i class="fa-solid fa-quote-left" style="color: #ccc"></i>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Praesent libero.
+                </p>
+                <div class="text-end quote-icon">
+                  <i class="fa-solid fa-quote-right" style="color: #ccc"></i>
+                </div>
+                <h6>— Client Name</h6>
+              </div>
+              <div class="testimonial-card">
+                <div class="quote-icon">
+                  <i class="fa-solid fa-quote-left" style="color: #ccc"></i>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Praesent libero.
+                </p>
+                <div class="text-end quote-icon">
+                  <i class="fa-solid fa-quote-right" style="color: #ccc"></i>
+                </div>
+                <h6>— Client Name</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
+
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="d-none d-md-block d-lg-none mini-hero">
     <div class="container">
       <div class="mini-hero-content">
         <div class="hero-header">
@@ -425,6 +669,15 @@
           <a class="btn cta-primary" href="#">Book a Stay</a>
           <a class="btn cta-secondary" href="#">Request a Service</a>
         </div>
+      </div>
+    </div>
+  </section>
+  <section class="d-none d-lg-block mini-hero-lg">
+    <div class="container">
+      <div class="">
+        <img src="{% static 'svg/care.svg' %}" alt="icon" />
+        <span>Let us handle your property and operational needs while you focus on growth</span>
+          <a class="btn cta-secondary" href="#">Request a Service</a>
       </div>
     </div>
   </section>
