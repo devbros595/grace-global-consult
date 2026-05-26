@@ -120,140 +120,135 @@
     </header>
     <main>{% block content %} {% endblock %}</main>
     <footer>
-      <div class="container">
-        <div class="footer-wrapper">
-          <div class="d-flex flex-column gap-5 footer-logo">
-            <img
-              src="{% static 'img/grace-global-logo.jpeg' %}"
-              alt="Xeloos-logo"
-              loading="lazy"
-            />
-            <div class="d-flex flex-column gap-3 contact-details">
-              <div class="via-phone">
-                <i class="fa-solid fa-phone fa-lg" style="color: #0ccb55"></i>
-                <div class="phone-details">
-                  <span>+44-791-978-623</span>
-                </div>
-              </div>
-              <div class="via-email">
-                <i
-                  class="fa-solid fa-envelope fa-lg"
-                  style="color: #0ccb55"
-                ></i>
-                <a href="mailto:info@graceglobalconsultancy"
-                  >info@graceglobalconsultancy.com</a
-                >
-              </div>
-              <div class="via-address">
-                <i
-                  class="fa-solid fa-location-dot fa-lg"
-                  style="color: #0ccb55"
-                ></i>
-                <span> Flat 1, hatters court 9 king luton LU1 2DW. </span>
+      <div class="footer-wrapper">
+        <div class="d-flex flex-column gap-5 footer-logo">
+          <img
+            src="{% static 'img/grace-global-logo.jpeg' %}"
+            alt="Xeloos-logo"
+            loading="lazy"
+          />
+          <div class="d-flex flex-column gap-3 contact-details">
+            <div class="via-phone">
+              <i class="fa-solid fa-phone fa-lg" style="color: #0ccb55"></i>
+              <div class="phone-details">
+                <span>+44-791-978-623</span>
               </div>
             </div>
-          </div>
-          <div class="quick-links">
-            <h4>Quick Links</h4>
-            <nav>
-              <ul>
-                <li><a href="{% url 'index' %}">Home</a></li>
-                <li><a href="{% url 'about' %}">About Us</a></li>
-                <li><a href="{% url 'hostels' %}">Hostels</a></li>
-                <li>
-                  <a href="{% url 'property_services' %}">Property Services</a>
-                </li>
-                <li><a href="{% url 'contact_us' %}">Contact Us</a></li>
-                <li><a href="{% url 'book_now' %}">Book a Stay</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="our-services">
-            <h4>Our Services</h4>
-            <nav>
-              <ul>
-                <li><a href="#">Youth Accommodation</a></li>
-                <li><a href="#">Real Estate Management</a></li>
-                <li><a href="#">General Cleaning Services</a></li>
-                <li><a href="#">Office Administrative Support</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="legal">
-            <h4>Legal</h4>
-            <nav>
-              <ul>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Service</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="social-links">
-            <h4>CONNECT WITH US</h4>
-            <div class="socials">
-              <a href="" target="_blank" rel="noopener">
-                <!-- Facebook -->
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="25"
-                  height="25"
-                  fill="white"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.5-3.88 3.77-3.88 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.77l-.44 2.89h-2.33v6.99A10 10 0 0 0 22 12z"
-                  />
-                </svg>
-              </a>
-              <a href="" target="_blank" rel="noopener">
-                <!-- Twitter/X -->
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="25"
-                  height="25"
-                  fill="white"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M18.9 2H22l-6.8 7.78L23 22h-6.8l-5.3-6.9L4.9 22H2l7.3-8.4L1 2h6.9l4.8 6.2L18.9 2zm-2.4 18h1.9L7 3.9H5z"
-                  />
-                </svg>
-              </a>
-              <a href="" target="_blank" rel="noopener">
-                <!-- Instagram -->
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="25"
-                  height="25"
-                  fill="white"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M7.75 2C4.57 2 2 4.57 2 7.75v8.5C2 19.43 4.57 22 7.75 22h8.5C19.43 22 22 19.43 22 16.25v-8.5C22 4.57 19.43 2 16.25 2h-8.5zm0 2h8.5C18.33 4 20 5.67 20 7.75v8.5C20 18.33 18.33 20 16.25 20h-8.5C5.67 20 4 18.33 4 16.25v-8.5C4 5.67 5.67 4 7.75 4zm8.75 1a1.25 1.25 0 1 0 0 2.5A1.25 1.25 0 0 0 16.5 5zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"
-                  />
-                </svg>
-              </a>
-              <a href="" target="_blank" rel="noopener">
-                <!-- LinkedIn -->
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="25"
-                  height="25"
-                  fill="white"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.48 1s2.5 1.12 2.5 2.5zM.5 8h4V24h-4V8zm7 0h3.8v2.2h.05c.53-1 1.82-2.2 3.75-2.2C19 8 21 10.13 21 14.13V24h-4v-8.25c0-1.97-.03-4.5-2.75-4.5-2.75 0-3.17 2.15-3.17 4.37V24h-4V8z"
-                  />
-                </svg>
-              </a>
+            <div class="via-email">
+              <i class="fa-solid fa-envelope fa-lg" style="color: #0ccb55"></i>
+              <a href="mailto:info@graceglobalconsultancy"
+                >info@graceglobalconsultancy.com</a
+              >
+            </div>
+            <div class="via-address">
+              <i
+                class="fa-solid fa-location-dot fa-lg"
+                style="color: #0ccb55"
+              ></i>
+              <span> Flat 1, hatters court 9 king luton LU1 2DW. </span>
             </div>
           </div>
         </div>
-        <hr />
-        <div class="footer-copyright">
-          &copy; 2026 Grace Global Consult Limited. | All rights reserved.
+        <div class="quick-links">
+          <h4>Quick Links</h4>
+          <nav>
+            <ul>
+              <li><a href="{% url 'index' %}">Home</a></li>
+              <li><a href="{% url 'about' %}">About Us</a></li>
+              <li><a href="{% url 'hostels' %}">Hostels</a></li>
+              <li>
+                <a href="{% url 'property_services' %}">Property Services</a>
+              </li>
+              <li><a href="{% url 'contact_us' %}">Contact Us</a></li>
+              <li><a href="{% url 'book_now' %}">Book a Stay</a></li>
+            </ul>
+          </nav>
         </div>
+        <div class="our-services">
+          <h4>Our Services</h4>
+          <nav>
+            <ul>
+              <li><a href="#">Youth Accommodation</a></li>
+              <li><a href="#">Real Estate Management</a></li>
+              <li><a href="#">General Cleaning Services</a></li>
+              <li><a href="#">Office Administrative Support</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="legal">
+          <h4>Legal</h4>
+          <nav>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="social-links">
+          <h4>CONNECT WITH US</h4>
+          <div class="socials">
+            <a href="" target="_blank" rel="noopener">
+              <!-- Facebook -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="white"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.5-3.88 3.77-3.88 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.77l-.44 2.89h-2.33v6.99A10 10 0 0 0 22 12z"
+                />
+              </svg>
+            </a>
+            <a href="" target="_blank" rel="noopener">
+              <!-- Twitter/X -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="white"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M18.9 2H22l-6.8 7.78L23 22h-6.8l-5.3-6.9L4.9 22H2l7.3-8.4L1 2h6.9l4.8 6.2L18.9 2zm-2.4 18h1.9L7 3.9H5z"
+                />
+              </svg>
+            </a>
+            <a href="" target="_blank" rel="noopener">
+              <!-- Instagram -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="white"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7.75 2C4.57 2 2 4.57 2 7.75v8.5C2 19.43 4.57 22 7.75 22h8.5C19.43 22 22 19.43 22 16.25v-8.5C22 4.57 19.43 2 16.25 2h-8.5zm0 2h8.5C18.33 4 20 5.67 20 7.75v8.5C20 18.33 18.33 20 16.25 20h-8.5C5.67 20 4 18.33 4 16.25v-8.5C4 5.67 5.67 4 7.75 4zm8.75 1a1.25 1.25 0 1 0 0 2.5A1.25 1.25 0 0 0 16.5 5zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"
+                />
+              </svg>
+            </a>
+            <a href="" target="_blank" rel="noopener">
+              <!-- LinkedIn -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="white"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.48 1s2.5 1.12 2.5 2.5zM.5 8h4V24h-4V8zm7 0h3.8v2.2h.05c.53-1 1.82-2.2 3.75-2.2C19 8 21 10.13 21 14.13V24h-4v-8.25c0-1.97-.03-4.5-2.75-4.5-2.75 0-3.17 2.15-3.17 4.37V24h-4V8z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="footer-copyright">
+        &copy; 2026 Grace Global Consult Limited. | All rights reserved.
       </div>
     </footer>
 

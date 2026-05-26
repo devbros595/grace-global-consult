@@ -6,7 +6,7 @@
 }
 
 body {
-  background: #0B1F3A;
+  background: #0b1f3a;
 }
 
 header {
@@ -286,22 +286,21 @@ footer hr {
 }
 
 @media (min-width: 768px) {
+  footer {
+    padding: 3rem 2rem;
+  }
+
   .footer-wrapper {
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 2rem;
-    padding: 1rem;
+      justify-content: space-between;
+      flex-wrap: wrap;
   }
 }
 
-@media (min-width: 1024px) {
-
-  header{
+@media (min-width: 992px) {
+  header {
     padding-left: 2rem;
     padding-right: 2rem;
   }
-
-  
   
 }
