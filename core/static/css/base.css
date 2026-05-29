@@ -9,12 +9,16 @@ body {
   background: #0b1f3a;
 }
 
-header {
-  position: sticky;
+
+  header {
+  position: fixed;        /* Changed to fixed so it stays stuck while scrolling */
   top: 0;
+  left: 0;                
+  width: 100%;              
   z-index: 1050;
   padding-top: 15px;
   margin: 0;
+  pointer-events: none;
 }
 
 .navbar {
@@ -24,11 +28,12 @@ header {
   padding: 0 15px !important;
   background: transparent !important;
   box-shadow: none !important;
+  pointer-events: auto;
 }
 
 .navbar-pill {
   background-color: #ffffff;
-  padding: 10px 24px;
+  padding: 0.5rem 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -287,13 +292,14 @@ footer hr {
 
 @media (min-width: 768px) {
   footer {
-    padding: 3rem 2rem;
+    padding: 3rem 2.5rem;
   }
 
   .footer-wrapper {
     flex-direction: row;
-      justify-content: space-between;
-      flex-wrap: wrap;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
   }
 }
 
@@ -302,5 +308,13 @@ footer hr {
     padding-left: 2rem;
     padding-right: 2rem;
   }
+
+  .footer-wrapper {
+    gap: 4rem;
+  }
+
+  footer {
+    padding: 5rem 2.5rem 3rem;
   
+  }
 }

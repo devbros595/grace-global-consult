@@ -1,0 +1,36 @@
+{% extends "base.html" %} {% load static %} {% block title %}
+<title>About Us | Graceglobalconsult</title>
+{% endblock %} {% block content %}
+<section class="about-us-hero">
+  <div class="container">
+    <div class="about-us-hero-text">
+      <h1>About Us</h1>
+      <p>
+        Learn more about who we are, what drives us and our commitment to
+        delivering quality hospitality and property management solutions.
+      </p>
+    </div>
+  </div>
+</section>
+<div class="sections">
+  <section class="who-we-are">
+    <div class="container">
+      <div class="who-we-are-content">
+        <div class="text-center section-heading">
+          <h3>Who We Are</h3>
+          <div class="section-line mx-auto"></div>
+        </div>
+        <p>
+          We are a leading hospitality and property management company dedicated
+          to providing exceptional services to our clients. With a passion for
+          excellence and a commitment to quality, we strive to create memorable
+          experiences for our guests and maximize the value of our clients'
+          properties.
+        </p>
+        <a href="{% url 'contact_us' %}">Learn More</a>
+      </div>
+    </div>
+  </section>
+  <hr />
+</div>
+{% endblock %}

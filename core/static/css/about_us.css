@@ -1,0 +1,91 @@
+.about-us-hero {
+  position: relative;
+  background-image: url("../img/man-cleaning.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 2rem 0rem;
+  color: #fff;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.about-us-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.458);
+  z-index: 1;
+}
+
+.about-us-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.about-us-hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-shadow: 0 2px 2px rgb(0, 0, 0);
+  padding-top: 160px;
+  padding-bottom: 0rem;
+}
+
+.about-us-hero-text h1 {
+  font-size: 35px;
+}
+.about-us-hero-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  width: 100%;
+  max-width: 350px;
+}
+
+.who-we-are {
+  background-color: #f8fafc;
+  color: #0b1f3a;
+  padding: 2rem 0rem;
+}
+
+.who-we-are-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.section-line {
+  background: rgb(212, 180, 1);
+  height: 0.2rem;
+  width: 3rem;
+  border-radius: 3rem;
+}
+
+.section-heading h3 {
+  color: #0b1f3a;
+  font-family: "Inter" sans-serif;
+}
+
+.who-we-are-content p {
+  font-size: 15px;
+  line-height: 2;
+}
+
+ .who-we-are-content a {
+    text-decoration: none;
+    padding: 0.7rem 1.7rem;
+    font-weight: 500;
+    border-radius: 0.3rem;
+    background-color: #d4b401eb;
+    color: #F8FAFC;
+    transition: all 0.5s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.356);
+  }
+  /* .who-we-are-content a:hover {
+    background-color: #0A8F3D;
+    color: #ffffff;
+    transform: scale(0.95);
+  } */
+
+
