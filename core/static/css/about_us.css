@@ -5,7 +5,6 @@
   background-position: center;
   padding: 2rem 0rem;
   color: #fff;
-  height: 90vh;
   overflow: hidden;
 }
 
@@ -42,7 +41,6 @@
 }
 
 .who-we-are {
-  background-color: #f8fafc;
   color: #0b1f3a;
   padding: 2rem 0rem;
 }
@@ -72,20 +70,24 @@
   line-height: 2;
 }
 
- .who-we-are-content a {
-    text-decoration: none;
-    padding: 0.7rem 1.7rem;
-    font-weight: 500;
-    border-radius: 0.3rem;
-    background-color: #d4b401eb;
-    color: #F8FAFC;
-    transition: all 0.5s ease;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.356);
-  }
-  /* .who-we-are-content a:hover {
-    background-color: #0A8F3D;
-    color: #ffffff;
-    transform: scale(0.95);
-  } */
+.who-we-are-content a {
+  text-decoration: none;
+  padding: 0.7rem 1.7rem;
+  font-weight: 500;
+  border-radius: 0.3rem;
+  background-color: #d4b401eb;
+  color: #f8fafc;
+  transition: all 0.5s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.356);
+}
 
+.sections {
+  background-color: #f8fafc;
+  padding-bottom: 10rem;
+}
 
+.sections hr {
+  border-top: 2px solid #0A8F3D;
+  margin: 1rem;
+  opacity: 100;
+}

@@ -205,9 +205,8 @@ body {
 footer {
   background-color: #0b1f3a;
   color: #ffffff;
-  position: relative;
   padding: 2rem 1rem;
-  z-index: 1;
+  border: 1px solid #ff1919;
 }
 
 footer a {
