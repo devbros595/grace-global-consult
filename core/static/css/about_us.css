@@ -82,6 +82,7 @@
 }
 
 .sections {
+<<<<<<< HEAD
   background-color: #f8fafc;
   padding-bottom: 10rem;
 }
@@ -91,3 +92,130 @@
   margin: 1rem;
   opacity: 100;
 }
+=======
+  padding-bottom: 3rem;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #0a8f3d;
+  height: 0;
+}
+
+.value-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.value-item {
+  border: 2px solid #e5e7eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.value-item-icon {
+  background-color: #e5e7eb;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.value-item-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.value-item-text span {
+  font-size: 19px;
+  font-weight: 500;
+}
+.value-item-text p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.why-content .section-item {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  border: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 3rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.108);
+}
+
+.section-item img {
+  width: 40px;
+  height: 40px;
+}
+
+.section-item span {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.partner-banner {
+  border-radius: 1rem;
+}
+
+.banner-header {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.partner .banner-cta {
+  flex-direction: row;
+  justify-content: center;
+}
+
+.partner .banner-cta a {
+  padding: 0.7rem 1rem;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .value-container {
+    justify-content: center;
+  }
+
+  .value-item {
+    background-color: #ffffff;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+  }
+
+  .value-item-icon {
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .value-item-text {
+    align-items: center;
+  }
+
+  .value-item-text span {
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  .value-item-text p {
+    line-height: normal;
+    text-align: center;
+    margin:0;
+  }
+}
+
+/* .who-we-are-content a:hover {
+    background-color: #0A8F3D;
+    color: #ffffff;
+    transform: scale(0.95);
+  } */
+>>>>>>> 7d05048 (Refactor About Us page: update styles, add core values section, and enhance layout)
