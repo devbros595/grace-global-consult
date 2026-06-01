@@ -54,11 +54,12 @@
 }
 
 .section-line {
-  background: rgb(212, 180, 1);
-  height: 0.2rem;
-  width: 3rem;
-  border-radius: 3rem;
+  margin: 0 auto;
 }
+
+/* .section-heading{
+  
+} */
 
 .section-heading h3 {
   color: #0b1f3a;
@@ -82,17 +83,6 @@
 }
 
 .sections {
-<<<<<<< HEAD
-  background-color: #f8fafc;
-  padding-bottom: 10rem;
-}
-
-.sections hr {
-  border-top: 2px solid #0A8F3D;
-  margin: 1rem;
-  opacity: 100;
-}
-=======
   padding-bottom: 3rem;
 }
 
@@ -169,18 +159,45 @@ hr {
   font-weight: 500;
 }
 
-.partner .banner-cta {
+.about-partner .banner-cta {
   flex-direction: row;
   justify-content: center;
 }
 
-.partner .banner-cta a {
+.about-partner .banner-cta a {
   padding: 0.7rem 1rem;
   font-size: 16px;
   font-weight: 500;
 }
 
 @media (min-width: 768px) {
+  .who-we-are .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .who-we-are-content {
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 0;
+    width: 65%;
+  }
+
+  .who-we-are-img {
+    width: 35%;
+  }
+
+  .who-we-are-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .who-we-are-content p {
+    line-height: 1.8;
+  }
+
   .value-container {
     justify-content: center;
   }
@@ -204,12 +221,49 @@ hr {
   .value-item-text span {
     font-weight: 500;
     font-size: 18px;
+    text-align: center;
   }
 
   .value-item-text p {
     line-height: normal;
     text-align: center;
-    margin:0;
+    margin: 0;
+  }
+
+  .core-value .who-we-are-content {
+    align-items: center;
+    width: 100%;
+  }
+
+ 
+}
+@media (min-width: 992px) {
+  .section-line {
+    margin: 0;
+  }
+  .who-we-are .container {
+    gap: 2rem;
+  }
+
+  .who-we-are-content {
+    gap: 2rem;
+    padding: 0;
+    padding-right: 2rem;
+    width: 50%;
+  }
+
+  .who-we-are-img {
+    width: 50%;
+  }
+
+  .who-we-are-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .core-value .who-we-are-content {
+    align-items: flex-start;
+    width: 100%;
   }
 }
 
@@ -218,4 +272,3 @@ hr {
     color: #ffffff;
     transform: scale(0.95);
   } */
->>>>>>> 7d05048 (Refactor About Us page: update styles, add core values section, and enhance layout)

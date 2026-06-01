@@ -206,7 +206,7 @@ footer {
   background-color: #0b1f3a;
   color: #ffffff;
   padding: 2rem 1rem;
-  border: 1px solid #ff1919;
+  position: relative;
 }
 
 footer a {
@@ -223,6 +223,7 @@ footer a:hover {
 .footer-wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 3rem;
   margin-bottom: 2rem;
 }
@@ -236,6 +237,10 @@ footer a:hover {
 
 .footer-wrapper ul li {
   list-style: none;
+}
+
+.footer-logo{
+  padding-right: 2px;
 }
 
 .footer-logo img {
@@ -261,6 +266,10 @@ footer a:hover {
   color: #dbdada;
   font-size: 14px;
   text-transform: capitalize;
+}
+
+.via-email a{
+  font-size: 14px;
 }
 
 .quick-links,
