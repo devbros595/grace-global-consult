@@ -17,12 +17,14 @@
   <section class="who-we-are">
     <div class="container">
       <div class="who-we-are-content">
-        <div class="section-heading border">
+        <div class="section-heading">
           <h3>Who We Are</h3>
-          <div class="section-line"></div>
+          <div class="section-line d-block d-md-none"></div>
+          <div class="section-line m-0 d-none d-md-block"></div>
         </div>
         <p>
-          Grace Global Consult Limited is a multi-faceted company offering hospitality and property-related services. We are committed to delivering value through professionalism, integrity, and attention to detail.
+          Grace Global Consult Limited is a multi-faceted company offering hospitality and property-related services. We
+          are committed to delivering value through professionalism, integrity, and attention to detail.
         </p>
         <a href="{% url 'contact_us' %}">Learn More</a>
       </div>
@@ -106,34 +108,46 @@
   <section class="why-choose-us">
     <div class="container">
       <div class="why-us">
-        <div class="text-center section-heading">
+        <div class="section-heading">
           <h3>Why Choose Us</h3>
-          <div class="section-line mx-auto"></div>
+          <div class="section-line"></div>
         </div>
         <div class="why-content">
-          <div class="row g-3">
-            <div class="col-6">
+          <div class="row g-3 ">
+            <div class="col-6 col-lg-3 d-lg-flex justify-content-center">
               <div class="section-item">
                 <img src="{% static 'svg/trusted.svg' %}" alt="icon" />
                 <span>Reliable & Professional</span>
+                <p class="d-none d-lg-block">
+                  You can count on us for consistent and dependable service delivery.
+                </p>
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-6 col-lg-3 d-lg-flex justify-content-center">
               <div class="section-item">
                 <img src="{% static 'svg/customer-focused.svg' %}" alt="icon" />
                 <span>Customer Focused</span>
+                <p class="d-none d-lg-block">
+                  We put our clients and guests first in everything we do.
+                </p>
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-6 col-lg-3 d-lg-flex justify-content-center">
               <div class="section-item">
                 <img src="{% static 'svg/solutions.svg' %}" alt="icon" />
                 <span>Flexible Solutions</span>
+                <p class="d-none d-lg-block">
+                  Tailored services that fits your unique needs.
+                </p>
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-6 col-lg-3 d-lg-flex justify-content-center">
               <div class="section-item">
                 <img src="{% static 'svg/quality.svg' %}" alt="icon" />
                 <span>Quality & Efficiency</span>
+                <p class="d-none d-lg-block">
+                  We are committed to excellence in quality and efficiency.
+                </p>
               </div>
             </div>
           </div>
@@ -153,5 +167,60 @@
       </div>
     </div>
   </section>
+  <section class="partner d-none d-md-block about-partner">
+    <div class="partner-banner">
+      <div class="banner-text">
+        <div class="banner-header">Partner with us or stay with us today.</div>
+        <div class="banner-description">We are here to serve you and provide the best experience.</div>
+      </div>
+      <div class="banner-cta">
+        <a class="btn cta-primary" href="#">Contact Us</a>
+        <a class="btn cta-secondary" href="#">Book a Stay</a>
+      </div>
+    </div>
+  </section>
+  <section class="our-division-section d-none d-md-block">
+    <div class="container">
+      <div class="our-division-container">
+        <div class="section-heading">
+          <h3>Our Divisions</h3>
+          <div class="section-line"></div>
+        </div>
+        <div class="our-division-content">
+          <div class="row">
+            <div class="col-6">
+              <div class="division-item">
+                <div class="division-item-icon">
+                  <img src="{% static 'svg/hostel.svg' %}" alt="icon" />
+                </div>
+                <div class="division-item-content">
+                  <div class="division-item-text">
+                    <div class="division-item-title">Grace Hostels</div>
+                    <div class="division-item-info">Affordable, clean and welcoming accommodation designed for comfort and community.</div>
+                  </div>
+                  <a href="#">Learn More &rarr;</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="division-item">
+                <div class="division-item-icon">
+                  <img src="{% static 'svg/real-estate.svg' %}" alt="icon" />
+                </div>
+                <div class="division-item-content">
+                  <div class="division-item-text">
+                    <div class="division-item-title">Grace Property Services</div>
+                    <div class="division-item-info">Professional support for property owners and businesses.</div>
+                  </div>
+                  <a href="#">Learn More &rarr;</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</section>
 </div>
 {% endblock %}
