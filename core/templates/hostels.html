@@ -1,6 +1,34 @@
 {% extends "base.html" %} {% load static %} {% block title %}
-<title>Hostels | Graceglobalconsult</title>
-{% endblock %} {% block content %} section class="hostels">
-<div class="container">
+<title>Hostels | Grace Global Consult</title>
+{% endblock %} {% block content %}
+<section class="hostel-hero">
+  <div class="container">
+    <div class="hostel-hero-text">
+      <h1>Discover Our<br />Youth Hostels.</h1>
+      <p>Comfortable, secure and community oriented accommodation.</p>
+      <div class="hero-cta">
+        <a href="{% url 'contact_us' %}" class="btn">Book Your Stay</a>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="sections">
+  <section class="hostel-category-section">
+    <div class="container">
+      <div class="hostel-category">
+        <div class="section-heading">
+          <h3>Hostel Categories</h3>
+          <div class="section-line"></div>
+        </div>
+        <!-- <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+            <div class="hostel-card">
+              <img src="" alt="hostel" />
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
 </div>
 {% endblock %}
