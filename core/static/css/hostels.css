@@ -52,6 +52,10 @@
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.335);
 }
 
+.section-line {
+  margin: 0 auto;
+}
+
 .hostel-category-section {
   padding: 2rem 0rem;
 }
@@ -60,11 +64,143 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 2rem;
+}
+
+.hostel-category-content .hostel-card {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.8rem 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.108);
+  width: 100%;
+}
+
+.hostel-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hostel-card-link a {
+  text-decoration: none;
+  color: #0b1f3a;
+  font-size: 18px;
+  font-weight: 500;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.hostel-card-text span {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.hostel-card-text p {
+  margin: 0;
+}
+
+.amenities-category-section {
+  padding: 2rem 0rem;
+}
+
+.amenities-category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.amenities-category-content .amenities-card {
+  background-color: #fff;
+  border-radius: 1rem;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.3rem 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.108);
+  height: 100%;
+}
+
+.amenities-card-text {
+  display: flex;
+  flex-direction: column;
   gap: 1rem;
+  text-align: center;
+}
+
+.amenities-card-text span {
+  font-weight: 500;
+  font-size: 20px;
+  width: 100%;
+}
+
+.amenities-card-text p {
+  margin: 0;
+}
+
+.featured-hostels {
+  padding: 4rem 1rem 0;
 }
 
 .section-line {
-  margin: 0 auto;
+  background: rgb(212, 180, 1);
+  height: 0.2rem;
+  width: 3rem;
+  border-radius: 3rem;
+}
+
+.hostel-scroll {
+  margin-top: 2rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
+}
+
+.hostel-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.hostel-card {
+  min-width: 220px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+
+.hostel-scroll .link {
+  margin: 0 1rem;
+  min-width: max-content;
+}
+
+.hostel-card a {
+  text-decoration: none;
+  color: #0b1f3a;
+  font-size: 14px;
+  font-weight: 500;
+  background: #e5e7eb88;
+  border: 1px solid #e5e7eb;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.hostel-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.hostel-card h6{
+  font-weight: 600;
+  text-align: center;
+  margin-top: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -116,4 +252,3 @@
     margin: 0;
   }
 }
-
