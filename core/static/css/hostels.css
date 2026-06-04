@@ -1,4 +1,4 @@
-.hostel-hero {
+.page-hero {
   position: relative;
   background-image: url("../img/hostel-1.jpeg");
   background-size: cover;
@@ -8,7 +8,7 @@
   overflow: hidden;
 }
 
-.hostel-hero::before {
+.page-hero::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -16,12 +16,12 @@
   z-index: 1;
 }
 
-.hostel-hero .container {
+.page-hero .container {
   position: relative;
   z-index: 2;
 }
 
-.hostel-hero-text {
+.page-hero-content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -31,17 +31,19 @@
   padding-bottom: 0rem;
 }
 
-.hostel-hero-text h1 {
+
+
+.page-hero-text h1 {
   line-height: 1.3;
 }
 
-.hostel-hero-text p {
+.page-hero-text p {
   margin: 0;
   line-height: 1.3;
   width: 100%;
 }
 
-.hero-cta a {
+.page-hero-cta a {
   padding: 0.75rem 1.5rem;
   background-color: #d4b401;
   color: #fff;

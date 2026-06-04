@@ -1,12 +1,14 @@
 {% extends "base.html" %} {% load static %} {% block title %}
 <title>Hostels | Grace Global Consult</title>
 {% endblock %} {% block content %}
-<section class="hostel-hero">
+<section class="page-hero">
   <div class="container">
-    <div class="hostel-hero-text">
-      <h1>Discover Our<br />Youth Hostels.</h1>
-      <p>Comfortable, secure and community oriented accommodation.</p>
-      <div class="hero-cta">
+    <div class="page-hero-content">
+      <div class="page-hero-text">
+        <h1>Discover Our<br />Youth Hostels.</h1>
+        <p>Comfortable, secure and community oriented accommodation.</p>
+      </div>
+      <div class="page-hero-cta">
         <a href="{% url 'contact_us' %}" class="btn">Book Your Stay</a>
       </div>
     </div>
@@ -59,7 +61,7 @@
       </div>
     </div>
   </section>
-  <hr>
+  <hr />
   <section class="amenities-category-section">
     <div class="container">
       <div class="amenities-category">
@@ -124,7 +126,9 @@
         <h3>Featured Hostels</h3>
         <div class="section-line mx-auto"></div>
       </div>
-      <div class="hostel-scroll d-flex align-items-center justify-content-center gap-4">
+      <div
+        class="hostel-scroll d-flex align-items-center justify-content-start gap-4"
+      >
         <div class="hostel-card">
           <img src="{% static 'img/hostel-1.jpeg' %}" alt="" />
           <h6>Grace Hostel 1</h6>
@@ -144,17 +148,21 @@
           <h6>Grace Hostel 4</h6>
         </div>
         <div class="hostel-card link d-block d-md-none">
-          <a href="#">View All
-            <i class="fa-solid fa-angles-right ms-2" style="color: #d4b401"></i></a>
+          <a href="#"
+            >View All
+            <i class="fa-solid fa-angles-right ms-2" style="color: #d4b401"></i
+          ></a>
         </div>
       </div>
       <div class="d-none d-md-block">
-        <a href="#">View All
-          <i class="fa-solid fa-angles-right ms-2" style="color: #d4b401"></i></a>
+        <a href="#"
+          >View All
+          <i class="fa-solid fa-angles-right ms-2" style="color: #d4b401"></i
+        ></a>
       </div>
     </div>
   </section>
-  <hr>
+  <hr />
   <section class="amenities-category-section">
     <div class="container">
       <div class="amenities-category">
@@ -213,7 +221,7 @@
       </div>
     </div>
   </section>
-    <section class="newsletter d-block d-lg-none">
+  <section class="newsletter d-block d-lg-none">
     <div class="container">
       <div class="newsletter-content">
         <h3>Stay Updated</h3>
