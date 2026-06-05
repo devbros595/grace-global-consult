@@ -1,13 +1,14 @@
 {% extends "base.html" %} {% load static %} {% block title %}
 <title>Propery Services | Grace Global Consult</title>
 {% endblock %} {% block content %}
-<section class="page-hero-property">
+<section class="page-hero-contact">
   <div class="container">
     <div class="page-hero-content">
       <div class="page-hero-text">
         <h1>Contact Us</h1>
         <p>
-          We'd love to hear from you. Reach out to us for inquires, partnerships and support.
+          We'd love to hear from you. <br />Reach out to us for inquires,
+          partnerships and support.
         </p>
       </div>
       <div class="page-hero-cta">
@@ -17,12 +18,82 @@
   </div>
 </section>
 <div class="sections pt-3">
+  <section class="contact-details-section">
+    <div class="container">
+      <div class="contact-details-content">
+        <div class="section-heading">
+          <h3>Get In Touch</h3>
+          <div class="section-line"></div>
+        </div>
+        <div class="contact-card-container">
+          <div class="row g-3">
+            <div
+              class="col-12 col-md-6 col-lg-4 >"
+            >
+              <div class="contact-card">
+                <div class="contact-card-icon">
+                  <img src="{% static 'svg/phone.svg' %}" alt="phone icon" />
+                </div>
+                <div class="contact-card-text">
+                  <span>Phone</span>
+                  <p>+44-791-978-623</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-4 >"
+            >
+              <div class="contact-card">
+                <div class="contact-card-icon">
+                  <img src="{% static 'svg/email.svg' %}" alt="phone icon" />
+                </div>
+                <div class="contact-card-text">
+                  <span>Email</span>
+                  <a href="mailto:info@gracegblobalconsultancy.co.uk">info@gracegblobalconsultancy.co.uk</a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-4 >"
+            >
+              <div class="contact-card">
+                <div class="contact-card-icon">
+                  <img src="{% static 'svg/location.svg' %}" alt="phone icon" />
+                </div>
+                <div class="contact-card-text">
+                  <span>Address</span>
+                  <p> Flat 1, hatters court 9 king luton LU1 2DW. </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-4>"
+            >
+              <div class="contact-card">
+                <div class="contact-card-icon">
+                  <img src="{% static 'svg/clock.svg' %}" alt="phone icon" />
+                </div>
+                <div class="contact-card-text">
+                  <span>Business Hours</span>
+                  <ul>
+                    <li>Monday - Friday: 9:00 AM - 6:00 PM</li>
+                    <li>Saturday: 10:00 AM - 4:00 PM</li>
+                    <li>Sunday: Closed</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <section class="partner page-partner-sect">
     <div class="container">
       <div class="cta-card">
         <h2 class="cta-title">Partner with us today</h2>
         <p class="cta-description">
-          Let us handle your property and<br>
+          Let us handle your property and<br />
           operational needs.
         </p>
         <div class="cta-buttons">

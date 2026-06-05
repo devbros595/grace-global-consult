@@ -3,6 +3,7 @@
   background-image: url("../img/hostel-1.jpeg");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   padding: 2rem 0rem;
   color: #fff;
   overflow: hidden;
@@ -22,21 +23,20 @@
   z-index: 1;
 }
 
- .page-hero-content {
+.page-hero-hostel .page-hero-content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 1rem;
+  gap: 2rem;
   text-shadow: 0 2px 2px rgb(0, 0, 0);
-  padding-top: 160px;
-  padding-bottom: 0rem;
+  margin: 9rem auto 0;
 }
 
- .page-hero-text h1 {
+.page-hero-text h1 {
   line-height: 1.3;
 }
 
- .page-hero-text p {
+.page-hero-text p {
   margin: 0;
   line-height: 1.3;
   width: 100%;
