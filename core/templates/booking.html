@@ -1,7 +1,92 @@
-{% extends "base.html" %}
-{% load static %}
-{% block title %}
-<title>Book Now | Graceglobalconsult</title>
-{% endblock %}
-{% block content %}
+{% extends "base.html" %} {% load static %} {% block title %}
+<title>Book Now | Grace Global Consult</title>
+{% endblock %} {% block content %}
+<section class="page-hero-book">
+    <div class="container">
+        <div class="page-hero-content">
+            <div class="page-hero-text">
+                <h1>Book a Stay</h1>
+                <p>
+                    Comfortable rooms, affordable prices and great hospitality.
+                </p>
+            </div>
+            <div class="page-hero-cta">
+                <a href="{% url 'contact_us' %}" class="btn">Request a Service</a>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="sections">
+    <section class="contact-details-section">
+        <div class="container">
+            <div class="contact-details-content">
+                <div class="section-heading">
+                    <h3>Check Availability</h3>
+                    <div class="section-line"></div>
+                </div>
+                <div class="availability-card">
+                    <form action="#" method="GET" class="availability-form">
+                        <div class="form-field-group">
+                            <label for="check-in" class="field-label">Check-in</label>
+                            <div class="input-wrapper date-icon">
+                                <input type="date" id="check-in" name="check_in" class="form-input" required>
+                                <span class="custom-icon calendar-icon"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-field-group">
+                            <label for="check-out" class="field-label">Check-out</label>
+                            <div class="input-wrapper date-icon">
+                                <input type="date" id="check-out" name="check_out" class="form-input" required>
+                                <span class="custom-icon calendar-icon"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-field-group">
+                            <label for="guests" class="field-label">Guests</label>
+                            <div class="input-wrapper select-icon">
+                                <select id="guests" name="guests" class="form-input select-input" required>
+                                    <option value="" disabled selected hidden>Select guests</option>
+                                    <option value="1">1 Guest</option>
+                                    <option value="2">2 Guests</option>
+                                    <option value="3">3 Guests</option>
+                                    <option value="4">4+ Guests</option>
+                                </select>
+                                <span class="custom-icon chevron-icon"></span>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn-availability">Check Availability</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="featured-hostels book-now">
+        <div class="container">
+            <div class="section-heading">
+                <h3>Our Hostels</h3>
+                <div class="section-line"></div>
+            </div>
+            
+        </div>
+    </section>
+    <section class="partner page-partner-sect">
+        <div class="container">
+            <div class="cta-card">
+                <h2 class="cta-title">Partner with us today</h2>
+                <p class="cta-description">
+                    Let us handle your property and<br />
+                    operational needs.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary">Contact Us</a>
+                    <a href="#" class="btn btn-secondary">Request Service</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</div>
 {% endblock %}

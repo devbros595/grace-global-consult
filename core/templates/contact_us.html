@@ -1,5 +1,5 @@
 {% extends "base.html" %} {% load static %} {% block title %}
-<title>Propery Services | Grace Global Consult</title>
+<title>Contact Us | Grace Global Consult</title>
 {% endblock %} {% block content %}
 <section class="page-hero-contact">
   <div class="container">
@@ -17,7 +17,7 @@
     </div>
   </div>
 </section>
-<div class="sections pt-3">
+<div class="sections">
   <section class="contact-details-section">
     <div class="container">
       <div class="contact-details-content">
@@ -27,9 +27,7 @@
         </div>
         <div class="contact-card-container">
           <div class="row g-3">
-            <div
-              class="col-12 col-md-6 col-lg-4 >"
-            >
+            <div class="col-12 col-md-6 col-lg-4 >">
               <div class="contact-card">
                 <div class="contact-card-icon">
                   <img src="{% static 'svg/phone.svg' %}" alt="phone icon" />
@@ -40,9 +38,7 @@
                 </div>
               </div>
             </div>
-            <div
-              class="col-12 col-md-6 col-lg-4 >"
-            >
+            <div class="col-12 col-md-6 col-lg-4 >">
               <div class="contact-card">
                 <div class="contact-card-icon">
                   <img src="{% static 'svg/email.svg' %}" alt="phone icon" />
@@ -53,9 +49,7 @@
                 </div>
               </div>
             </div>
-            <div
-              class="col-12 col-md-6 col-lg-4 >"
-            >
+            <div class="col-12 col-md-6 col-lg-4 >">
               <div class="contact-card">
                 <div class="contact-card-icon">
                   <img src="{% static 'svg/location.svg' %}" alt="phone icon" />
@@ -66,9 +60,7 @@
                 </div>
               </div>
             </div>
-            <div
-              class="col-12 col-md-6 col-lg-4>"
-            >
+            <div class="col-12 col-md-6 col-lg-4>">
               <div class="contact-card">
                 <div class="contact-card-icon">
                   <img src="{% static 'svg/clock.svg' %}" alt="phone icon" />
@@ -84,6 +76,32 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="contact-form-container">
+          <div class="form-title">
+            <img src="{% static 'svg/send.svg'%}" alt="send-icon">
+            <h5>Send Us a Message</h5>
+          </div>
+          <form action="#" method="POST" class="contact-form">
+            <div class="form-group">
+              <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+            </div>
+
+            <div class="form-group">
+              <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+            </div>
+
+            <div class="form-group">
+              <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+            </div>
+
+            <div class="form-group">
+              <textarea name="message" class="form-control textarea-control" placeholder="Message" rows="5"
+                required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Send Message</button>
+          </form>
         </div>
       </div>
     </div>
