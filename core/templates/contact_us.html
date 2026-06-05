@@ -1,7 +1,46 @@
-{% extends "base.html" %}
-{% load static %}
-{% block title %}
-<title>Contact Us | Graceglobalconsult</title>
-{% endblock %}
-{% block content %}
+{% extends "base.html" %} {% load static %} {% block title %}
+<title>Propery Services | Grace Global Consult</title>
+{% endblock %} {% block content %}
+<section class="page-hero-property">
+  <div class="container">
+    <div class="page-hero-content">
+      <div class="page-hero-text">
+        <h1>Contact Us</h1>
+        <p>
+          We'd love to hear from you. Reach out to us for inquires, partnerships and support.
+        </p>
+      </div>
+      <div class="page-hero-cta">
+        <a href="{% url 'contact_us' %}" class="btn">Request a Service</a>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="sections pt-3">
+  <section class="partner page-partner-sect">
+    <div class="container">
+      <div class="cta-card">
+        <h2 class="cta-title">Partner with us today</h2>
+        <p class="cta-description">
+          Let us handle your property and<br>
+          operational needs.
+        </p>
+        <div class="cta-buttons">
+          <a href="#" class="btn btn-primary">Contact Us</a>
+          <a href="#" class="btn btn-secondary">Request Service</a>
+        </div>
+      </div>
+      <!-- <div class="partner-banner">
+        <div class="banner-header">Partner with us today.</div>
+        <div class="banner-description">
+          Let us handle your property and operational needs.
+        </div>
+        <div class="banner-cta">
+          <a class="btn cta-primary" href="#">Contact Us</a>
+          <a class="btn cta-secondary" href="#">Request a Service</a>
+        </div>
+      </div> -->
+    </div>
+  </section>
+</div>
 {% endblock %}

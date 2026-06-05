@@ -6,13 +6,14 @@
   padding: 2rem 0rem;
   color: #fff;
   overflow: hidden;
+  height: 80vh;
 }
 
 .about-us-hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.458);
+  background: rgba(0, 0, 0, 0.65);
   z-index: 1;
 }
 
