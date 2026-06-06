@@ -65,27 +65,65 @@
     <hr>
     <section class="featured-hostels book-now">
         <div class="container">
-            <div class="section-heading">
-                <h3>Our Hostels</h3>
-                <div class="section-line"></div>
-            </div>
-            
-        </div>
-    </section>
-    <section class="partner page-partner-sect">
-        <div class="container">
-            <div class="cta-card">
-                <h2 class="cta-title">Partner with us today</h2>
-                <p class="cta-description">
-                    Let us handle your property and<br />
-                    operational needs.
-                </p>
-                <div class="cta-buttons">
-                    <a href="#" class="btn btn-primary">Contact Us</a>
-                    <a href="#" class="btn btn-secondary">Request Service</a>
+            <div class="our-hostel-container">
+                <div class="section-heading">
+                    <h3>Our Hostels</h3>
+                    <div class="section-line"></div>
+                </div>
+                <div class="page-services-content ">
+                    <div class="row g-5">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="page-card">
+                                <div class="page-card-img">
+                                    <img src="{% static 'img/hostel-1.jpeg' %}" alt="" />
+                                </div>
+                                <div class="page-card-text">
+                                    <span>Grace Hostel 1</span>
+                                    <p>From $00.00/night</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="page-card">
+                                <div class="page-card-img">
+                                    <img src="{% static 'img/hostel-2.jpeg' %}" alt="" />
+                                </div>
+                                <div class="page-card-text">
+                                    <span>Grace Hostel 2</span>
+                                    <p>From $00.00/night</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="page-card">
+                                <div class="page-card-img">
+                                    <img src="{% static 'img/hostel-3.jpeg' %}" alt="" />
+                                </div>
+                                <div class="page-card-text">
+                                    <span>Grace Hostel 3</span>
+                                    <p>From $00.00/night</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hostel-link">
+                        <a href="#">View All Hostels<span class="arrow">&rarr;</span></a>
+                    </div>
                 </div>
             </div>
 
+        </div>
+    </section>
+    <section class="help-section">
+        <div class="container">
+            <div class="help-container">
+                <h4>Need Help?</h4>
+                <p>Contact our team for assistance with your booking.</p>
+                <div class="page-hero-cta">
+                <a href="{% url 'contact_us' %}" class="btn">Contact Us</a>
+            </div>
+
+            </div>
         </div>
     </section>
 </div>

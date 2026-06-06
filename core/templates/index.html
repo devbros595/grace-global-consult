@@ -1,46 +1,24 @@
 {% extends "base.html" %} {% load static %} {% block title %}
-<title>Grace global consult</title>
+<title>Grace Global Consult</title>
 {% endblock %} {% block content %}
 
-<script>
-  const swiper = new Swiper(".swiper", {
-    loop: true,
 
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    autoplay: {
-      delay: 1000,
-    },
-
-    slidesPerView: 3,
-
-    spaceBetween: 20,
-
-    centeredSlides: true,
-    breakpoints: {
-      640: {
-        slidesPerView: 1,
-      },
-      1024: {
-        slidesPerView: 3,
-      },
-    },
-  });
-</script>
 <section class="hero-section">
   <div class="hero-swiper">
     <div class="swiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide"></div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">
+          <img src="{% static 'img/hostel-1.jpeg' %}" alt="Hostel">
+        </div>
+        <div class="swiper-slide">
+          <img src="{% static 'img/worker.jpg' %}" alt="property">
+        </div>
+        <div class="swiper-slide">
+          <img src="{% static 'img/property.png' %}" alt="cleaning">
+        </div>
+        <div class="swiper-slide">
+          <img src="{% static 'img/janitors.png' %}" alt="cleaning">
+        </div>
       </div>
 
       <div class="swiper-pagination"></div>
@@ -48,7 +26,6 @@
       <!-- <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div> -->
     </div>
-    <div class="overlay"></div>
     <div class="hero-content">
       <div class="hero-text">
         <h2>Hospitality & Property<br />Service Solutions</h2>
@@ -58,8 +35,8 @@
         </p>
       </div>
       <div class="cta-btns">
-        <a class="btn cta-primary" href="#">Book a Stay</a>
-        <a class="btn cta-secondary" href="#">Request a Service</a>
+        <a class="btn cta-primary" href="{% url 'book_now' %}">Book a Stay</a>
+        <a class="btn cta-secondary" href="{% url 'contact_us' %}">Request a Service</a>
       </div>
     </div>
   </div>
@@ -104,13 +81,8 @@
                           <span>Ideal for travellers, students and groups</span>
                         </li>
                       </ul>
-                      <a class="learn-more-btn" href="#"
-                        >Learn More
-                        <i
-                          class="fa-solid fa-angles-right ms-2"
-                          style="color: #d4b401"
-                        ></i
-                      ></a>
+                      <a class="learn-more-btn" href="#">Learn More
+                        <i class="fa-solid fa-angles-right ms-2" style="color: #d4b401"></i></a>
                     </div>
                   </div>
                 </div>
@@ -121,10 +93,7 @@
                 <div class="card-body">
                   <div class="card-content">
                     <div class="card-icon">
-                      <img
-                        src="{% static 'svg/real-estate.svg' %}"
-                        alt="icon"
-                      />
+                      <img src="{% static 'svg/real-estate.svg' %}" alt="icon" />
                     </div>
                     <div class="card-details">
                       <h5 class="card-title">Property Services</h5>
@@ -145,13 +114,8 @@
                           <span>Office administrative support</span>
                         </li>
                       </ul>
-                      <a class="learn-more-btn" href="#"
-                        >Learn More
-                        <i
-                          class="fa-solid fa-angles-right ms-2"
-                          style="color: #d4b401"
-                        ></i
-                      ></a>
+                      <a class="learn-more-btn" href="#">Learn More
+                        <i class="fa-solid fa-angles-right ms-2" style="color: #d4b401"></i></a>
                     </div>
                   </div>
                 </div>
@@ -191,10 +155,7 @@
 
       <div class="stat-item">
         <div class="stat-icon">
-          <i
-            class="fa-regular fa-calendar-plus fa-2xl"
-            style="color: #d4b401"
-          ></i>
+          <i class="fa-regular fa-calendar-plus fa-2xl" style="color: #d4b401"></i>
         </div>
         <div class="stat-num">
           <h3 class="counter" data-target="10">0</h3>
@@ -415,9 +376,7 @@
         <h3>Featured Hostels</h3>
         <div class="section-line mx-auto"></div>
       </div>
-      <div
-        class="hostel-scroll d-flex align-items-center justify-content-start gap-4"
-      >
+      <div class="hostel-scroll d-flex align-items-center justify-content-start gap-4">
         <div class="hostel-card">
           <img src="{% static 'img/hostel-1.jpeg' %}" alt="" />
           <h6 class="mt-2">Grace Hostel 1</h6>
@@ -437,17 +396,13 @@
           <h6 class="mt-2">Grace Hostel 4</h6>
         </div>
         <div class="hostel-card link d-block d-md-none">
-          <a href="#"
-            >View All
-            <i class="fa-solid fa-angles-right ms-2" style="color: #d4b401"></i
-          ></a>
+          <a href="#">View All
+            <i class="fa-solid fa-angles-right ms-2" style="color: #d4b401"></i></a>
         </div>
       </div>
       <div class="d-none d-md-block">
-        <a href="#"
-          >View All
-          <i class="fa-solid fa-angles-right ms-2" style="color: #d4b401"></i
-        ></a>
+        <a href="#">View All
+          <i class="fa-solid fa-angles-right ms-2" style="color: #d4b401"></i></a>
       </div>
     </div>
   </section>
@@ -456,11 +411,7 @@
       <div class="text-center section-heading">
         <h4>What Our Clients Say</h4>
       </div>
-      <div
-        id="testimonialCarousel"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
         <!-- Slides -->
         <div class="carousel-inner shadow">
           <div class="carousel-item active">
@@ -517,24 +468,11 @@
         </div>
         <!-- Indicators -->
         <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#testimonialCarousel"
-            data-bs-slide-to="0"
-            class="active"
-          ></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
 
-          <button
-            type="button"
-            data-bs-target="#testimonialCarousel"
-            data-bs-slide-to="1"
-          ></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
 
-          <button
-            type="button"
-            data-bs-target="#testimonialCarousel"
-            data-bs-slide-to="2"
-          ></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"></button>
         </div>
       </div>
     </div>
@@ -544,11 +482,7 @@
       <div class="text-center section-heading">
         <h3>What Our Clients Say</h3>
       </div>
-      <div
-        id="testimonialCarousel"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
         <!-- Slides -->
         <div class="carousel-inner">
           <div class="carousel-item active gap-3">
@@ -683,24 +617,11 @@
         </div>
         <!-- Indicators -->
         <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#testimonialCarousel"
-            data-bs-slide-to="0"
-            class="active"
-          ></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
 
-          <button
-            type="button"
-            data-bs-target="#testimonialCarousel"
-            data-bs-slide-to="1"
-          ></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
 
-          <button
-            type="button"
-            data-bs-target="#testimonialCarousel"
-            data-bs-slide-to="2"
-          ></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"></button>
         </div>
       </div>
     </div>
@@ -738,9 +659,7 @@
       <div class="newsletter-content">
         <h3>Stay Updated</h3>
         <span class="d-block d-md-none">Subscribe to our newsletter.</span>
-        <span class="d-none d-md-block"
-          >Subscribe to our newsletter for updates and offers.</span
-        >
+        <span class="d-none d-md-block">Subscribe to our newsletter for updates and offers.</span>
         <form action="">
           <input type="text" name="" id="" placeholder="Enter your email" />
           <button class="btn" type="submit">Subscribe</button>
@@ -752,9 +671,7 @@
     <div class="d-flex justify-content-between align-items-center gap-3">
       <div class="d-flex flex-column gap-2">
         <h4>Stay Updated</h4>
-        <span class="d-none d-md-block"
-          >Subscribe to our newsletter for updates and offers.</span
-        >
+        <span class="d-none d-md-block">Subscribe to our newsletter for updates and offers.</span>
       </div>
       <form action="">
         <input type="text" name="" id="" placeholder="Enter your email" />
@@ -813,4 +730,5 @@
     });
   });
 </script>
+
 {% endblock %}

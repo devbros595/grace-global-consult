@@ -1,6 +1,19 @@
 .swiper {
   width: 100%;
-  height: 500px;
+  overflow: hidden;
+}
+
+.hero-swiper,
+.swiper,
+.swiper-wrapper,
+.swiper-slide {
+  height: 100vh;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .swiper-slide {
@@ -8,7 +21,6 @@
   align-items: center;
   justify-content: center;
   font-size: 2rem;
-  background: #0b1f3a;
 }
 
 .hero-swiper {
@@ -16,15 +28,31 @@
   color: #fff;
 }
 
+.swiper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.hero-swiper h2{
+  line-height: 1.5;
+}
+
+
 .hero-content {
   position: absolute;
   bottom: 0;
   left: 1rem;
-  z-index: 1;
-  transform: translate(0%, -25%);
+  z-index: 3;
+  transform: translate(0%, -15%);
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 2rem;
+  text-shadow: 0 2px 2px rgb(0, 0, 0);
 }
 
 .hero-text {
@@ -65,7 +93,6 @@
   flex-direction: column;
   gap: 2.5rem;
 }
-
 
 .section-heading h3 {
   color: #0b1f3a;
@@ -341,11 +368,11 @@ form input {
 }
 
 form input:focus {
-  border-color: #d4b401;
+  border-color: #c48200;
 }
 
 .newsletter button {
-  background-color: #d4b401;
+  background-color: #c48200;
   color: #ffffff;
   font-weight: 500;
   font-size: 15px;
@@ -354,9 +381,6 @@ form input:focus {
 }
 
 @media (min-width: 768px) {
-  .swiper {
-    max-height: 400px;
-  }
 
   .cta-btns {
     flex-direction: row;
@@ -642,23 +666,23 @@ form input:focus {
     font-weight: 500;
     border-radius: 0.3rem;
     background-color: #d4b401eb;
-    color: #F8FAFC;
+    color: #f8fafc;
     transition: all 0.5s ease;
     box-shadow: 0 0 10px rgba(168, 168, 168, 0.517);
   }
 
   .mini-hero-lg .mini-hero-content a:hover {
-    background-color: #0A8F3D;
+    background-color: #0a8f3d;
     color: #ffffff;
     transform: scale(0.95);
   }
 
-  .newsletter-lg  {
+  .newsletter-lg {
     color: #0b1f3a;
     padding: 3rem 2rem;
   }
 
-  .newsletter-lg form{
+  .newsletter-lg form {
     display: flex;
     gap: 1rem;
     align-items: center;
@@ -677,7 +701,7 @@ form input:focus {
   }
 
   .newsletter-lg form input:focus {
-    border-color: #0A8F3D;
+    border-color: #0a8f3d;
   }
 
   .newsletter-lg form button {
@@ -685,14 +709,13 @@ form input:focus {
     font-weight: 500;
     border-radius: 0.3rem;
     background-color: #d4b401eb;
-    color: #F8FAFC;
+    color: #f8fafc;
     transition: all 0.5s ease;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.356);
   }
   .newsletter-lg form button:hover {
-    background-color: #0A8F3D;
+    background-color: #0a8f3d;
     color: #ffffff;
     transform: scale(0.95);
   }
-
 }
