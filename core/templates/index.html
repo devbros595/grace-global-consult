@@ -81,7 +81,7 @@
                           <span>Ideal for travellers, students and groups</span>
                         </li>
                       </ul>
-                      <a class="learn-more-btn" href="#">Learn More
+                      <a class="learn-more-btn" href="{% url 'hostels' %}">Learn More
                         <i class="fa-solid fa-angles-right ms-2" style="color: #d4b401"></i></a>
                     </div>
                   </div>
@@ -114,7 +114,7 @@
                           <span>Office administrative support</span>
                         </li>
                       </ul>
-                      <a class="learn-more-btn" href="#">Learn More
+                      <a class="learn-more-btn" href="{% url 'property_services' %}">Learn More
                         <i class="fa-solid fa-angles-right ms-2" style="color: #d4b401"></i></a>
                     </div>
                   </div>
@@ -364,8 +364,8 @@
           Let Grace Global Consult Limited take care of needs.
         </div>
         <div class="banner-cta">
-          <a class="btn cta-primary" href="#">Book a Stay</a>
-          <a class="btn cta-secondary" href="#">Request a Service</a>
+          <a class="btn cta-primary" href="{% url 'book_now' %}">Book a Stay</a>
+          <a class="btn cta-secondary" href="{% url 'contact_us' %}">Request a Service</a>
         </div>
       </div>
     </div>

@@ -116,6 +116,7 @@ hr {
 .value-item {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   gap: 3rem;
   border-radius: 1rem;
@@ -132,6 +133,7 @@ hr {
 .value-item-text {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 0.5rem;
 }
 
@@ -140,8 +142,9 @@ hr {
   font-weight: 500;
 }
 .value-item-text p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
+  text-align: center;
 }
 
 .why-content .section-item {
@@ -150,19 +153,22 @@ hr {
   border: none;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
   gap: 1rem;
   padding: 1rem 3rem;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.108);
 }
 
 .section-item img {
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
 }
 
 .section-item span {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
+  text-align: center;
 }
 
 .partner-banner {

@@ -30,7 +30,7 @@
             <div class="col-12 col-md-6 col-lg-4">
               <div class="hostel-card">
                 <div class="hostel-card-img">
-                  <i class="fa-solid fa-users fa-2xl"></i>
+                  <img src="{% static 'svg/group.svg' %}" alt="icon" />
                 </div>
                 <div class="hostel-card-content">
                   <div class="hostel-card-text">
@@ -46,7 +46,7 @@
             <div class="col-12 col-md-6 col-lg-4">
               <div class="hostel-card">
                 <div class="hostel-card-img">
-                  <i class="fa-solid fa-users fa-2xl"></i>
+                  <img src="{% static 'svg/single-user.svg' %}" alt="icon" />
                 </div>
                 <div class="hostel-card-content">
                   <div class="hostel-card-text">
@@ -77,7 +77,7 @@
             <div class="col-6">
               <div class="amenities-card">
                 <div class="amenities-card-img">
-                  <i class="fa-solid fa-users fa-2xl"></i>
+                  <img src="{% static 'svg/wifi.svg' %}" alt="icon" />
                 </div>
                 <div class="amenities-card-text">
                   <span>Free Wifi</span>
@@ -88,7 +88,7 @@
             <div class="col-6">
               <div class="amenities-card">
                 <div class="amenities-card-img">
-                  <i class="fa-solid fa-users fa-2xl"></i>
+                  <img src="{% static 'svg/security.svg' %}" alt="icon" />
                 </div>
                 <div class="amenities-card-text">
                   <span>24/7 Security</span>
@@ -99,7 +99,7 @@
             <div class="col-6">
               <div class="amenities-card">
                 <div class="amenities-card-img">
-                  <i class="fa-solid fa-users fa-2xl"></i>
+                  <img src="{% static 'svg/social.svg' %}" alt="icon" />
                 </div>
                 <div class="amenities-card-text">
                   <span>Social Common Areas</span>
@@ -110,7 +110,7 @@
             <div class="col-6">
               <div class="amenities-card">
                 <div class="amenities-card-img">
-                  <i class="fa-solid fa-users fa-2xl"></i>
+                  <img src="{% static 'svg/laundry.svg' %}" alt="icon" />
                 </div>
                 <div class="amenities-card-text">
                   <span>On-Site Laundring</span>
@@ -129,9 +129,7 @@
         <h3>Featured Hostels</h3>
         <div class="section-line mx-auto"></div>
       </div>
-      <div
-        class="hostel-scroll d-flex align-items-center justify-content-start gap-4"
-      >
+      <div class="hostel-scroll d-flex align-items-center justify-content-start gap-4">
         <div class="hostel-card">
           <img src="{% static 'img/hostel-1.jpeg' %}" alt="" />
           <h6>Grace Hostel 1</h6>
@@ -151,17 +149,13 @@
           <h6>Grace Hostel 4</h6>
         </div>
         <div class="hostel-card link d-block d-md-none">
-          <a href="#"
-            >View All
-            <i class="fa-solid fa-angles-right ms-2" style="color: #d4b401"></i
-          ></a>
+          <a href="#">View All
+            <i class="fa-solid fa-angles-right ms-2" style="color: #d4b401"></i></a>
         </div>
       </div>
       <div class="d-none d-md-block">
-        <a href="#"
-          >View All
-          <i class="fa-solid fa-angles-right ms-2" style="color: #d4b401"></i
-        ></a>
+        <a href="#">View All
+          <i class="fa-solid fa-angles-right ms-2" style="color: #d4b401"></i></a>
       </div>
     </div>
   </section>
@@ -170,15 +164,15 @@
     <div class="container">
       <div class="amenities-category">
         <div class="section-heading">
-          <h3>Why Stay Wit Us?</h3>
+          <h3>Why Stay With Us?</h3>
           <div class="section-line"></div>
         </div>
-        <div class="amenities-category-content">
+        <div class="amenities-category-content why-us-block">
           <div class="row g-3">
-            <div class="col-6">
+            <div class="col-12">
               <div class="amenities-card">
                 <div class="amenities-card-img">
-                  <i class="fa-solid fa-users fa-2xl"></i>
+                  <img src="{% static 'svg/community.svg' %}" alt="icon" />
                 </div>
                 <div class="amenities-card-text">
                   <span>Community</span>
@@ -186,10 +180,10 @@
                 </div>
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-12">
               <div class="amenities-card">
                 <div class="amenities-card-img">
-                  <i class="fa-solid fa-users fa-2xl"></i>
+                  <img src="{% static 'svg/happy.svg' %}" alt="icon" />
                 </div>
                 <div class="amenities-card-text">
                   <span>Comfort</span>
@@ -197,25 +191,14 @@
                 </div>
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-12">
               <div class="amenities-card">
                 <div class="amenities-card-img">
-                  <i class="fa-solid fa-users fa-2xl"></i>
+                  <img src="{% static 'svg/support.svg' %}" alt="icon" />
                 </div>
                 <div class="amenities-card-text">
                   <span>Support</span>
                   <p>Stay connected throughout your stay.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="amenities-card">
-                <div class="amenities-card-img">
-                  <i class="fa-solid fa-users fa-2xl"></i>
-                </div>
-                <div class="amenities-card-text">
-                  <span>On-Site Laundring</span>
-                  <p>Convenient washing and drying facilities</p>
                 </div>
               </div>
             </div>
@@ -229,9 +212,7 @@
       <div class="newsletter-content">
         <h3>Stay Updated</h3>
         <span class="d-block d-md-none">Subscribe to our newsletter.</span>
-        <span class="d-none d-md-block"
-          >Subscribe to our newsletter for updates and offers.</span
-        >
+        <span class="d-none d-md-block">Subscribe to our newsletter for updates and offers.</span>
         <form action="">
           <input type="text" name="" id="" placeholder="Enter your email" />
           <button class="btn" type="submit">Subscribe</button>

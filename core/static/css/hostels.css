@@ -74,7 +74,7 @@
   border: none;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 2rem;
   padding: 1.8rem 1rem;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.108);
@@ -99,11 +99,12 @@
 
 .hostel-card-text span {
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .hostel-card-text p {
   margin: 0;
+  margin-top: 0.5rem;
 }
 
 .amenities-category-section {
@@ -130,6 +131,18 @@
   height: 100%;
 }
 
+.why-us-block .amenities-card {
+  flex-direction: row;
+}
+
+.amenities-card-img{
+  width: 50px;
+}
+
+.amenities-card-img img{
+  width: 100%;
+}
+
 .amenities-card-text {
   display: flex;
   flex-direction: column;
@@ -137,9 +150,21 @@
   text-align: center;
 }
 
+.why-us-block .amenities-card-text {
+    text-align: left;
+}
+
+.why-us-block .amenities-card-text span {
+    font-size: 18px;
+}
+
+.why-us-block .amenities-card-img{
+  width: 60px;
+}
+
 .amenities-card-text span {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
   width: 100%;
 }
 
@@ -191,11 +216,13 @@
   border-radius: 0.5rem;
 }
 
-.hostel-card img {
+.hostel-card-img {
+  width: 60px;
+}
+
+.hostel-card-img img {
   width: 100%;
-  height: 140px;
-  object-fit: cover;
-  border-radius: 12px;
+  height: 100%;
 }
 
 .hostel-card h6 {
