@@ -1,17 +1,14 @@
 {% extends "base.html" %} {% load static %} {% block title %}
 <title>Admin Services | Grace Global Consult</title>
 {% endblock %} {% block content %}
-<section class="page-hero-cleaning">
+<section class="page-hero-admin">
   <div class="container">
     <div class="page-hero-content">
       <div class="page-hero-text">
-        <h1>
-          Expert Cleaning<br />
-          Services
-        </h1>
+        <h1>Office Administration & Digital Solutions</h1>
         <p>
-          Professional cleaning solutions for residential and commercial
-          buildings.
+          We provide administrative support and software development solutions
+          to streamline operations and improve business efficiency.
         </p>
       </div>
       <div class="page-hero-cta">
@@ -21,11 +18,11 @@
   </div>
 </section>
 <div class="sections pt-3 cleaning-service">
-  <section class="page-services-section ">
+  <section class="page-services-section">
     <div class="container">
       <div class="page-services">
         <div class="section-heading">
-          <h3>Our Cleaning Services</h3>
+          <h3>Admin Services</h3>
           <div class="section-line"></div>
         </div>
         <div class="page-services-content">
@@ -35,19 +32,15 @@
             data-aos-delay="100"
           >
             <div class="col-12 col-lg-6 order-2 order-lg-1 service-item">
-              <h4>Domestic Cleaning</h4>
-              <p>
-                We offer professional cleaning for homes, offices, and
-                commercial spaces, including floor cleaning, dusting, bathroom
-                and kitchen cleaning, post-construction cleaning, and routine
-                maintenance. Our team delivers neat, hygienic results using safe
-                cleaning products and flexible schedules.
-              </p>
+              <h4>Administrative Support</h4>
+              <p class="card-text text-muted">
+              Virtual assistance, email handling, data entry, scheduling, and document management.
+            </p>
               <a href="{% url 'contact_us' %}">Contact Us</a>
             </div>
             <div class="col-12 col-lg-6 order-1 order-lg-2 service-img">
               <img
-                src="{% static 'img/woman-cleaning.jpeg' %}"
+                src="{% static 'img/admin-lady.jpeg' %}"
                 alt=""
                 loading="lazy"
                 class="img-fluid"
@@ -60,19 +53,15 @@
             data-aos-delay="200"
           >
             <div class="col-12 col-lg-6 order-2 order-lg-2 service-item">
-              <h4>Deep Cleaning</h4>
-              <p>
-                We offer specialized deep cleaning for homes, offices, and
-                commercial spaces, including carpet washing, sanitizing, intense
-                bathroom and kitchen scrubbing, move-in/move-out cleaning, and
-                detailed disinfection. Our team delivers spotless, pristine
-                results using eco-friendly products and flexible schedules.
-              </p>
+              <h4>Software Development</h4>
+              <p class="card-text text-muted">
+              Web apps, business websites, CRM systems, APIs, and custom automation tools.
+            </p>
               <a href="{% url 'contact_us' %}">Contact Us</a>
             </div>
             <div class="col-12 col-lg-6 order-1 order-lg-1 service-img">
               <img
-                src="{% static 'img/deep-cleaning.jpeg' %}"
+                src="{% static 'img/web-dev.png' %}"
                 alt=""
                 loading="lazy"
                 class="img-fluid"
@@ -85,19 +74,36 @@
             data-aos-delay="200"
           >
             <div class="col-12 col-lg-6 order-2 order-lg-1 service-item">
-              <h4>Commercial Cleaning</h4>
-              <p>
-                We offer commercial cleaning for offices, retail, and corporate
-                spaces, including desk sanitization, floor buffing, restroom
-                deep cleaning, window washing, and high-touch area disinfection.
-                Our team delivers spotless, professional results using
-                heavy-duty safe products and flexible, after-hours schedules.
-              </p>
+              <h4>Process Optimization</h4>
+              <p class="card-text text-muted">
+              Workflow automation, digital transformation, and business efficiency improvements.
+            </p>
               <a href="{% url 'contact_us' %}">Contact Us</a>
             </div>
             <div class="col-12 col-lg-6 order-1 order-lg-2 service-img">
               <img
-                src="{% static 'img/com-cleaning.jpeg' %}"
+                src="{% static 'img/optimization.png' %}"
+                alt=""
+                loading="lazy"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div
+            class="row bg-white aos-init aos-animate"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
+            <div class="col-12 col-lg-6 order-2 order-lg-1 service-item">
+              <h4>Technical Support</h4>
+              <p class="card-text text-muted">
+              Database management, system maintenance, troubleshooting, and data structuring.
+            </p>
+              <a href="{% url 'contact_us' %}">Contact Us</a>
+            </div>
+            <div class="col-12 col-lg-6 order-1 order-lg-2 service-img">
+              <img
+                src="{% static 'img/db-management.png' %}"
                 alt=""
                 loading="lazy"
                 class="img-fluid"
@@ -109,7 +115,7 @@
     </div>
   </section>
   <hr />
-  <section class="why-choose-us ">
+  <section class="why-choose-us">
     <div class="container">
       <div class="why-us">
         <div class="section-heading">
@@ -123,7 +129,7 @@
                 <div class="page-card-img">
                   <img src="{% static 'svg/trusted.svg' %}" alt="" />
                 </div>
-                <div class="page-card-text">Reliable Delivery</div>
+                <div class="page-card-text">Experienced Professionals</div>
               </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
@@ -158,14 +164,13 @@
   <section class="partner page-partner-sect">
     <div class="container">
       <div class="cta-card">
-        <h2 class="cta-title">Partner with us today</h2>
+        <h2 class="cta-title">Need a Custom Business Solution?</h2>
         <p class="cta-description">
-          Let us handle your property and<br />
-          operational needs.
+          Let’s build an efficient administrative or software system tailored to your business needs.
         </p>
         <div class="cta-buttons">
-          <a href="#" class="btn btn-primary">Contact Us</a>
-          <a href="#" class="btn btn-secondary">Request Service</a>
+          <a href="{% url 'contact_us' %}" class="btn btn-primary">Contact Us Today</a>
+          <a href="{% url 'contact_us' %}" class="btn btn-secondary">Request Service</a>
         </div>
       </div>
     </div>
@@ -219,23 +224,6 @@
                   href="{% url 'property_services' %}"
                   class="division-card-link"
                 >
-                  Learn More <span class="arrow">&rarr;</span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6">
-            <div class="division-card">
-              <div class="icon-box">
-                <img src="{% static 'svg/office-admin.svg' %}" alt="Hostel Icon" />
-              </div>
-              <div class="division-card-content">
-                <h4 class="division-card-title">Office Admin Support</h4>
-                <p class="division-card-desc">
-                    Efficient office administration and support services for smooth
-                    operations.
-                </p>
-                <a href="{% url 'admin_services' %}" class="division-card-link">
                   Learn More <span class="arrow">&rarr;</span>
                 </a>
               </div>

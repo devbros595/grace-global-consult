@@ -45,7 +45,9 @@
                 </div>
                 <div class="contact-card-text">
                   <span>Email</span>
-                  <a href="mailto:info@gracegblobalconsultancy.co.uk">info@gracegblobalconsultancy.co.uk</a>
+                  <a href="mailto:info@gracegblobalconsultancy.co.uk"
+                    >info@gracegblobalconsultancy.co.uk</a
+                  >
                 </div>
               </div>
             </div>
@@ -56,7 +58,7 @@
                 </div>
                 <div class="contact-card-text">
                   <span>Address</span>
-                  <p> Flat 1, hatters court 9 king luton LU1 2DW. </p>
+                  <p>Flat 1, hatters court 9 king luton LU1 2DW.</p>
                 </div>
               </div>
             </div>
@@ -79,29 +81,70 @@
         </div>
         <div class="contact-form-container">
           <div class="form-title">
-            <img src="{% static 'svg/send.svg'%}" alt="send-icon">
+            <img src="{% static 'svg/send.svg'%}" alt="send-icon" />
             <h5>Send Us a Message</h5>
           </div>
-          <form action="#" method="POST" class="contact-form">
+          <form
+            id="contactForm"
+            action="{% url 'contact_us' %}"
+            method="POST"
+            class="contact-form"
+          >
+            {% csrf_token %}
+
             <div class="form-group">
-              <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                required
+                class="form-control"
+              />
             </div>
 
             <div class="form-group">
-              <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+              <input
+                type="email"
+                name="email"
+                placeholder="Email Address"
+                required
+                class="form-control"
+              />
             </div>
 
             <div class="form-group">
-              <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+              <input
+                type="text"
+                name="subject"
+                placeholder="Subject"
+                required
+                class="form-control"
+              />
             </div>
 
             <div class="form-group">
-              <textarea name="message" class="form-control textarea-control" placeholder="Message" rows="5"
-                required></textarea>
+              <textarea
+                name="message"
+                placeholder="Message"
+                rows="5"
+                required
+                class="form-control"
+              ></textarea>
             </div>
+            <!-- RESPONSE BOX -->
+          <div id="formResponse"></div>
 
-            <button type="submit" class="btn-submit">Send Message</button>
+            <button type="submit" class="btn-submit" id="submitBtn">
+              <span id="btnText">Send Message</span>
+              <span
+                id="btnSpinner"
+                class="spinner"
+                style="display: none"
+              ></span>
+            </button>
           </form>
+
+           
         </div>
       </div>
     </div>
@@ -132,4 +175,79 @@
     </div>
   </section>
 </div>
+<script>
+const form = document.getElementById("contactForm");
+const submitBtn = document.getElementById("submitBtn");
+const spinner = document.getElementById("btnSpinner");
+const btnText = document.getElementById("btnText");
+const responseBox = document.getElementById("formResponse");
+
+let fadeTimer;
+
+function showMessage(type, message) {
+  clearTimeout(fadeTimer);
+
+  responseBox.className = type;
+  responseBox.innerText = message;
+
+  responseBox.style.display = "block";
+
+  // force reflow for smooth animation reset
+  responseBox.style.opacity = "0";
+  responseBox.style.transform = "translateY(-10px)";
+
+  setTimeout(() => {
+    responseBox.style.opacity = "1";
+    responseBox.style.transform = "translateY(0)";
+  }, 10);
+
+  // auto fade after 4 seconds
+  fadeTimer = setTimeout(() => {
+    responseBox.style.opacity = "0";
+    responseBox.style.transform = "translateY(-10px)";
+
+    setTimeout(() => {
+      responseBox.style.display = "none";
+    }, 600);
+  }, 4000);
+}
+
+form.addEventListener("submit", async function (e) {
+  e.preventDefault();
+
+  // loader
+  submitBtn.disabled = true;
+  spinner.style.display = "inline-block";
+  btnText.innerText = "Sending...";
+
+  try {
+    const formData = new FormData(form);
+
+    const response = await fetch(form.action, {
+      method: "POST",
+      body: formData,
+      headers: {
+        "X-Requested-With": "XMLHttpRequest"
+      }
+    });
+
+    const data = await response.json();
+
+    if (data.status === "success") {
+      showMessage("success", data.message);
+      form.reset();
+    } else {
+      showMessage("error", data.message);
+    }
+
+  } catch (error) {
+    showMessage("error", "Network error. Please try again.");
+  }
+
+  // reset loader
+  submitBtn.disabled = false;
+  spinner.style.display = "none";
+  btnText.innerText = "Send Message";
+});
+</script>
 {% endblock %}

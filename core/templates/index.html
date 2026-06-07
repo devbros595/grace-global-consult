@@ -2,22 +2,21 @@
 <title>Grace Global Consult</title>
 {% endblock %} {% block content %}
 
-
 <section class="hero-section">
   <div class="hero-swiper">
     <div class="swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <img src="{% static 'img/hostel-1.jpeg' %}" alt="Hostel">
+          <img src="{% static 'img/hostel-1.jpeg' %}" alt="Hostel" />
         </div>
         <div class="swiper-slide">
-          <img src="{% static 'img/worker.jpg' %}" alt="property">
+          <img src="{% static 'img/worker.jpg' %}" alt="property" />
         </div>
         <div class="swiper-slide">
-          <img src="{% static 'img/property.png' %}" alt="cleaning">
+          <img src="{% static 'img/property.png' %}" alt="cleaning" />
         </div>
         <div class="swiper-slide">
-          <img src="{% static 'img/janitors.png' %}" alt="cleaning">
+          <img src="{% static 'img/janitors.png' %}" alt="cleaning" />
         </div>
       </div>
 
@@ -33,165 +32,217 @@
       </div>
       <div class="cta-btns">
         <a class="btn cta-primary" href="{% url 'book_now' %}">Book a Stay</a>
-        <a class="btn cta-secondary" href="{% url 'contact_us' %}">Request a Service</a>
+        <a class="btn cta-secondary" href="{% url 'contact_us' %}"
+          >Request a Service</a
+        >
       </div>
     </div>
   </div>
 </section>
 <div class="sections">
-    <section class="divisions">
-      <div class="container">
-        <div class="our-divisions">
-          <div class="text-center section-heading">
-            <h3>Our Divisions</h3>
-            <div class="section-line mx-auto"></div>
-          </div>
-          <div class="section-content">
-            <div class="row g-4">
-              <div class="col-12 col-md-6 d-flex" data-aos="fade-up" data-aos-duration="800">
-                <div class="card w-100 ">
-                  <div class="card-body">
-                    <div class="card-content">
-                      <div class="card-icon">
-                        <img src="{% static 'svg/cleaning.svg' %}" alt="icon" />
-                      </div>
-                      <div class="card-details">
-                        <h5 class="card-title">Cleaning Services</h5>
-                        <p class="card-description">
-                          Professional cleaning solutions for homes and businesses.
-                        </p>
-                        <ul class="d-none d-lg-block">
-                          <li>
-                            <i class="fa-solid fa-check-double"></i>
-                            <span>
-                              Residential and commercial cleaning services
-                            </span>
-                          </li>
-                          <li>
-                            <i class="fa-solid fa-check-double"></i>
-                            <span>
-                              Flexible scheduling to fit your needs
-                            </span>
-                          </li>
-                          <li>
-                            <i class="fa-solid fa-check-double"></i>
-                            <span>
-                              High-quality cleaning products and equipment
-                            </span>
-                          </li>
-                        </ul>
-                        <a class="learn-more-btn" href="{% url 'cleaning_services' %}">Learn More
-                          <i class="fa-solid fa-angles-right ms-2" style="color: #d4b401"></i></a>
-                      </div>
+  <section class="divisions">
+    <div class="container">
+      <div class="our-divisions">
+        <div class="text-center section-heading">
+          <h3>Our Divisions</h3>
+          <div class="section-line mx-auto"></div>
+        </div>
+        <div class="section-content">
+          <div class="row g-4">
+            <div
+              class="col-12 col-md-6 d-flex"
+              data-aos="fade-up"
+              data-aos-duration="800"
+            >
+              <div class="card w-100">
+                <div class="card-body">
+                  <div class="card-content">
+                    <div class="card-icon">
+                      <img src="{% static 'svg/cleaning.svg' %}" alt="icon" />
+                    </div>
+                    <div class="card-details">
+                      <h5 class="card-title">Cleaning Services</h5>
+                      <p class="card-description">
+                        Professional cleaning solutions for homes and
+                        businesses.
+                      </p>
+                      <ul class="d-none d-lg-block">
+                        <li>
+                          <i class="fa-solid fa-check-double"></i>
+                          <span>
+                            Residential and commercial cleaning services
+                          </span>
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-check-double"></i>
+                          <span> Flexible scheduling to fit your needs </span>
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-check-double"></i>
+                          <span>
+                            High-quality cleaning products and equipment
+                          </span>
+                        </li>
+                      </ul>
+                      <a
+                        class="learn-more-btn"
+                        href="{% url 'cleaning_services' %}"
+                        >Learn More
+                        <i
+                          class="fa-solid fa-angles-right ms-2"
+                          style="color: #d4b401"
+                        ></i
+                      ></a>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
-                <div class="card w-100 ">
-                  <div class="card-body">
-                    <div class="card-content">
-                      <div class="card-icon">
-                        <img src="{% static 'svg/real-estate.svg' %}" alt="icon" />
-                      </div>
-                      <div class="card-details">
-                        <h5 class="card-title">Property Services</h5>
-                        <p class="card-description">
-                          Professional support for property owners and business.
-                        </p>
-                        <ul class="d-none d-lg-block">
-                          <li>
-                            <i class="fa-solid fa-check-double"></i>
-                            <span>Real esate management</span>
-                          </li>
-                          <li>
-                            <i class="fa-solid fa-check-double"></i>
-                            <span>General building clearing</span>
-                          </li>
-                          <li>
-                            <i class="fa-solid fa-check-double"></i>
-                            <span>Office administrative support</span>
-                          </li>
-                        </ul>
-                        <a class="learn-more-btn" href="{% url 'property_services' %}">Learn More
-                          <i class="fa-solid fa-angles-right ms-2" style="color: #d4b401"></i></a>
-                      </div>
+            </div>
+            <div
+              class="col-12 col-md-6 d-flex"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-duration="800"
+            >
+              <div class="card w-100">
+                <div class="card-body">
+                  <div class="card-content">
+                    <div class="card-icon">
+                      <img
+                        src="{% static 'svg/real-estate.svg' %}"
+                        alt="icon"
+                      />
+                    </div>
+                    <div class="card-details">
+                      <h5 class="card-title">Property Services</h5>
+                      <p class="card-description">
+                        Professional support for property owners and business.
+                      </p>
+                      <ul class="d-none d-lg-block">
+                        <li>
+                          <i class="fa-solid fa-check-double"></i>
+                          <span>Real esate management</span>
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-check-double"></i>
+                          <span>General building clearing</span>
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-check-double"></i>
+                          <span>Office administrative support</span>
+                        </li>
+                      </ul>
+                      <a
+                        class="learn-more-btn"
+                        href="{% url 'property_services' %}"
+                        >Learn More
+                        <i
+                          class="fa-solid fa-angles-right ms-2"
+                          style="color: #d4b401"
+                        ></i
+                      ></a>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-md-6 d-flex" data-aos="fade-up" data-aos-duration="800">
-                <div class="card w-100 ">
-                  <div class="card-body">
-                    <div class="card-content">
-                      <div class="card-icon">
-                        <img src="{% static 'svg/office-admin.svg' %}" alt="icon" />
-                      </div>
-                      <div class="card-details">
-                        <h5 class="card-title">Office Admin Support</h5>
-                        <p class="card-description">
-                          Reliable office support services for businesses of all sizes.
-                        </p>
-                        <ul class="d-none d-lg-block">
-                          <li>
-                            <i class="fa-solid fa-check-double"></i>
-                            <span>
-                              Software and IT support for smooth operations.
-                            </span>
-                          </li>
-                          <li>
-                            <i class="fa-solid fa-check-double"></i>
-                            <span>
-                              Efficient document management and organization
-                            </span>
-                          </li>
-                          <li>
-                            <i class="fa-solid fa-check-double"></i>
-                            <span>
-                              Skilled administrative professionals to support your team
-                            </span>
-                          </li>
-                        </ul>
-                        <a class="learn-more-btn" href="{% url 'property_services' %}">Learn More
-                          <i class="fa-solid fa-angles-right ms-2" style="color: #d4b401"></i></a>
-                      </div>
+            </div>
+            <div
+              class="col-12 col-md-6 d-flex"
+              data-aos="fade-up"
+              data-aos-duration="800"
+            >
+              <div class="card w-100">
+                <div class="card-body">
+                  <div class="card-content">
+                    <div class="card-icon">
+                      <img
+                        src="{% static 'svg/office-admin.svg' %}"
+                        alt="icon"
+                      />
+                    </div>
+                    <div class="card-details">
+                      <h5 class="card-title">Office Admin Support</h5>
+                      <p class="card-description">
+                        Reliable office support services for businesses of all
+                        sizes.
+                      </p>
+                      <ul class="d-none d-lg-block">
+                        <li>
+                          <i class="fa-solid fa-check-double"></i>
+                          <span>
+                            Software and IT support for smooth operations.
+                          </span>
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-check-double"></i>
+                          <span>
+                            Efficient document management and organization
+                          </span>
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-check-double"></i>
+                          <span>
+                            Skilled administrative professionals to support your
+                            team
+                          </span>
+                        </li>
+                      </ul>
+                      <a
+                        class="learn-more-btn"
+                        href="{% url 'admin_services' %}"
+                        >Learn More
+                        <i
+                          class="fa-solid fa-angles-right ms-2"
+                          style="color: #d4b401"
+                        ></i
+                      ></a>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
-                <div class="card w-100 ">
-                  <div class="card-body">
-                    <div class="card-content">
-                      <div class="card-icon">
-                        <img src="{% static 'svg/hostel.svg' %}" alt="icon" />
-                      </div>
-                      <div class="card-details">
-                        <h5 class="card-title">Hostels</h5>
-                        <p class="card-description d-block d-lg-none">
-                          Affordable, clean and welcoming youth accommodation.
-                        </p>
-                        <p class="card-description d-none d-lg-block">
-                          Affordable, clean and welcoming youth accommodation
-                          designed for comfort and community.
-                        </p>
-                        <ul class="d-none d-lg-block">
-                          <li>
-                            <i class="fa-solid fa-check-double"></i>
-                            <span>Modern facilities</span>
-                          </li>
-                          <li>
-                            <i class="fa-solid fa-check-double"></i>
-                            <span>Safe and secure environment</span>
-                          </li>
-                          <li>
-                            <i class="fa-solid fa-check-double"></i>
-                            <span>Ideal for travellers, students and groups</span>
-                          </li>
-                        </ul>
-                        <a class="learn-more-btn" href="{% url 'hostels' %}">Learn More
-                          <i class="fa-solid fa-angles-right ms-2" style="color: #d4b401"></i></a>
-                      </div>
+            </div>
+            <div
+              class="col-12 col-md-6 d-flex"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-duration="800"
+            >
+              <div class="card w-100">
+                <div class="card-body">
+                  <div class="card-content">
+                    <div class="card-icon">
+                      <img src="{% static 'svg/hostel.svg' %}" alt="icon" />
+                    </div>
+                    <div class="card-details">
+                      <h5 class="card-title">Hostels</h5>
+                      <p class="card-description d-block d-lg-none">
+                        Affordable, clean and welcoming youth accommodation.
+                      </p>
+                      <p class="card-description d-none d-lg-block">
+                        Affordable, clean and welcoming youth accommodation
+                        designed for comfort and community.
+                      </p>
+                      <ul class="d-none d-lg-block">
+                        <li>
+                          <i class="fa-solid fa-check-double"></i>
+                          <span>Modern facilities</span>
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-check-double"></i>
+                          <span>Safe and secure environment</span>
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-check-double"></i>
+                          <span>Ideal for travellers, students and groups</span>
+                        </li>
+                      </ul>
+                      <a class="learn-more-btn" href="{% url 'hostels' %}"
+                        >Learn More
+                        <i
+                          class="fa-solid fa-angles-right ms-2"
+                          style="color: #d4b401"
+                        ></i
+                      ></a>
                     </div>
                   </div>
                 </div>
@@ -199,9 +250,10 @@
             </div>
           </div>
         </div>
-        <div class="section-divider d-block d-md-none"></div>
       </div>
-    </section>
+      <div class="section-divider d-block d-md-none"></div>
+    </div>
+  </section>
   <section class="company-stat d-none d-md-block">
     <div class="stat-container">
       <div class="stat-item">
@@ -230,7 +282,10 @@
 
       <div class="stat-item">
         <div class="stat-icon">
-          <i class="fa-regular fa-calendar-plus fa-2xl" style="color: #d4b401"></i>
+          <i
+            class="fa-regular fa-calendar-plus fa-2xl"
+            style="color: #d4b401"
+          ></i>
         </div>
         <div class="stat-num">
           <h3 class="counter" data-target="10">0</h3>
@@ -440,7 +495,9 @@
         </div>
         <div class="banner-cta">
           <a class="btn cta-primary" href="{% url 'book_now' %}">Book a Stay</a>
-          <a class="btn cta-secondary" href="{% url 'contact_us' %}">Request a Service</a>
+          <a class="btn cta-secondary" href="{% url 'contact_us' %}"
+            >Request a Service</a
+          >
         </div>
       </div>
     </div>
@@ -451,7 +508,9 @@
         <h3>Featured Hostels</h3>
         <div class="section-line mx-auto"></div>
       </div>
-      <div class="hostel-scroll d-flex align-items-center justify-content-start gap-4">
+      <div
+        class="hostel-scroll d-flex align-items-center justify-content-start gap-4"
+      >
         <div class="hostel-card">
           <img src="{% static 'img/hostel-1.jpeg' %}" alt="" />
           <h6 class="mt-2">Grace Hostel 1</h6>
@@ -471,13 +530,17 @@
           <h6 class="mt-2">Grace Hostel 4</h6>
         </div>
         <div class="hostel-card link d-block d-md-none">
-          <a href="#">View All
-            <i class="fa-solid fa-angles-right ms-2" style="color: #d4b401"></i></a>
+          <a href="#"
+            >View All
+            <i class="fa-solid fa-angles-right ms-2" style="color: #d4b401"></i
+          ></a>
         </div>
       </div>
       <div class="d-none d-md-block">
-        <a href="#">View All
-          <i class="fa-solid fa-angles-right ms-2" style="color: #d4b401"></i></a>
+        <a href="#"
+          >View All
+          <i class="fa-solid fa-angles-right ms-2" style="color: #d4b401"></i
+        ></a>
       </div>
     </div>
   </section>
@@ -486,7 +549,11 @@
       <div class="text-center section-heading">
         <h4>What Our Clients Say</h4>
       </div>
-      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div
+        id="testimonialCarousel"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
         <!-- Slides -->
         <div class="carousel-inner shadow">
           <div class="carousel-item active">
@@ -543,11 +610,24 @@
         </div>
         <!-- Indicators -->
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
+          <button
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
 
-          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+          <button
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide-to="1"
+          ></button>
 
-          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"></button>
+          <button
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide-to="2"
+          ></button>
         </div>
       </div>
     </div>
@@ -557,7 +637,11 @@
       <div class="text-center section-heading">
         <h3>What Our Clients Say</h3>
       </div>
-      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div
+        id="testimonialCarousel"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
         <!-- Slides -->
         <div class="carousel-inner">
           <div class="carousel-item active gap-3">
@@ -692,11 +776,24 @@
         </div>
         <!-- Indicators -->
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
+          <button
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
 
-          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+          <button
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide-to="1"
+          ></button>
 
-          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"></button>
+          <button
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide-to="2"
+          ></button>
         </div>
       </div>
     </div>
@@ -733,12 +830,14 @@
     <div class="container">
       <div class="newsletter-content">
         <h3>Stay Updated</h3>
-        <span class="d-block d-md-none">Subscribe to our newsletter.</span>
-        <span class="d-none d-md-block">Subscribe to our newsletter for updates and offers.</span>
-        <form action="">
-          <input type="text" name="" id="" placeholder="Enter your email" />
-          <button class="btn" type="submit">Subscribe</button>
-        </form>
+
+        <span class="d-block d-md-none"> Subscribe to our newsletter. </span>
+
+        <span class="d-none d-md-block">
+          Subscribe to our newsletter for updates and offers.
+        </span>
+
+        {% include "includes/newsletter.html" %}
       </div>
     </div>
   </section>
@@ -746,15 +845,81 @@
     <div class="d-flex justify-content-between align-items-center gap-3">
       <div class="d-flex flex-column gap-2">
         <h4>Stay Updated</h4>
-        <span class="d-none d-md-block">Subscribe to our newsletter for updates and offers.</span>
+
+        <span> Subscribe to our newsletter for updates and offers. </span>
       </div>
-      <form action="">
-        <input type="text" name="" id="" placeholder="Enter your email" />
-        <button class="btn" type="submit">Subscribe</button>
-      </form>
+
+      {% include "includes/newsletter.html" %}
     </div>
   </section>
 </div>
+<script>
+  document.querySelectorAll(".newsletter-form").forEach((form) => {
+    form.addEventListener("submit", async function (e) {
+      e.preventDefault();
+
+      const emailInput = form.querySelector(".newsletter-email");
+
+      const messageBox = form.querySelector(".newsletter-message");
+
+      try {
+        const response = await fetch("{% url 'subscribe_newsletter' %}", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "X-CSRFToken": form.querySelector("[name=csrfmiddlewaretoken]")
+              .value,
+          },
+          body: JSON.stringify({
+            email: emailInput.value,
+          }),
+        });
+
+        const data = await response.json();
+
+        messageBox.textContent = data.message;
+
+        messageBox.classList.remove("success", "error", "fade-out");
+
+        messageBox.classList.add("show");
+
+        if (data.success) {
+          form.reset();
+          messageBox.classList.add("success");
+        } else {
+          messageBox.classList.add("error");
+        }
+
+        // Fade out after 4 seconds
+        setTimeout(() => {
+          messageBox.classList.add("fade-out");
+        }, 4000);
+
+        // Reset classes after fade animation
+        setTimeout(() => {
+          messageBox.classList.remove("show", "success", "error", "fade-out");
+          messageBox.textContent = "";
+        }, 4500);
+
+      } catch (error) {
+        messageBox.textContent = "Unable to subscribe. Please try again.";
+
+        messageBox.classList.remove("success", "error", "fade-out");
+
+        messageBox.classList.add("show", "error");
+
+        setTimeout(() => {
+          messageBox.classList.add("fade-out");
+        }, 4000);
+
+        setTimeout(() => {
+          messageBox.classList.remove("show", "success", "error", "fade-out");
+          messageBox.textContent = "";
+        }, 4500);
+      }
+    });
+  });
+</script>
 <script>
   window.addEventListener("load", () => {
     const counters = document.querySelectorAll(".counter");

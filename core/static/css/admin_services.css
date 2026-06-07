@@ -1,6 +1,6 @@
-.page-hero-cleaning {
+.page-hero-admin {
   position: relative;
-  background-image: url("../img/cleaning-company.png");
+  background-image: url("../img/office_admin.jpeg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -10,12 +10,13 @@
   height: 100vh;
 }
 
-.page-hero-cleaning .container {
+.page-hero-admin .container {
   position: relative;
   z-index: 2;
+  height: 100%;
 }
 
-.page-hero-cleaning::before {
+.page-hero-admin::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -23,14 +24,17 @@
   z-index: 1;
 }
 
-.page-hero-cleaning .page-hero-content {
+.page-hero-admin .page-hero-content {
+  position: absolute;
+  bottom: 3rem;
+  left: 1rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 1rem;
   text-shadow: 0 2px 2px rgb(0, 0, 0);
   padding: 0;
-  margin: 15rem auto 0;
+  margin: 0;
 }
 
 .page-hero-text h1 {

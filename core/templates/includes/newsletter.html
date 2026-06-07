@@ -1,0 +1,46 @@
+<style>
+  .newsletter-message {
+    margin-top: 12px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  .newsletter-message.show {
+    opacity: 1;
+  }
+
+  .newsletter-message.success {
+    background-color: rgba(25, 135, 84, 0.1);
+    color: #198754;
+    border: 1px solid rgba(25, 135, 84, 0.25);
+  }
+
+  .newsletter-message.error {
+    background-color: rgba(220, 53, 69, 0.1);
+    color: #dc3545;
+    border: 1px solid rgba(220, 53, 69, 0.25);
+  }
+
+  .newsletter-message.fade-out {
+    opacity: 0;
+  }
+</style>
+
+<form class="newsletter-form">
+  {% csrf_token %}
+
+  <input
+    type="email"
+    class="newsletter-email"
+    placeholder="Enter your email"
+    required
+  />
+
+  <button class="btn" type="submit">Subscribe</button>
+
+  <div class="newsletter-message mt-2"></div>
+</form>
