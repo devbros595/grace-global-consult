@@ -104,7 +104,13 @@
 }
 
 .our-divisions .card {
-  border: 1px solid #a1a2a37b;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.108);
+}
+
+.our-divisions .card-body {
+  padding: 1rem;
 }
 
 .our-divisions .card-content {
@@ -112,7 +118,9 @@
   flex-direction: row;
   padding: 1rem;
   gap: 2rem;
+  align-items: flex-start;
 }
+
 
 .our-divisions .card-details {
   display: flex;
@@ -123,13 +131,19 @@
 
 .our-divisions .card-title {
   color: #0b1f3a;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.our-divisions .card-description {
+  color: #0b1f3a;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .our-divisions .card-details a {
   text-decoration: none;
-  color: #0b1f3a;
-  font-weight: 500;
-  font-size: 14px;
+  color: #0A8F3D;
   margin-top: 0.5rem;
 }
 

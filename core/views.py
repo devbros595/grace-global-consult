@@ -50,6 +50,13 @@ def property_services_view(request):
     return render(request, "property_services.html")
 
 
+def cleaning_services_view(request):
+    return render(request, "cleaning_service.html")
+
+def admin_services_view(request):
+    return render(request, "admin_services.html")
+
+
 def hostels_view(request):
     return render(request, "hostels.html")
 
