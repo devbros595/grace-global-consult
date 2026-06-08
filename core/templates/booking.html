@@ -1,6 +1,7 @@
 {% extends "base.html" %} {% load static %} {% block title %}
 <title>Book Now | Grace Global Consult</title>
 {% endblock %} {% block content %}
+<!-- Hero Section left un-modified -->
 <section class="page-hero-book">
     <div class="container">
         <div class="page-hero-content">
@@ -16,15 +17,17 @@
         </div>
     </div>
 </section>
+
 <div class="sections">
+    <!-- Availability Section -->
     <section id="contact-details-section" class="contact-details-section">
         <div class="container">
             <div class="contact-details-content">
-                <div class="section-heading">
+                <div class="section-heading" data-aos="fade-up" data-aos-duration="600">
                     <h3>Check Availability</h3>
                     <div class="section-line"></div>
                 </div>
-                <div class="availability-card">
+                <div class="availability-card" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
                     <form class="availability-form" id="bookingForm">
                         {% csrf_token %}
                         <div class="form-field-group">
@@ -71,19 +74,15 @@
                         const messageBox = document.getElementById("bookingMessage");
 
                         // 1. DATE VALIDATION GUARD RULES
-                        // Automatically set the minimum check-in date to today's date
                         const today = new Date().toISOString().split('T')[0];
                         checkInInput.min = today;
 
-                        // Dynamic change listener: update check-out limits based on check-in choices
                         checkInInput.addEventListener("change", function () {
                             if (checkInInput.value) {
-                                // Check-out must be at least 1 day after check-in
                                 const nextDay = new Date(checkInInput.value);
                                 nextDay.setDate(nextDay.getDate() + 1);
                                 checkOutInput.min = nextDay.toISOString().split('T')[0];
 
-                                // If check-out date is now invalid, clear it
                                 if (checkOutInput.value && checkOutInput.value < checkOutInput.min) {
                                     checkOutInput.value = "";
                                 }
@@ -94,7 +93,6 @@
                         bookingForm.addEventListener("submit", async function (e) {
                             e.preventDefault();
 
-                            // Guard against empty dropdown field submissions
                             const guestSelect = document.getElementById("guests").value;
                             if (!guestSelect) {
                                 messageBox.textContent = "Please select the number of guests.";
@@ -102,7 +100,6 @@
                                 return;
                             }
 
-                            // Visual loading state indicator feedback loop
                             submitBtn.disabled = true;
                             const originalBtnText = submitBtn.textContent;
                             submitBtn.textContent = "Checking Availability...";
@@ -126,19 +123,17 @@
                                 const result = await response.json();
 
                                 messageBox.textContent = result.message;
-                                messageBox.className = "mt-3 show"; // Resets structural status rules safely
+                                messageBox.className = "mt-3 show"; 
 
                                 if (result.success) {
                                     messageBox.classList.add("success");
                                     bookingForm.reset();
-                                    // Reset date constraints after form initialization wipe
                                     checkInInput.min = today;
                                     checkOutInput.removeAttribute('min');
                                 } else {
                                     messageBox.classList.add("error");
                                 }
 
-                                // Autohide notifications routines
                                 setTimeout(() => { messageBox.classList.add("fade-out"); }, 4000);
                                 setTimeout(() => {
                                     messageBox.textContent = "";
@@ -149,7 +144,6 @@
                                 messageBox.textContent = "Network error. Please try again.";
                                 messageBox.className = "mt-3 show error";
                             } finally {
-                                // Restore button interactivity state cleanly
                                 submitBtn.disabled = false;
                                 submitBtn.textContent = originalBtnText;
                             }
@@ -160,16 +154,18 @@
         </div>
     </section>
     <hr>
+
+    <!-- Featured Hostels Section -->
     <section class="featured-hostels book-now">
         <div class="container">
             <div class="our-hostel-container">
-                <div class="section-heading">
+                <div class="section-heading" data-aos="fade-up" data-aos-duration="600">
                     <h3>Our Hostels</h3>
                     <div class="section-line"></div>
                 </div>
-                <div class="page-services-content ">
+                <div class="page-services-content">
                     <div class="row g-5">
-                        <div class="col-12 col-md-6 col-lg-4">
+                        <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
                             <div class="page-card">
                                 <div class="page-card-img">
                                     <img src="{% static 'img/hostel-1.jpeg' %}" alt="" />
@@ -180,7 +176,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4">
+                        <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="700">
                             <div class="page-card">
                                 <div class="page-card-img">
                                     <img src="{% static 'img/hostel-2.jpeg' %}" alt="" />
@@ -191,7 +187,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4">
+                        <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="700">
                             <div class="page-card">
                                 <div class="page-card-img">
                                     <img src="{% static 'img/hostel-3.jpeg' %}" alt="" />
@@ -203,15 +199,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="hostel-link">
+                    <div class="hostel-link" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
                         <a href="{% url 'hostels' %}">View All Hostels<span class="arrow">&rarr;</span></a>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
-    <section class="partner page-partner-sect">
+
+    <!-- Call To Action Banner -->
+    <section class="partner page-partner-sect" data-aos="zoom-in" data-aos-duration="700">
         <div class="container">
             <div class="cta-card">
                 <h2 class="cta-title">Book Today</h2>
@@ -226,15 +223,17 @@
             </div>
         </div>
     </section>
+
+    <!-- Global Shared Divisions -->
     <section class="our-division-section">
         <div class="container">
             <div class="division-container">
-                <div class="section-heading">
+                <div class="section-heading" data-aos="fade-up" data-aos-duration="600">
                     <h3 class="division-section-title">Our Divisions</h3>
                     <div class="section-line"></div>
                 </div>
                 <div class="row g-4">
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
                         <div class="division-card">
                             <div class="icon-box">
                                 <img src="{% static 'svg/cleaning.svg' %}" alt="cleaning-icon" />
@@ -251,7 +250,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="700">
                         <div class="division-card">
                             <div class="icon-box">
                                 <img src="{% static 'svg/real-estate.svg' %}" alt="Property Icon" />
@@ -267,7 +266,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
                         <div class="division-card">
                             <div class="icon-box">
                                 <img src="{% static 'svg/office-admin.svg' %}" alt="Property Icon" />
@@ -284,7 +283,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="700">
                         <div class="division-card">
                             <div class="icon-box">
                                 <img src="{% static 'svg/hostel.svg' %}" alt="Hostel Icon" />
@@ -306,56 +305,4 @@
         </div>
     </section>
 </div>
-<script>
-    document.getElementById("bookingForm").addEventListener("submit", async function (e) {
-        e.preventDefault();
-
-        const messageBox = document.getElementById("bookingMessage");
-
-        const data = {
-            check_in: document.getElementById("check-in").value,
-            check_out: document.getElementById("check-out").value,
-            guests: document.getElementById("guests").value,
-        };
-
-        try {
-            const response = await fetch("{% url 'create_booking' %}", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                    "X-CSRFToken": document.querySelector("[name=csrfmiddlewaretoken]").value
-                },
-                body: JSON.stringify(data)
-            });
-
-            const result = await response.json();
-
-            messageBox.textContent = result.message;
-
-            messageBox.classList.remove("success", "error", "show");
-            messageBox.classList.add("show");
-
-            if (result.success) {
-                messageBox.classList.add("success");
-                this.reset();
-            } else {
-                messageBox.classList.add("error");
-            }
-
-            // fade out
-            setTimeout(() => {
-                messageBox.classList.add("fade-out");
-            }, 4000);
-
-            setTimeout(() => {
-                messageBox.textContent = "";
-                messageBox.classList.remove("show", "success", "error", "fade-out");
-            }, 4500);
-
-        } catch (error) {
-            messageBox.textContent = "Network error. Try again.";
-            messageBox.classList.add("show", "error");
-        }
-    });
-</script>
 {% endblock %}

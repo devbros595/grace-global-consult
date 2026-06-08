@@ -1,5 +1,5 @@
 {% extends "base.html" %} {% load static %} {% block title %}
-<title>Propery Services | Grace Global Consult</title>
+<title>Property Services | Grace Global Consult</title>
 {% endblock %} {% block content %}
 <section class="page-hero-property">
   <div class="container">
@@ -17,63 +17,59 @@
     </div>
   </div>
 </section>
+
 <div class="sections pt-3">
-  <section class="page-services-section">
+  <!-- Services Segment -->
+  <section class="page-services-section pb-1">
     <div class="container">
       <div class="page-services">
-        <div class="section-heading">
-          <h3>Our Services</h3>
+        <div class="section-heading" data-aos="fade-up" data-aos-duration="600">
+          <h3>Property Services</h3>
           <div class="section-line"></div>
         </div>
         <div class="page-services-content">
-          <div class="row g-4">
-            <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-              <div class="page-card">
-                <div class="page-card-img">
-                  <img src="{% static 'svg/cleaning.svg' %}" alt="" />
-                </div>
-                <div class="page-card-text">Cleaning Services</div>
-              </div>
+          <!-- Clean vertical fade-up to protect layout flow -->
+          <div class="row bg-white" data-aos="fade-up" data-aos-duration="700">
+            <div class="col-12 col-lg-6 order-2 order-lg-1 service-item">
+              <h4>Real Estate Management</h4>
+              <p class="card-text text-muted">
+                Professional property oversight, valuation support, portfolio
+                marketing, and strategic asset management to maximize return on
+                investment.
+              </p>
+              <a href="{% url 'contact_us' %}">Contact Us</a>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="page-card">
-                <div class="page-card-img">
-                  <img src="{% static 'svg/real-estate.svg' %}" alt="" />
-                </div>
-                <div class="page-card-text">Real Estate Management </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="page-card">
-                <div class="page-card-img">
-                  <img src="{% static 'svg/office-admin.svg' %}" alt="" />
-                </div>
-                <div class="page-card-text">Office Admin Support</div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="page-card">
-                <div class="page-card-img">
-                  <img src="{% static 'svg/tech-expert.svg' %}" alt="" />
-                </div>
-                <div class="page-card-text">Tech Experts</div>
-              </div>
+            <div class="col-12 col-lg-6 order-1 order-lg-2 service-img">
+              <!-- Don't forget to update this src path if you downloaded one of the images from earlier! -->
+              <img
+                src="{% static 'img/real_management.png' %}"
+                alt="Modern real estate architecture"
+                loading="lazy"
+                class="img-fluid"
+              />
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- Why Choose Us Segment -->
   <section class="why-choose-us">
     <div class="container">
       <div class="why-us">
-        <div class="section-heading">
+        <div class="section-heading" data-aos="fade-up" data-aos-duration="600">
           <h3>Why Choose Us</h3>
           <div class="section-line"></div>
         </div>
         <div class="page-services-content">
           <div class="row g-4">
-            <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+            <div
+              class="col-12 col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="600"
+            >
               <div class="page-card">
                 <div class="page-card-img">
                   <img src="{% static 'svg/trusted.svg' %}" alt="" />
@@ -81,7 +77,12 @@
                 <div class="page-card-text">Reliable Delivery</div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
+            <div
+              class="col-12 col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-duration="600"
+            >
               <div class="page-card">
                 <div class="page-card-img">
                   <img src="{% static 'svg/customer-focused.svg' %}" alt="" />
@@ -89,7 +90,12 @@
                 <div class="page-card-text">Customer Focused</div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
+            <div
+              class="col-12 col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-duration="600"
+            >
               <div class="page-card">
                 <div class="page-card-img">
                   <img src="{% static 'svg/solutions.svg' %}" alt="" />
@@ -97,7 +103,12 @@
                 <div class="page-card-text">Flexible Solutions</div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
+            <div
+              class="col-12 col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-delay="400"
+              data-aos-duration="600"
+            >
               <div class="page-card">
                 <div class="page-card-img">
                   <img src="{% static 'svg/quality.svg' %}" alt="" />
@@ -110,77 +121,104 @@
       </div>
     </div>
   </section>
-  <section class="partner page-partner-sect">
+
+  <!-- CTA Banner Section -->
+  <section
+    class="partner page-partner-sect"
+    data-aos="zoom-in"
+    data-aos-duration="700"
+  >
     <div class="container">
       <div class="cta-card">
         <h2 class="cta-title">Partner with us today</h2>
         <p class="cta-description">
-          Let us handle your property and<br>
+          Let us handle your property and<br />
           operational needs.
         </p>
         <div class="cta-buttons">
-          <a href="#" class="btn btn-primary">Contact Us</a>
-          <a href="#" class="btn btn-secondary">Request Service</a>
+          <a href="{% url 'contact_us' %}" class="btn btn-primary"
+            >Contact Us</a
+          >
+          <a href="{% url 'contact_us' %}" class="btn btn-secondary"
+            >Request Service</a
+          >
         </div>
       </div>
-      <!-- <div class="partner-banner">
-        <div class="banner-header">Partner with us today.</div>
-        <div class="banner-description">
-          Let us handle your property and operational needs.
-        </div>
-        <div class="banner-cta">
-          <a class="btn cta-primary" href="#">Contact Us</a>
-          <a class="btn cta-secondary" href="#">Request a Service</a>
-        </div>
-      </div> -->
     </div>
   </section>
 
+  <!-- Cross-Division Grid Section -->
   <section class="our-division-section">
     <div class="container">
       <div class="division-container">
-        <div class="section-heading">
+        <div class="section-heading" data-aos="fade-up" data-aos-duration="600">
           <h3 class="division-section-title">Our Divisions</h3>
           <div class="section-line"></div>
         </div>
 
         <div class="row g-4">
-
-          <div class="col-12 col-md-6">
+          <div
+            class="col-12 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-duration="700"
+          >
             <div class="division-card">
               <div class="icon-box">
-                <img src="{% static 'svg/cleaning.svg' %}" alt="cleaning-icon" />
+                <img
+                  src="{% static 'svg/cleaning.svg' %}"
+                  alt="cleaning-icon"
+                />
               </div>
               <div class="division-card-content">
                 <h4 class="division-card-title">General Cleaning</h4>
                 <p class="division-card-desc">
-                  Professional cleaning services for offices and commercial spaces,
-                  ensuring a spotless, hygienic, and well-maintained environment.
+                  Professional cleaning services for offices and commercial
+                  spaces, ensuring a spotless, hygienic, and well-maintained
+                  environment.
                 </p>
-                <a href="{% url 'cleaning_services' %}" class="division-card-link">
+                <a
+                  href="{% url 'cleaning_services' %}"
+                  class="division-card-link"
+                >
                   Learn More <span class="arrow">&rarr;</span>
                 </a>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6">
+
+          <div
+            class="col-12 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="700"
+          >
             <div class="division-card">
               <div class="icon-box">
-                <img src="{% static 'svg/office-admin.svg' %}" alt="Property Icon" />
+                <img
+                  src="{% static 'svg/office-admin.svg' %}"
+                  alt="Admin Support Icon"
+                />
               </div>
               <div class="division-card-content">
                 <h4 class="division-card-title">Admin Support</h4>
                 <p class="division-card-desc">
-                  Efficient office administration and support services for smooth
-                  operations.
+                  Efficient office administration and support services for
+                  smooth operations.
                 </p>
-                <a href="{% url 'property_services' %}" class="division-card-link">
+                <a href="{% url 'admin_services' %}" class="division-card-link">
                   Learn More <span class="arrow">&rarr;</span>
                 </a>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6">
+
+          <div
+            class="col-12 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-duration="700"
+          >
             <div class="division-card">
               <div class="icon-box">
                 <img src="{% static 'svg/hostel.svg' %}" alt="Hostel Icon" />
@@ -198,19 +236,6 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <section class="newsletter d-block d-lg-none">
-    <div class="container">
-      <div class="newsletter-content">
-        <h3>Stay Updated</h3>
-        <span class="d-block d-md-none">Subscribe to our newsletter.</span>
-        <span class="d-none d-md-block">Subscribe to our newsletter for updates and offers.</span>
-        <form action="">
-          <input type="text" name="" id="" placeholder="Enter your email" />
-          <button class="btn" type="submit">Subscribe</button>
-        </form>
       </div>
     </div>
   </section>

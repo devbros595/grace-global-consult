@@ -1,0 +1,286 @@
+.page-hero-hostel {
+  position: relative;
+  background-image: url("../img/hostel-1.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 2rem 0rem;
+  color: #fff;
+  overflow: hidden;
+  height: 80vh;
+}
+
+.page-hero-hostel .container {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+}
+
+.page-hero-hostel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.page-hero-hostel .page-hero-content {
+  position: absolute;
+  bottom: 3rem;
+  left: 1rem; 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  text-shadow: 0 2px 2px rgb(0, 0, 0);
+  margin: 0;
+}
+
+.page-hero-text h1 {
+  line-height: 1.3;
+}
+
+.page-hero-text p {
+  margin: 0;
+  line-height: 1.3;
+  width: 100%;
+}
+
+.page-hero-cta a {
+  padding: 0.75rem 1.5rem;
+  background-color: #d4b401;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+  text-shadow: none;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.335);
+}
+
+.section-line {
+  margin: 0 auto;
+}
+
+.hostel-category-section {
+  padding: 2rem 0rem;
+}
+
+.hostel-category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hostel-category-content .hostel-card {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 1.8rem 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.108);
+  width: 100%;
+}
+
+.hostel-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hostel-card-link a {
+  text-decoration: none;
+  color: #0b1f3a;
+  font-size: 18px;
+  font-weight: 500;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.hostel-card-text span {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.hostel-card-text p {
+  margin: 0;
+  margin-top: 0.5rem;
+}
+
+.amenities-category-section {
+  padding: 2rem 0rem;
+}
+
+.amenities-category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.amenities-category-content .amenities-card {
+  background-color: #fff;
+  border-radius: 1rem;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.3rem 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.108);
+  height: 100%;
+}
+
+.why-us-block .amenities-card {
+  flex-direction: row;
+}
+
+.amenities-card-img{
+  width: 50px;
+}
+
+.amenities-card-img img{
+  width: 100%;
+}
+
+.amenities-card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
+
+.why-us-block .amenities-card-text {
+    text-align: left;
+}
+
+.why-us-block .amenities-card-text span {
+    font-size: 18px;
+}
+
+.why-us-block .amenities-card-img{
+  width: 60px;
+}
+
+.amenities-card-text span {
+  font-weight: 500;
+  font-size: 16px;
+  width: 100%;
+}
+
+.amenities-card-text p {
+  margin: 0;
+}
+
+.featured-hostels {
+  padding: 4rem 1rem 0;
+}
+
+.section-line {
+  background: rgb(212, 180, 1);
+  height: 0.2rem;
+  width: 3rem;
+  border-radius: 3rem;
+}
+
+.hostel-scroll {
+  margin-top: 2rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
+}
+
+.hostel-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.hostel-card {
+  min-width: 220px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+
+.hostel-scroll .link {
+  margin: 0 1rem;
+  min-width: max-content;
+}
+
+.hostel-card a {
+  text-decoration: none;
+  color: #0b1f3a;
+  font-size: 14px;
+  font-weight: 500;
+  background: #e5e7eb88;
+  border: 1px solid #e5e7eb;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.hostel-card-img {
+  width: 60px;
+}
+
+.hostel-card-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.hostel-card h6 {
+  font-weight: 600;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .hostel-hero {
+    padding: 4rem 2rem;
+  }
+
+  .hostel-hero::before {
+    background: rgba(0, 0, 0, 0.672);
+  }
+
+  .hostel-hero-text {
+    padding-bottom: 0rem;
+  }
+
+  .hostel-hero-text p {
+    display: inline-block;
+    font-size: 18px;
+    margin: 0;
+    line-height: 1.3;
+    width: 40%;
+    height: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-cta a {
+    padding: 1rem 1.5rem;
+    transition: 0.5s ease;
+  }
+
+  .hero-cta a:hover {
+    background-color: #0a8f3d;
+    border: 1.5px solid #0a8f3d;
+  }
+
+  .hostel-hero-text p {
+    width: 42%;
+  }
+
+  .hostel-category {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .section-line {
+    margin: 0;
+  }
+}

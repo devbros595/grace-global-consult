@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+<title>Page Not Found | Grace Global Consult</title>
+{% endblock %}
+
+{% block content %}
+<section class="d-flex align-items-center min-vh-100 bg-light py-5">
+  <div class="container text-center">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 col-lg-6">
+        
+        <!-- Big Styled 404 Error Code -->
+        <h1 class="display-1 fw-bold text-primary mb-2" data-aos="zoom-in" data-aos-duration="600" style="font-size: calc(4rem + 4vw);">
+          404
+        </h1>
+        
+        <!-- Error Message -->
+        <h2 class="h3 fw-semibold text-dark mb-3" data-aos="fade-up" data-aos-delay="100" data-aos-duration="600">
+          Oops, this page doesn't exist!
+        </h2>
+        
+        <p class="text-muted mb-5 mx-auto" style="max-width: 450px;" data-aos="fade-up" data-aos-delay="200" data-aos-duration="600">
+          The link you followed might be broken, or the page has been moved. Let's get you back on track.
+        </p>
+        
+        <!-- Action Buttons -->
+        <div class="d-flex flex-column flex-sm-row justify-content-center gap-3" data-aos="fade-up" data-aos-delay="300" data-aos-duration="600">
+          <a href="/" class="btn btn-primary px-4 py-2 fw-medium shadow-sm">
+            Go to Homepage
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

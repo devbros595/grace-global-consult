@@ -1,6 +1,7 @@
 {% extends "base.html" %} {% load static %} {% block title %}
 <title>Cleaning Services | Grace Global Consult</title>
 {% endblock %} {% block content %}
+<!-- Hero Section left un-modified -->
 <section class="page-hero-cleaning">
   <div class="container">
     <div class="page-hero-content">
@@ -20,16 +21,19 @@
     </div>
   </div>
 </section>
+
 <div class="sections pt-3 cleaning-service">
-  <section class="page-services-section ">
+  <!-- Cleaning Services List -->
+  <section class="page-services-section">
     <div class="container">
       <div class="page-services">
-        <div class="section-heading">
+        <div class="section-heading" data-aos="fade-up" data-aos-duration="600">
           <h3>Our Cleaning Services</h3>
           <div class="section-line"></div>
         </div>
         <div class="page-services-content">
-          <div class="row bg-white aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
+          <!-- Domestic Cleaning -->
+          <div class="row bg-white" data-aos="fade-up" data-aos-duration="700">
             <div class="col-12 col-lg-6 order-2 order-lg-1 service-item">
               <h4>Domestic Cleaning</h4>
               <p>
@@ -45,7 +49,9 @@
               <img src="{% static 'img/woman-cleaning.jpeg' %}" alt="" loading="lazy" class="img-fluid" />
             </div>
           </div>
-          <div class="row bg-light aos-init aos-animate" data-aos="fade-right" data-aos-delay="200">
+          
+          <!-- Deep Cleaning -->
+          <div class="row bg-light" data-aos="fade-up" data-aos-duration="700">
             <div class="col-12 col-lg-6 order-2 order-lg-2 service-item">
               <h4>Deep Cleaning</h4>
               <p>
@@ -61,7 +67,9 @@
               <img src="{% static 'img/deep-cleaning.jpeg' %}" alt="" loading="lazy" class="img-fluid" />
             </div>
           </div>
-          <div class="row bg-white aos-init aos-animate" data-aos="fade-right" data-aos-delay="200">
+
+          <!-- Commercial Cleaning -->
+          <div class="row bg-white" data-aos="fade-up" data-aos-duration="700">
             <div class="col-12 col-lg-6 order-2 order-lg-1 service-item">
               <h4>Commercial Cleaning</h4>
               <p>
@@ -81,16 +89,18 @@
       </div>
     </div>
   </section>
-  <section class="why-choose-us ">
+
+  <!-- Why Choose Us -->
+  <section class="why-choose-us">
     <div class="container">
       <div class="why-us">
-        <div class="section-heading">
+        <div class="section-heading" data-aos="fade-up" data-aos-duration="600">
           <h3>Why Choose Us</h3>
           <div class="section-line"></div>
         </div>
         <div class="page-services-content">
           <div class="row g-4">
-            <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+            <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="600">
               <div class="page-card">
                 <div class="page-card-img">
                   <img src="{% static 'svg/trusted.svg' %}" alt="" />
@@ -98,7 +108,7 @@
                 <div class="page-card-text">Reliable Delivery</div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="600">
               <div class="page-card">
                 <div class="page-card-img">
                   <img src="{% static 'svg/customer-focused.svg' %}" alt="" />
@@ -106,7 +116,7 @@
                 <div class="page-card-text">Customer Focused</div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="600">
               <div class="page-card">
                 <div class="page-card-img">
                   <img src="{% static 'svg/solutions.svg' %}" alt="" />
@@ -114,7 +124,7 @@
                 <div class="page-card-text">Flexible Solutions</div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400" data-aos-duration="600">
               <div class="page-card">
                 <div class="page-card-img">
                   <img src="{% static 'svg/quality.svg' %}" alt="" />
@@ -129,15 +139,17 @@
   </section>
   <hr />
 
+  <!-- Work Gallery Grid -->
   <section class="cleaning-gallery-section">
     <div class="container">
-      <div class="section-heading">
+      <div class="section-heading" data-aos="fade-up" data-aos-duration="600">
         <h3>Our Work Gallery</h3>
         <div class="section-line"></div>
       </div>
       <div class="gallery-grid-wrapper mt-5">
         <div class="row g-4">
-          <div class="col-12 col-sm-6 col-md-4">
+          <!-- Static Item 1 -->
+          <div class="col-12 col-sm-6 col-md-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="600">
             <div class="gallery-card">
               <div class="gallery-img-box">
                 <img src="{% static 'img/office-cleaning.jpeg' %}" alt="Office Cleaning Work" loading="lazy" />
@@ -147,7 +159,8 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-md-4">
+          <!-- Static Item 2 -->
+          <div class="col-12 col-sm-6 col-md-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="600">
             <div class="gallery-card">
               <div class="gallery-img-box">
                 <img src="{% static 'img/kitchen-cleaning.jpeg' %}" alt="Deep Kitchen Cleaning" loading="lazy" />
@@ -157,7 +170,8 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-md-4">
+          <!-- Static Item 3 -->
+          <div class="col-12 col-sm-6 col-md-4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="600">
             <div class="gallery-card">
               <div class="gallery-img-box">
                 <img src="{% static 'img/home-cleaning.jpeg' %}" alt="Domestic Window Cleaning" loading="lazy" />
@@ -167,7 +181,8 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-md-4">
+          <!-- Static Item 4 -->
+          <div class="col-12 col-sm-6 col-md-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="600">
             <div class="gallery-card">
               <div class="gallery-img-box">
                 <img src="{% static 'img/vacuum-machine.jpeg' %}" alt="Floor Clean" loading="lazy" />
@@ -177,7 +192,8 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-md-4">
+          <!-- Static Item 5 -->
+          <div class="col-12 col-sm-6 col-md-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="600">
             <div class="gallery-card">
               <div class="gallery-img-box">
                 <img src="{% static 'img/furniture-cleaning.jpeg' %}" alt="Carpet Wash Setup" loading="lazy" />
@@ -188,32 +204,33 @@
             </div>
           </div>
 
+          <!-- Dynamic Items & Fallback Loop -->
           {% if gallery_items %}
-          {% for item in gallery_items %}
-          <!-- Dynamic Gallery Item -->
-          <div class="col-12 col-sm-6 col-md-4">
-            <div class="gallery-card">
-              <div class="gallery-img-box">
-                <img src="{{ item.image.url }}" alt="{{ item.alt_text }}" loading="lazy" />
-              </div>
-              <div class="gallery-card-overlay">
-                <span>{{ item.title }}</span>
+            {% for item in gallery_items %}
+            <div class="col-12 col-sm-6 col-md-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="600">
+              <div class="gallery-card">
+                <div class="gallery-img-box">
+                  <img src="{{ item.image.url }}" alt="{{ item.alt_text }}" loading="lazy" />
+                </div>
+                <div class="gallery-card-overlay">
+                  <span>{{ item.title }}</span>
+                </div>
               </div>
             </div>
-          </div>
-          {% endfor %}
+            {% endfor %}
           {% else %}
-          <!-- Fallback design placeholder state if no images are uploaded yet -->
-          <div class="col-12 text-center py-4">
-            <p class="text-muted">No transformation showcase photos uploaded yet. Check back soon!</p>
-          </div>
+            <!-- Fallback State -->
+            <div class="col-12 text-center py-4" data-aos="fade-up" data-aos-duration="600">
+              <p class="text-muted">No transformation showcase photos uploaded yet. Check back soon!</p>
+            </div>
           {% endif %}
-
         </div>
       </div>
     </div>
   </section>
-  <section class="partner page-partner-sect">
+
+  <!-- CTA Banner -->
+  <section class="partner page-partner-sect" data-aos="zoom-in" data-aos-duration="800">
     <div class="container">
       <div class="cta-card">
         <h2 class="cta-title">Need Professional Cleaning Services?</h2>
@@ -228,15 +245,17 @@
       </div>
     </div>
   </section>
+
+  <!-- Our Divisions Segment -->
   <section class="our-division-section">
     <div class="container">
       <div class="division-container">
-        <div class="section-heading">
+        <div class="section-heading" data-aos="fade-up" data-aos-duration="600">
           <h3 class="division-section-title">Our Divisions</h3>
           <div class="section-line"></div>
         </div>
         <div class="row g-4">
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
             <div class="division-card">
               <div class="icon-box">
                 <img src="{% static 'svg/real-estate.svg' %}" alt="Property Icon" />
@@ -252,7 +271,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="700">
             <div class="division-card">
               <div class="icon-box">
                 <img src="{% static 'svg/office-admin.svg' %}" alt="Hostel Icon" />
@@ -269,7 +288,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
             <div class="division-card">
               <div class="icon-box">
                 <img src="{% static 'svg/hostel.svg' %}" alt="Hostel Icon" />

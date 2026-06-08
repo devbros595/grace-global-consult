@@ -22,6 +22,7 @@
 
       <div class="swiper-pagination"></div>
     </div>
+  
     <div class="hero-content">
       <div class="hero-text">
         <h2>Hospitality & Property<br />Service Solutions</h2>
@@ -39,11 +40,11 @@
     </div>
   </div>
 </section>
-<div class="sections">
+<div class="sections pb-0">
   <section class="divisions">
     <div class="container">
       <div class="our-divisions">
-        <div class="text-center section-heading">
+        <div class="text-center section-heading" data-aos="fade-up" data-aos-duration="600">
           <h3>Our Divisions</h3>
           <div class="section-line mx-auto"></div>
         </div>
@@ -254,9 +255,11 @@
       <div class="section-divider d-block d-md-none"></div>
     </div>
   </section>
+  
+  <!-- Counter/Stats Section: Staggered zoom-in effect -->
   <section class="company-stat d-none d-md-block">
     <div class="stat-container">
-      <div class="stat-item">
+      <div class="stat-item" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="600">
         <div class="stat-icon">
           <i class="fa-solid fa-user-group fa-2xl" style="color: #d4b401"></i>
         </div>
@@ -268,7 +271,7 @@
         </div>
       </div>
 
-      <div class="stat-item">
+      <div class="stat-item" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="600">
         <div class="stat-icon">
           <i class="fa-regular fa-building fa-2xl" style="color: #d4b401"></i>
         </div>
@@ -280,7 +283,7 @@
         </div>
       </div>
 
-      <div class="stat-item">
+      <div class="stat-item" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="600">
         <div class="stat-icon">
           <i
             class="fa-regular fa-calendar-plus fa-2xl"
@@ -295,7 +298,7 @@
         </div>
       </div>
 
-      <div class="stat-item">
+      <div class="stat-item" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="600">
         <div class="stat-icon">
           <i class="fa-solid fa-headset fa-2xl" style="color: #d4b401"></i>
         </div>
@@ -308,35 +311,37 @@
       </div>
     </div>
   </section>
+
+  <!-- What We Offer Section (Large Screens) -->
   <section class="what-we-offer d-none d-lg-block">
     <div class="why-us">
-      <div class="text-center section-heading">
+      <div class="text-center section-heading" data-aos="fade-up" data-aos-duration="600">
         <h3>What We Offer</h3>
         <div class="section-line mx-auto"></div>
       </div>
       <div class="why-us-content">
-        <div class="why-us-item">
+        <div class="why-us-item" data-aos="fade-up" data-aos-delay="100" data-aos-duration="600">
           <div class="why-us-icon">
             <img src="{% static 'svg/bed.svg' %}" alt="icon" />
           </div>
           <h5>Clean & Comfortable Room</h5>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
         </div>
-        <div class="why-us-item">
+        <div class="why-us-item" data-aos="fade-up" data-aos-delay="200" data-aos-duration="600">
           <div class="why-us-icon">
             <img src="{% static 'svg/key.svg' %}" alt="icon" />
           </div>
           <h5>Shared & Private Options</h5>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
         </div>
-        <div class="why-us-item">
+        <div class="why-us-item" data-aos="fade-up" data-aos-delay="300" data-aos-duration="600">
           <div class="why-us-icon">
             <img src="{% static 'svg/secure-shield.svg' %}" alt="icon" />
           </div>
           <h5>Secure Environment</h5>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
         </div>
-        <div class="why-us-item">
+        <div class="why-us-item" data-aos="fade-up" data-aos-delay="400" data-aos-duration="600">
           <div class="why-us-icon">
             <img src="{% static 'svg/friendly.svg' %}" alt="icon" />
           </div>
@@ -346,8 +351,10 @@
       </div>
     </div>
   </section>
+
+  <!-- Side-by-Side Comparison Panels -->
   <section class="why-section">
-    <div class="why-us-lg shadow">
+    <div class="why-us-lg shadow" data-aos="fade-right" data-aos-duration="800">
       <h5>Why Choose Us?</h5>
       <div class="d-flex align-items-end justify-content-between">
         <ul>
@@ -371,7 +378,7 @@
         <img src="{% static 'svg/question.svg' %}" alt="" />
       </div>
     </div>
-    <div class="who-for shadow">
+    <div class="who-for shadow" data-aos="fade-left" data-aos-duration="800">
       <h5>Who It's For</h5>
       <div class="d-flex align-items-end justify-content-between">
         <ul>
@@ -396,14 +403,16 @@
       </div>
     </div>
   </section>
-  <section class="d-none d-md-block d-lg-none why-choose-us">
+
+  <!-- Why Choose Us (Mid Screens) -->
+  <section class="why-choose-us d-none d-md-block d-lg-none">
     <div class="why-us">
-      <div class="text-center section-heading">
+      <div class="text-center section-heading" data-aos="fade-up" data-aos-duration="600">
         <h3>Why Choose Us</h3>
         <div class="section-line mx-auto"></div>
       </div>
       <div class="why-us-content">
-        <div class="why-us-item">
+        <div class="why-us-item" data-aos="fade-up" data-aos-delay="100" data-aos-duration="600">
           <div class="why-us-icon">
             <img src="{% static 'svg/trusted.svg' %}" alt="icon" />
           </div>
@@ -412,7 +421,7 @@
             We deliver top notch services you can trust.
           </div>
         </div>
-        <div class="why-us-item">
+        <div class="why-us-item" data-aos="fade-up" data-aos-delay="200" data-aos-duration="600">
           <div class="why-us-icon">
             <img src="{% static 'svg/customer-focused.svg' %}" alt="icon" />
           </div>
@@ -421,7 +430,7 @@
             We put our clients and guests first in everyting we do.
           </div>
         </div>
-        <div class="why-us-item">
+        <div class="why-us-item" data-aos="fade-up" data-aos-delay="300" data-aos-duration="600">
           <div class="why-us-icon">
             <img src="{% static 'svg/solutions.svg' %}" alt="icon" />
           </div>
@@ -430,7 +439,7 @@
             Tailored services that fit your unique needs.
           </div>
         </div>
-        <div class="why-us-item">
+        <div class="why-us-item" data-aos="fade-up" data-aos-delay="400" data-aos-duration="600">
           <div class="why-us-icon">
             <img src="{% static 'svg/quality.svg' %}" alt="icon" />
           </div>
@@ -442,14 +451,16 @@
       </div>
     </div>
   </section>
-  <section class="d-block d-md-none why-choose-us">
+
+  <!-- Why Choose Us (Mobile Layout) -->
+  <section class="why-choose-us d-block d-md-none">
     <div class="why-us">
-      <div class="text-center section-heading">
+      <div class="text-center section-heading" data-aos="fade-up" data-aos-duration="600">
         <h3>Why Choose Us</h3>
         <div class="section-line mx-auto"></div>
       </div>
       <div class="section-content-grid">
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
           <div class="card-content">
             <div class="card-icon">
               <img src="{% static 'svg/trusted.svg' %}" alt="icon" />
@@ -459,7 +470,7 @@
             </div>
           </div>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-delay="200">
           <div class="card-content">
             <div class="card-icon">
               <img src="{% static 'svg/customer-focused.svg' %}" alt="icon" />
@@ -467,7 +478,7 @@
             <div class="card-title">Customer Focused</div>
           </div>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-delay="300">
           <div class="card-content">
             <div class="card-icon">
               <img src="{% static 'svg/solutions.svg' %}" alt="icon" />
@@ -475,7 +486,7 @@
             <div class="card-title">Flexible Solutions</div>
           </div>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-delay="400">
           <div class="card-content">
             <img src="{% static 'svg/quality.svg' %}" alt="icon" />
             <div class="card-title">
@@ -486,7 +497,9 @@
       </div>
     </div>
   </section>
-  <section class="partner d-block d-md-none">
+
+  <!-- Partner Banner (Mobile) -->
+  <section class="partner d-block d-md-none" data-aos="zoom-in" data-aos-duration="800">
     <div class="container">
       <div class="partner-banner">
         <div class="banner-header">Partner with us or stay with us today.</div>
@@ -502,30 +515,32 @@
       </div>
     </div>
   </section>
+
+  <!-- Featured Hostels Section -->
   <section class="featured-hostels">
     <div class="container">
-      <div class="text-center section-heading">
+      <div class="text-center section-heading" data-aos="fade-up" data-aos-duration="600">
         <h3>Featured Hostels</h3>
         <div class="section-line mx-auto"></div>
       </div>
       <div
         class="hostel-scroll d-flex align-items-center justify-content-start gap-4"
       >
-        <div class="hostel-card">
+        <div class="hostel-card" data-aos="fade-up" data-aos-delay="100" data-aos-duration="600">
           <img src="{% static 'img/hostel-1.jpeg' %}" alt="" />
           <h6 class="mt-2">Grace Hostel 1</h6>
         </div>
 
-        <div class="hostel-card">
+        <div class="hostel-card" data-aos="fade-up" data-aos-delay="200" data-aos-duration="600">
           <img src="{% static 'img/hostel-2.jpeg' %}" alt="" />
           <h6 class="mt-2">Grace Hostel 2</h6>
         </div>
 
-        <div class="hostel-card">
+        <div class="hostel-card" data-aos="fade-up" data-aos-delay="300" data-aos-duration="600">
           <img src="{% static 'img/hostel-3.jpeg' %}" alt="" />
           <h6 class="mt-2">Grace Hostel 3</h6>
         </div>
-        <div class="hostel-card">
+        <div class="hostel-card" data-aos="fade-up" data-aos-delay="400" data-aos-duration="600">
           <img src="{% static 'img/hostel-4.jpeg' %}" alt="" />
           <h6 class="mt-2">Grace Hostel 4</h6>
         </div>
@@ -536,7 +551,7 @@
           ></a>
         </div>
       </div>
-      <div class="d-none d-md-block">
+      <div class="d-none d-md-block" data-aos="fade-up" data-aos-duration="600">
         <a href="#"
           >View All
           <i class="fa-solid fa-angles-right ms-2" style="color: #d4b401"></i
@@ -544,7 +559,9 @@
       </div>
     </div>
   </section>
-  <section class="testimonials d-block d-lg-none">
+
+  <!-- Testimonials Section (Mobile/Mid Screen Carousel) -->
+  <section class="testimonials d-block d-lg-none" data-aos="fade-up" data-aos-duration="800">
     <div class="container">
       <div class="text-center section-heading">
         <h4>What Our Clients Say</h4>
@@ -632,7 +649,9 @@
       </div>
     </div>
   </section>
-  <section class="testimonials d-none d-lg-block">
+
+  <!-- Testimonials Section (Large Screen Grid Carousel) -->
+  <section class="testimonials d-none d-lg-block" data-aos="fade-up" data-aos-duration="800">
     <div class="container">
       <div class="text-center section-heading">
         <h3>What Our Clients Say</h3>
@@ -798,7 +817,9 @@
       </div>
     </div>
   </section>
-  <section class="d-none d-md-block d-lg-none mini-hero">
+
+  <!-- Mini Hero Banners -->
+  <section class="d-none d-md-block d-lg-none mini-hero" data-aos="zoom-in" data-aos-duration="800">
     <div class="container">
       <div class="mini-hero-content">
         <div class="hero-header">
@@ -814,7 +835,7 @@
       </div>
     </div>
   </section>
-  <section class="d-none d-lg-block mini-hero-lg">
+  <section class="d-none d-lg-block mini-hero-lg" data-aos="zoom-in" data-aos-duration="800">
     <div class="container">
       <div class="mini-hero-content">
         <img src="{% static 'svg/care.svg' %}" alt="icon" />
@@ -826,7 +847,9 @@
       </div>
     </div>
   </section>
-  <section class="newsletter d-block d-lg-none">
+
+  <!-- Newsletter Sections -->
+  <section class="newsletter d-block d-lg-none" data-aos="fade-up" data-aos-duration="600">
     <div class="container">
       <div class="newsletter-content">
         <h3>Stay Updated</h3>
@@ -841,7 +864,7 @@
       </div>
     </div>
   </section>
-  <section class="newsletter-lg d-none d-lg-block">
+  <section class="newsletter-lg d-none d-lg-block" data-aos="fade-up" data-aos-duration="600">
     <div class="d-flex justify-content-between align-items-center gap-3">
       <div class="d-flex flex-column gap-2">
         <h4>Stay Updated</h4>
@@ -853,13 +876,14 @@
     </div>
   </section>
 </div>
+
+<!-- Form script continued below -->
 <script>
   document.querySelectorAll(".newsletter-form").forEach((form) => {
     form.addEventListener("submit", async function (e) {
       e.preventDefault();
 
       const emailInput = form.querySelector(".newsletter-email");
-
       const messageBox = form.querySelector(".newsletter-message");
 
       try {
@@ -867,8 +891,7 @@
           method: "POST",
           headers: {
             "Content-Type": "application/json",
-            "X-CSRFToken": form.querySelector("[name=csrfmiddlewaretoken]")
-              .value,
+            "X-CSRFToken": form.querySelector("[name=csrfmiddlewaretoken]").value,
           },
           body: JSON.stringify({
             email: emailInput.value,
@@ -878,9 +901,7 @@
         const data = await response.json();
 
         messageBox.textContent = data.message;
-
         messageBox.classList.remove("success", "error", "fade-out");
-
         messageBox.classList.add("show");
 
         if (data.success) {
@@ -903,72 +924,10 @@
 
       } catch (error) {
         messageBox.textContent = "Unable to subscribe. Please try again.";
-
         messageBox.classList.remove("success", "error", "fade-out");
-
         messageBox.classList.add("show", "error");
-
-        setTimeout(() => {
-          messageBox.classList.add("fade-out");
-        }, 4000);
-
-        setTimeout(() => {
-          messageBox.classList.remove("show", "success", "error", "fade-out");
-          messageBox.textContent = "";
-        }, 4500);
       }
     });
   });
 </script>
-<script>
-  window.addEventListener("load", () => {
-    const counters = document.querySelectorAll(".counter");
-
-    const runCounter = (counter) => {
-      const target = parseInt(counter.dataset.target);
-
-      let count = 0;
-
-      const speed = target / 120;
-
-      const updateCount = () => {
-        count += speed;
-
-        if (count < target) {
-          counter.innerText = Math.ceil(count);
-
-          requestAnimationFrame(updateCount);
-        } else {
-          counter.innerText = target + "+";
-        }
-      };
-
-      updateCount();
-    };
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const counter = entry.target;
-
-            if (!counter.classList.contains("started")) {
-              counter.classList.add("started");
-
-              runCounter(counter);
-            }
-          }
-        });
-      },
-      {
-        threshold: 0.4,
-      },
-    );
-
-    counters.forEach((counter) => {
-      observer.observe(counter);
-    });
-  });
-</script>
-
 {% endblock %}

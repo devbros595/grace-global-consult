@@ -2,6 +2,7 @@
 <title>About Us | Graceglobalconsult</title>
 {% endblock %} {% block content %}
 
+<!-- Hero Section left un-modified -->
 <section class="page-hero-about">
   <div class="container">
     <div class="page-hero-content">
@@ -14,14 +15,16 @@
       </div>
       <div class="page-hero-cta">
         <a href="{% url 'contact_us' %}" class="btn">Request a Service</a>
-
       </div>
     </div>
+  </div>
 </section>
+
 <div class="sections">
+  <!-- Who We Are Content -->
   <section class="who-we-are">
     <div class="container">
-      <div class="who-we-are-content">
+      <div class="who-we-are-content" data-aos="fade-up" data-aos-duration="800">
         <div class="section-heading">
           <h3>Who We Are</h3>
           <div class="section-line d-block d-md-none"></div>
@@ -33,22 +36,24 @@
         </p>
         <a href="{% url 'contact_us' %}">Learn More</a>
       </div>
-      <div class=" who-we-are-img d-none d-md-block">
+      <div class="who-we-are-img d-none d-md-block" data-aos="fade-in" data-aos-delay="200" data-aos-duration="800">
         <img src="{% static 'img/grace-global-logo.jpeg' %}" alt="">
       </div>
     </div>
   </section>
   <hr />
+
+  <!-- Core Values Block -->
   <section class="who-we-are core-value">
     <div class="container">
       <div class="who-we-are-content">
-        <div class="section-heading">
+        <div class="section-heading" data-aos="fade-up" data-aos-duration="600">
           <h3>Our Core Values</h3>
           <div class="section-line"></div>
         </div>
-        <div class="value-container ">
+        <div class="value-container">
           <div class="row g-4">
-            <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+            <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
               <div class="value-item">
                 <div class="value-item-icon">
                   <img src="{% static 'svg/badge-award.svg' %}" alt="icon" />
@@ -62,7 +67,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+            <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200" data-aos-duration="700">
               <div class="value-item">
                 <div class="value-item-icon">
                   <img src="{% static 'svg/gold-medal.svg' %}" alt="icon" />
@@ -76,7 +81,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+            <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="300" data-aos-duration="700">
               <div class="value-item">
                 <div class="value-item-icon">
                   <img src="{% static 'svg/customer-rate.svg' %}" alt="icon" />
@@ -90,7 +95,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+            <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="400" data-aos-duration="700">
               <div class="value-item">
                 <div class="value-item-icon">
                   <img src="{% static 'svg/rocket.svg' %}" alt="icon" />
@@ -110,16 +115,18 @@
     </div>
   </section>
   <hr />
+
+  <!-- Why Choose Us Grid -->
   <section class="why-choose-us">
     <div class="container">
       <div class="why-us">
-        <div class="section-heading">
+        <div class="section-heading" data-aos="fade-up" data-aos-duration="600">
           <h3>Why Choose Us</h3>
           <div class="section-line"></div>
         </div>
         <div class="why-content">
-          <div class="row g-3 ">
-            <div class="col-6 col-lg-3 d-lg-flex justify-content-center">
+          <div class="row g-3">
+            <div class="col-6 col-lg-3 d-lg-flex justify-content-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="600">
               <div class="section-item">
                 <img src="{% static 'svg/trusted.svg' %}" alt="icon" />
                 <span>Reliable & Professional</span>
@@ -128,7 +135,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-6 col-lg-3 d-lg-flex justify-content-center">
+            <div class="col-6 col-lg-3 d-lg-flex justify-content-center" data-aos="fade-up" data-aos-delay="200" data-aos-duration="600">
               <div class="section-item">
                 <img src="{% static 'svg/customer-focused.svg' %}" alt="icon" />
                 <span>Customer Focused</span>
@@ -137,7 +144,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-6 col-lg-3 d-lg-flex justify-content-center">
+            <div class="col-6 col-lg-3 d-lg-flex justify-content-center" data-aos="fade-up" data-aos-delay="300" data-aos-duration="600">
               <div class="section-item">
                 <img src="{% static 'svg/solutions.svg' %}" alt="icon" />
                 <span>Flexible Solutions</span>
@@ -146,7 +153,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-6 col-lg-3 d-lg-flex justify-content-center">
+            <div class="col-6 col-lg-3 d-lg-flex justify-content-center" data-aos="fade-up" data-aos-delay="400" data-aos-duration="600">
               <div class="section-item">
                 <img src="{% static 'svg/quality.svg' %}" alt="icon" />
                 <span>Quality & Efficiency</span>
@@ -160,7 +167,9 @@
       </div>
     </div>
   </section>
-  <section class="partner d-block d-md-none">
+
+  <!-- Mobile Only Banner -->
+  <section class="partner d-block d-md-none" data-aos="zoom-in" data-aos-duration="700">
     <div class="container">
       <div class="partner-banner">
         <div class="banner-header">Partner with us or stay with us today.</div>
@@ -174,48 +183,90 @@
       </div>
     </div>
   </section>
-  <section class="our-division-section d-none d-md-block">
-    <div class="container">
-      <div class="our-division-container">
-        <div class="section-heading">
-          <h3>Our Divisions</h3>
-          <div class="section-line"></div>
-        </div>
-        <div class="our-division-content">
-          <div class="row">
-            <div class="col-6">
-              <div class="division-item">
-                <div class="division-item-icon">
-                  <img src="{% static 'svg/hostel.svg' %}" alt="icon" />
-                </div>
-                <div class="division-item-content">
-                  <div class="division-item-text">
-                    <div class="division-item-title">Grace Hostels</div>
-                    <div class="division-item-info">Affordable, clean and welcoming accommodation designed for comfort
-                      and community.</div>
-                  </div>
-                  <a href="#">Learn More &rarr;</a>
-                </div>
-              </div>
+
+  <!-- Mid/Large Screen Divisions Layout -->
+<section class="our-division-section">
+  <div class="container">
+    <div class="division-container">
+      <div class="section-heading" data-aos="fade-up" data-aos-duration="600">
+        <h3 class="division-section-title">Our Divisions</h3>
+        <div class="section-line"></div>
+      </div>
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
+          <div class="division-card">
+            <div class="icon-box">
+              <img src="{% static 'svg/cleaning.svg' %}" alt="cleaning-icon" />
             </div>
-            <div class="col-6">
-              <div class="division-item">
-                <div class="division-item-icon">
-                  <img src="{% static 'svg/real-estate.svg' %}" alt="icon" />
-                </div>
-                <div class="division-item-content">
-                  <div class="division-item-text">
-                    <div class="division-item-title">Grace Property Services</div>
-                    <div class="division-item-info">Professional support for property owners and businesses.</div>
-                  </div>
-                  <a href="#">Learn More &rarr;</a>
-                </div>
-              </div>
+            <div class="division-card-content">
+              <h4 class="division-card-title">General Cleaning</h4>
+              <p class="division-card-desc">
+                Professional cleaning services for offices and commercial spaces,
+                ensuring a spotless, hygienic, and well-maintained environment.
+              </p>
+              <a href="{% url 'cleaning_services' %}" class="division-card-link">
+                Learn More <span class="arrow">&rarr;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="700">
+          <div class="division-card">
+            <div class="icon-box">
+              <img src="{% static 'svg/real-estate.svg' %}" alt="Property Icon" />
+            </div>
+            <div class="division-card-content">
+              <h4 class="division-card-title">Property Services</h4>
+              <p class="division-card-desc">
+                Professional support for property owners and businesses.
+              </p>
+              <a href="{% url 'property_services' %}" class="division-card-link">
+                Learn More <span class="arrow">&rarr;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
+          <div class="division-card">
+            <div class="icon-box">
+              <img src="{% static 'svg/office-admin.svg' %}" alt="Property Icon" />
+            </div>
+            <div class="division-card-content">
+              <h4 class="division-card-title">Admin Support</h4>
+              <p class="division-card-desc">
+                Efficient office administration and support services for smooth
+                operations.
+              </p>
+              <a href="{% url 'admin_services' %}" class="division-card-link">
+                Learn More <span class="arrow">&rarr;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="700">
+          <div class="division-card">
+            <div class="icon-box">
+              <img src="{% static 'svg/hostel.svg' %}" alt="Hostel Icon" />
+            </div>
+            <div class="division-card-content">
+              <h4 class="division-card-title">Grace Hostels</h4>
+              <p class="division-card-desc">
+                Affordable, clean, and welcoming accommodation designed for
+                comfort and community.
+              </p>
+              <a href="{% url 'hostels' %}" class="division-card-link">
+                Learn More <span class="arrow">&rarr;</span>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 </div>
 {% endblock %}

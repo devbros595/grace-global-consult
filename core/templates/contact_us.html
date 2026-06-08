@@ -1,6 +1,7 @@
 {% extends "base.html" %} {% load static %} {% block title %}
 <title>Contact Us | Grace Global Consult</title>
 {% endblock %} {% block content %}
+<!-- Hero Section left un-modified -->
 <section class="page-hero-contact">
   <div class="container">
     <div class="page-hero-content">
@@ -17,17 +18,20 @@
     </div>
   </div>
 </section>
+
 <div class="sections">
   <section class="contact-details-section">
     <div class="container">
       <div class="contact-details-content">
-        <div class="section-heading">
+        <div class="section-heading" data-aos="fade-up" data-aos-duration="600">
           <h3>Get In Touch</h3>
           <div class="section-line"></div>
         </div>
+        
+        <!-- Contact Information Cards -->
         <div class="contact-card-container">
           <div class="row g-3">
-            <div class="col-12 col-md-6 col-lg-4 >">
+            <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="600">
               <div class="contact-card">
                 <div class="contact-card-icon">
                   <img src="{% static 'svg/phone.svg' %}" alt="phone icon" />
@@ -38,10 +42,11 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 >">
+            
+            <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="600">
               <div class="contact-card">
                 <div class="contact-card-icon">
-                  <img src="{% static 'svg/email.svg' %}" alt="phone icon" />
+                  <img src="{% static 'svg/email.svg' %}" alt="email icon" />
                 </div>
                 <div class="contact-card-text">
                   <span>Email</span>
@@ -49,10 +54,11 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 >">
+            
+            <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="600">
               <div class="contact-card">
                 <div class="contact-card-icon">
-                  <img src="{% static 'svg/location.svg' %}" alt="phone icon" />
+                  <img src="{% static 'svg/location.svg' %}" alt="location icon" />
                 </div>
                 <div class="contact-card-text">
                   <span>Address</span>
@@ -60,10 +66,11 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4>">
+            
+            <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400" data-aos-duration="600">
               <div class="contact-card">
                 <div class="contact-card-icon">
-                  <img src="{% static 'svg/clock.svg' %}" alt="phone icon" />
+                  <img src="{% static 'svg/clock.svg' %}" alt="clock icon" />
                 </div>
                 <div class="contact-card-text">
                   <span>Business Hours</span>
@@ -77,16 +84,17 @@
             </div>
           </div>
         </div>
-        <div id="contact-form-container" class="contact-form-container">
-          <div class="form-title">
-            <img src="{% static 'svg/send.svg'%}" alt="send-icon" />
-            <h5>Send Us a Message</h5>
 
+        <!-- Interactive Contact Form Container -->
+        <div id="contact-form-container" class="contact-form-container" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+          <div class="form-title">
+            <img src="{% static 'svg/send.svg' %}" alt="send-icon" />
+            <h5>Send Us a Message</h5>
           </div>
           <p>Reach out to book a service, request a quote or ask any question.</p>
+          
           <form id="contactForm" action="{% url 'contact_us' %}" method="POST" class="contact-form">
             {% csrf_token %}
-
             <div class="form-group">
               <input type="text" name="name" placeholder="Your Name" required class="form-control" />
             </div>
@@ -102,6 +110,7 @@
             <div class="form-group">
               <textarea name="message" placeholder="Message" rows="5" required class="form-control"></textarea>
             </div>
+
             <!-- RESPONSE BOX -->
             <div id="formResponse"></div>
 
@@ -110,13 +119,13 @@
               <span id="btnSpinner" class="spinner" style="display: none"></span>
             </button>
           </form>
-
-
         </div>
       </div>
     </div>
   </section>
-  <section class="partner page-partner-sect">
+
+  <!-- CTA Banner -->
+  <section class="partner page-partner-sect" data-aos="zoom-in" data-aos-duration="700">
     <div class="container">
       <div class="cta-card">
         <h2 class="cta-title">Partner with us today</h2>
@@ -129,19 +138,10 @@
           <a href="#" class="btn btn-secondary">Request Service</a>
         </div>
       </div>
-      <!-- <div class="partner-banner">
-        <div class="banner-header">Partner with us today.</div>
-        <div class="banner-description">
-          Let us handle your property and operational needs.
-        </div>
-        <div class="banner-cta">
-          <a class="btn cta-primary" href="#">Contact Us</a>
-          <a class="btn cta-secondary" href="#">Request a Service</a>
-        </div>
-      </div> -->
     </div>
   </section>
 </div>
+
 <script>
   const form = document.getElementById("contactForm");
   const submitBtn = document.getElementById("submitBtn");
@@ -156,10 +156,9 @@
 
     responseBox.className = type;
     responseBox.innerText = message;
-
     responseBox.style.display = "block";
 
-    // force reflow for smooth animation reset
+    // Force reflow for smooth animation reset
     responseBox.style.opacity = "0";
     responseBox.style.transform = "translateY(-10px)";
 
@@ -168,7 +167,7 @@
       responseBox.style.transform = "translateY(0)";
     }, 10);
 
-    // auto fade after 4 seconds
+    // Auto fade after 4 seconds
     fadeTimer = setTimeout(() => {
       responseBox.style.opacity = "0";
       responseBox.style.transform = "translateY(-10px)";
@@ -182,7 +181,7 @@
   form.addEventListener("submit", async function (e) {
     e.preventDefault();
 
-    // loader
+    // Loader configuration state
     submitBtn.disabled = true;
     spinner.style.display = "inline-block";
     btnText.innerText = "Sending...";
@@ -211,7 +210,7 @@
       showMessage("error", "Network error. Please try again.");
     }
 
-    // reset loader
+    // Reset UI loader state elements
     submitBtn.disabled = false;
     spinner.style.display = "none";
     btnText.innerText = "Send Message";

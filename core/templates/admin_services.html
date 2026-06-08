@@ -1,6 +1,7 @@
 {% extends "base.html" %} {% load static %} {% block title %}
 <title>Admin Services | Grace Global Consult</title>
 {% endblock %} {% block content %}
+<!-- Hero Section left un-modified -->
 <section class="page-hero-admin">
   <div class="container">
     <div class="page-hero-content">
@@ -17,16 +18,18 @@
     </div>
   </div>
 </section>
+
 <div class="sections pt-3 cleaning-service">
   <section class="page-services-section">
     <div class="container">
       <div class="page-services">
-        <div class="section-heading">
+        <div class="section-heading" data-aos="fade-up" data-aos-duration="600">
           <h3>Admin Services</h3>
           <div class="section-line"></div>
         </div>
         <div class="page-services-content">
-          <div class="row bg-white aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
+          <!-- Clean vertical fade-up to protect layout flow -->
+          <div class="row bg-white" data-aos="fade-up" data-aos-duration="700">
             <div class="col-12 col-lg-6 order-2 order-lg-1 service-item">
               <h4>Administrative Support</h4>
               <p class="card-text text-muted">
@@ -38,7 +41,8 @@
               <img src="{% static 'img/admin-lady.jpeg' %}" alt="" loading="lazy" class="img-fluid" />
             </div>
           </div>
-          <div class="row bg-light aos-init aos-animate" data-aos="fade-right" data-aos-delay="200">
+          
+          <div class="row bg-light" data-aos="fade-up" data-aos-duration="700">
             <div class="col-12 col-lg-6 order-2 order-lg-2 service-item">
               <h4>Software Development</h4>
               <p class="card-text text-muted">
@@ -50,7 +54,8 @@
               <img src="{% static 'img/web-dev.png' %}" alt="" loading="lazy" class="img-fluid" />
             </div>
           </div>
-          <div class="row bg-white aos-init aos-animate" data-aos="fade-right" data-aos-delay="200">
+
+          <div class="row bg-white" data-aos="fade-up" data-aos-duration="700">
             <div class="col-12 col-lg-6 order-2 order-lg-1 service-item">
               <h4>Process Optimization</h4>
               <p class="card-text text-muted">
@@ -62,7 +67,8 @@
               <img src="{% static 'img/optimization.png' %}" alt="" loading="lazy" class="img-fluid" />
             </div>
           </div>
-          <div class="row bg-white aos-init aos-animate" data-aos="fade-right" data-aos-delay="200">
+
+          <div class="row bg-white" data-aos="fade-up" data-aos-duration="700">
             <div class="col-12 col-lg-6 order-2 order-lg-1 service-item">
               <h4>Technical Support</h4>
               <p class="card-text text-muted">
@@ -78,16 +84,17 @@
       </div>
     </div>
   </section>
+
   <section class="why-choose-us">
     <div class="container">
       <div class="why-us">
-        <div class="section-heading">
+        <div class="section-heading" data-aos="fade-up" data-aos-duration="600">
           <h3>Why Choose Us</h3>
           <div class="section-line"></div>
         </div>
         <div class="page-services-content">
           <div class="row g-4">
-            <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+            <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="600">
               <div class="page-card">
                 <div class="page-card-img">
                   <img src="{% static 'svg/trusted.svg' %}" alt="" />
@@ -95,7 +102,7 @@
                 <div class="page-card-text">Experienced Professionals</div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="600">
               <div class="page-card">
                 <div class="page-card-img">
                   <img src="{% static 'svg/customer-focused.svg' %}" alt="" />
@@ -103,7 +110,7 @@
                 <div class="page-card-text">Customer Focused</div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="600">
               <div class="page-card">
                 <div class="page-card-img">
                   <img src="{% static 'svg/solutions.svg' %}" alt="" />
@@ -111,7 +118,7 @@
                 <div class="page-card-text">Flexible Solutions</div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400" data-aos-duration="600">
               <div class="page-card">
                 <div class="page-card-img">
                   <img src="{% static 'svg/quality.svg' %}" alt="" />
@@ -124,7 +131,8 @@
       </div>
     </div>
   </section>
-  <section class="partner page-partner-sect">
+
+  <section class="partner page-partner-sect" data-aos="zoom-in" data-aos-duration="800">
     <div class="container">
       <div class="cta-card">
         <h2 class="cta-title">Need a Custom Business Solution?</h2>
@@ -138,16 +146,16 @@
       </div>
     </div>
   </section>
+
   <section class="our-division-section">
     <div class="container">
       <div class="division-container">
-        <div class="section-heading">
+        <div class="section-heading" data-aos="fade-up" data-aos-duration="600">
           <h3 class="division-section-title">Our Divisions</h3>
           <div class="section-line"></div>
         </div>
         <div class="row g-4">
-
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
             <div class="division-card">
               <div class="icon-box">
                 <img src="{% static 'svg/cleaning.svg' %}" alt="cleaning-icon" />
@@ -164,7 +172,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="700">
             <div class="division-card">
               <div class="icon-box">
                 <img src="{% static 'svg/real-estate.svg' %}" alt="Property Icon" />
@@ -180,7 +188,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
             <div class="division-card">
               <div class="icon-box">
                 <img src="{% static 'svg/hostel.svg' %}" alt="Hostel Icon" />
