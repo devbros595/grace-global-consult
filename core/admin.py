@@ -1,5 +1,6 @@
 from django.contrib import admin
-from .models import NewsletterSubscriber, Booking, ContactMessage
+from .models import NewsletterSubscriber, Booking, ContactMessage, CleaningJobGallery
+from django.utils.html import format_html
 
 
 @admin.register(NewsletterSubscriber)
@@ -44,3 +45,24 @@ class BookingAdmin(admin.ModelAdmin):
     list_filter = ('check_in', 'check_out', 'created_at')
     search_fields = ('guests',)
     ordering = ('-created_at',)
+
+
+
+@admin.register(CleaningJobGallery)
+class CleaningJobGalleryAdmin(admin.ModelAdmin):
+    list_display = ('title', 'preview_image', 'created_at')
+    list_filter = ('created_at',)
+    search_fields = ('title', 'alt_text')
+    readonly_fields = ('preview_image_detail',)
+
+    def preview_image(self, obj):
+        if obj.image:
+            return format_html('<img src="{}" style="width: 60px; height: 45px; object-fit: cover; border-radius: 4px;" />', obj.image.url)
+        return "No Image"
+    preview_image.short_description = "Image Preview"
+
+    def preview_image_detail(self, obj):
+        if obj.image:
+            return format_html('<img src="{}" style="max-width: 300px; border-radius: 8px;" />', obj.image.url)
+        return "No Image"
+    preview_image_detail.short_description = "Current Image Preview"

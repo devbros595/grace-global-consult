@@ -12,7 +12,7 @@
         </p>
       </div>
       <div class="page-hero-cta">
-        <a href="{% url 'contact_us' %}" class="btn">Request a Service</a>
+        <a href="#contact-form-container" class="btn">Request a Service</a>
       </div>
     </div>
   </div>
@@ -45,9 +45,7 @@
                 </div>
                 <div class="contact-card-text">
                   <span>Email</span>
-                  <a href="mailto:info@gracegblobalconsultancy.co.uk"
-                    >info@gracegblobalconsultancy.co.uk</a
-                  >
+                  <a href="mailto:info@gracegblobalconsultancy.co.uk">info@gracegblobalconsultancy.co.uk</a>
                 </div>
               </div>
             </div>
@@ -79,72 +77,41 @@
             </div>
           </div>
         </div>
-        <div class="contact-form-container">
+        <div id="contact-form-container" class="contact-form-container">
           <div class="form-title">
             <img src="{% static 'svg/send.svg'%}" alt="send-icon" />
             <h5>Send Us a Message</h5>
+
           </div>
-          <form
-            id="contactForm"
-            action="{% url 'contact_us' %}"
-            method="POST"
-            class="contact-form"
-          >
+          <p>Reach out to book a service, request a quote or ask any question.</p>
+          <form id="contactForm" action="{% url 'contact_us' %}" method="POST" class="contact-form">
             {% csrf_token %}
 
             <div class="form-group">
-              <input
-                type="text"
-                name="name"
-                placeholder="Your Name"
-                required
-                class="form-control"
-              />
+              <input type="text" name="name" placeholder="Your Name" required class="form-control" />
             </div>
 
             <div class="form-group">
-              <input
-                type="email"
-                name="email"
-                placeholder="Email Address"
-                required
-                class="form-control"
-              />
+              <input type="email" name="email" placeholder="Email Address" required class="form-control" />
             </div>
 
             <div class="form-group">
-              <input
-                type="text"
-                name="subject"
-                placeholder="Subject"
-                required
-                class="form-control"
-              />
+              <input type="text" name="subject" placeholder="Subject" required class="form-control" />
             </div>
 
             <div class="form-group">
-              <textarea
-                name="message"
-                placeholder="Message"
-                rows="5"
-                required
-                class="form-control"
-              ></textarea>
+              <textarea name="message" placeholder="Message" rows="5" required class="form-control"></textarea>
             </div>
             <!-- RESPONSE BOX -->
-          <div id="formResponse"></div>
+            <div id="formResponse"></div>
 
             <button type="submit" class="btn-submit" id="submitBtn">
               <span id="btnText">Send Message</span>
-              <span
-                id="btnSpinner"
-                class="spinner"
-                style="display: none"
-              ></span>
+              <span id="btnSpinner" class="spinner" style="display: none"></span>
             </button>
           </form>
 
-           
+
         </div>
       </div>
     </div>
@@ -176,78 +143,78 @@
   </section>
 </div>
 <script>
-const form = document.getElementById("contactForm");
-const submitBtn = document.getElementById("submitBtn");
-const spinner = document.getElementById("btnSpinner");
-const btnText = document.getElementById("btnText");
-const responseBox = document.getElementById("formResponse");
+  const form = document.getElementById("contactForm");
+  const submitBtn = document.getElementById("submitBtn");
+  const spinner = document.getElementById("btnSpinner");
+  const btnText = document.getElementById("btnText");
+  const responseBox = document.getElementById("formResponse");
 
-let fadeTimer;
+  let fadeTimer;
 
-function showMessage(type, message) {
-  clearTimeout(fadeTimer);
+  function showMessage(type, message) {
+    clearTimeout(fadeTimer);
 
-  responseBox.className = type;
-  responseBox.innerText = message;
+    responseBox.className = type;
+    responseBox.innerText = message;
 
-  responseBox.style.display = "block";
+    responseBox.style.display = "block";
 
-  // force reflow for smooth animation reset
-  responseBox.style.opacity = "0";
-  responseBox.style.transform = "translateY(-10px)";
-
-  setTimeout(() => {
-    responseBox.style.opacity = "1";
-    responseBox.style.transform = "translateY(0)";
-  }, 10);
-
-  // auto fade after 4 seconds
-  fadeTimer = setTimeout(() => {
+    // force reflow for smooth animation reset
     responseBox.style.opacity = "0";
     responseBox.style.transform = "translateY(-10px)";
 
     setTimeout(() => {
-      responseBox.style.display = "none";
-    }, 600);
-  }, 4000);
-}
+      responseBox.style.opacity = "1";
+      responseBox.style.transform = "translateY(0)";
+    }, 10);
 
-form.addEventListener("submit", async function (e) {
-  e.preventDefault();
+    // auto fade after 4 seconds
+    fadeTimer = setTimeout(() => {
+      responseBox.style.opacity = "0";
+      responseBox.style.transform = "translateY(-10px)";
 
-  // loader
-  submitBtn.disabled = true;
-  spinner.style.display = "inline-block";
-  btnText.innerText = "Sending...";
-
-  try {
-    const formData = new FormData(form);
-
-    const response = await fetch(form.action, {
-      method: "POST",
-      body: formData,
-      headers: {
-        "X-Requested-With": "XMLHttpRequest"
-      }
-    });
-
-    const data = await response.json();
-
-    if (data.status === "success") {
-      showMessage("success", data.message);
-      form.reset();
-    } else {
-      showMessage("error", data.message);
-    }
-
-  } catch (error) {
-    showMessage("error", "Network error. Please try again.");
+      setTimeout(() => {
+        responseBox.style.display = "none";
+      }, 600);
+    }, 4000);
   }
 
-  // reset loader
-  submitBtn.disabled = false;
-  spinner.style.display = "none";
-  btnText.innerText = "Send Message";
-});
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    // loader
+    submitBtn.disabled = true;
+    spinner.style.display = "inline-block";
+    btnText.innerText = "Sending...";
+
+    try {
+      const formData = new FormData(form);
+
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+          "X-Requested-With": "XMLHttpRequest"
+        }
+      });
+
+      const data = await response.json();
+
+      if (data.status === "success") {
+        showMessage("success", data.message);
+        form.reset();
+      } else {
+        showMessage("error", data.message);
+      }
+
+    } catch (error) {
+      showMessage("error", "Network error. Please try again.");
+    }
+
+    // reset loader
+    submitBtn.disabled = false;
+    spinner.style.display = "none";
+    btnText.innerText = "Send Message";
+  });
 </script>
 {% endblock %}

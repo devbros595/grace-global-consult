@@ -37,9 +37,6 @@
                     <span>Group Hostels</span>
                     <p>Ideal for student groups and teams.</p>
                   </div>
-                  <div class="hostel-card-link">
-                    <a href="#">Learn More</a>
-                  </div>
                 </div>
               </div>
             </div>
@@ -52,9 +49,6 @@
                   <div class="hostel-card-text">
                     <span>Solo/Student Hostels</span>
                     <p>Perfect for independent travellers and students.</p>
-                  </div>
-                  <div class="hostel-card-link">
-                    <a href="#">Learn More</a>
                   </div>
                 </div>
               </div>
@@ -207,16 +201,66 @@
       </div>
     </div>
   </section>
-  <section class="newsletter d-block d-lg-none">
+
+  <section class="our-division-section">
     <div class="container">
-      <div class="newsletter-content">
-        <h3>Stay Updated</h3>
-        <span class="d-block d-md-none">Subscribe to our newsletter.</span>
-        <span class="d-none d-md-block">Subscribe to our newsletter for updates and offers.</span>
-        <form action="">
-          <input type="text" name="" id="" placeholder="Enter your email" />
-          <button class="btn" type="submit">Subscribe</button>
-        </form>
+      <div class="division-container">
+        <div class="section-heading">
+          <h3 class="division-section-title">Our Divisions</h3>
+          <div class="section-line"></div>
+        </div>
+        <div class="row g-4">
+          <div class="col-12 col-md-6">
+            <div class="division-card">
+              <div class="icon-box">
+                <img src="{% static 'svg/cleaning.svg' %}" alt="cleaning-icon" />
+              </div>
+              <div class="division-card-content">
+                <h4 class="division-card-title">General Cleaning</h4>
+                <p class="division-card-desc">
+                  Professional cleaning services for offices and commercial spaces,
+                  ensuring a spotless, hygienic, and well-maintained environment.
+                </p>
+                <a href="{% url 'cleaning_services' %}" class="division-card-link">
+                  Learn More <span class="arrow">&rarr;</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="division-card">
+              <div class="icon-box">
+                <img src="{% static 'svg/office-admin.svg' %}" alt="Property Icon" />
+              </div>
+              <div class="division-card-content">
+                <h4 class="division-card-title">Admin Support</h4>
+                <p class="division-card-desc">
+                  Efficient office administration and support services for smooth
+                  operations.
+                </p>
+                <a href="{% url 'property_services' %}" class="division-card-link">
+                  Learn More <span class="arrow">&rarr;</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="division-card">
+              <div class="icon-box">
+                <img src="{% static 'svg/property-services.svg' %}" alt="Hostel Icon" />
+              </div>
+              <div class="division-card-content">
+                <h4 class="division-card-title">Property Management</h4>
+                <p class="division-card-desc">
+                  Professional support for property owners and businesses.
+                </p>
+                <a href="{% url 'property_services' %}" class="division-card-link">
+                  Learn More <span class="arrow">&rarr;</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>

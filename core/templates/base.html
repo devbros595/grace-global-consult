@@ -38,6 +38,17 @@
 </head>
 
 <body>
+  <div id="loading-spinner"
+    class="position-fixed top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center bg-light"
+    style="z-index: 9999; transition: opacity 0.5s ease;">
+
+    <div class="spinner-custom-wrapper mb-3">
+      <img src="{% static 'img/grace-global-logo.jpeg' %}" alt="Loading..." class="pulse-animation" width="100"
+        height="auto" />
+    </div>
+
+    <span class="text-secondary fw-semibold tracking-wide">Loading...</span>
+  </div>
   <header>
     <nav class="navbar">
       <div class="navbar-pill">
@@ -77,10 +88,17 @@
           <ul>
             <li><a href="{% url 'index' %}">Home</a></li>
             <li><a href="{% url 'about' %}">About Us</a></li>
-            <li><a href="{% url 'hostels' %}">Hostels</a></li>
-            <li>
-              <a href="{% url 'property_services' %}">Property Services</a>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle">
+                Our Services
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="{% url 'cleaning_services' %}">Cleaning Services</a></li>
+                <li><a href="{% url 'admin_services' %}">Admin Services</a></li>
+                <li><a href="{% url 'property_services' %}">Property Management</a></li>
+              </ul>
             </li>
+            <li><a href="{% url 'hostels' %}">Hostels</a></li>
             <li><a href="{% url 'contact_us' %}">Contact Us</a></li>
             <li><a href="{% url 'book_now' %}">Book a Stay</a></li>
           </ul>
@@ -119,9 +137,6 @@
             <li><a href="{% url 'index' %}">Home</a></li>
             <li><a href="{% url 'about' %}">About Us</a></li>
             <li><a href="{% url 'hostels' %}">Hostels</a></li>
-            <li>
-              <a href="{% url 'property_services' %}">Property Services</a>
-            </li>
             <li><a href="{% url 'contact_us' %}">Contact Us</a></li>
             <li><a href="{% url 'book_now' %}">Book a Stay</a></li>
           </ul>
@@ -191,6 +206,20 @@
     document.querySelectorAll("nav a:not(.logo-link)").forEach((link) => {
       if (link.href === window.location.href) {
         link.classList.add("active");
+
+        // If the active link is inside a dropdown sub-menu, 
+        // we also make the parent toggle link highlight as active!
+        const parentDropdown = link.closest('.dropdown');
+        if (parentDropdown) {
+          const toggleButton = parentDropdown.querySelector('.dropdown-toggle');
+          if (toggleButton) {
+            toggleButton.classList.add('active');
+          }
+          // On mobile, keep the dropdown container automatically open if an item inside is active
+          if (window.innerWidth < 1023) {
+            parentDropdown.classList.add('open');
+          }
+        }
       }
     });
 
@@ -244,24 +273,38 @@
 
   </script>
   <script>
-    const counters = document.querySelectorAll(".counter");
+    // Wait for the entire page (HTML, images, stylesheets) to finish loading
+    window.addEventListener("load", () => {
 
-    counters.forEach((counter) => {
-      const updateCounter = () => {
-        const target = +counter.getAttribute("data-target");
-        const current = +counter.innerText;
+      // Start a 1-second (1000ms) timer AFTER the load event triggers
+      setTimeout(() => {
+        const spinner = document.getElementById("loading-spinner");
 
-        const increment = target / 100;
+        if (spinner) {
+          spinner.style.opacity = "0"; // Triggers the 0.4s CSS fade-out transition
 
-        if (current < target) {
-          counter.innerText = `${Math.ceil(current + increment)}`;
-          setTimeout(updateCounter, 20);
-        } else {
-          counter.innerText = target + "+";
+          // Remove the spinner from the DOM entirely after it finishes fading out
+          setTimeout(() => {
+            spinner.remove();
+          }, 400);
         }
-      };
+      }, 1000); // 1000 milliseconds = 1 second
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const dropdownToggle = document.querySelector('.dropdown-toggle');
+      const dropdownParent = document.querySelector('.dropdown');
 
-      updateCounter();
+      if (dropdownToggle && dropdownParent) {
+        dropdownToggle.addEventListener('click', function (e) {
+          // Only trigger the toggle behavior on mobile screens (< 1023px)
+          if (window.innerWidth < 1023) {
+            e.preventDefault(); // Stop the browser from navigating immediately
+            dropdownParent.classList.toggle('open'); // Toggle the 'open' class
+          }
+        });
+      }
     });
   </script>
 </body>

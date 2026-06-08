@@ -21,140 +21,271 @@ mysecureadmin
 
 
 {% extends "base.html" %} {% load static %} {% block title %}
-<title>Cleaning Services | Grace Global Consult</title>
+<title>Property Management | Grace Global Consult</title>
 {% endblock %} {% block content %}
-<!-- =========================
-OFFICE ADMIN & SOFTWARE SERVICES
-========================= -->
-
-<section class="services-hero py-5 bg-light">
+<section class="page-hero-property">
   <div class="container">
-    <div class="row align-items-center">
-
-      <!-- Text Content -->
-      <div class="col-lg-6 mb-4 mb-lg-0">
-        <h1 class="fw-bold">Office Administration & Digital Solutions</h1>
-        <p class="text-muted mt-3">
-          We combine professional administrative support with modern software development
-          to help businesses streamline operations, automate workflows, and scale efficiently.
+    <div class="page-hero-content">
+      <div class="page-hero-text">
+        <h1>
+          Modern Property<br />
+          Management
+        </h1>
+        <p>
+          Maximizing asset value, optimizing operations, and delivering premium tenant experiences.
         </p>
-
-        <div class="mt-4">
-          <a href="#services" class="btn btn-primary me-2">Explore Services</a>
-          <a href="#contact" class="btn btn-outline-primary">Get Consultation</a>
-        </div>
       </div>
-
-      <!-- Image Placeholder -->
-      <div class="col-lg-6 text-center">
-        <img src="/static/images/office-admin-hero.jpg"
-             class="img-fluid rounded shadow"
-             alt="Office Administration and Software Development">
+      <div class="page-hero-cta">
+        <a href="{% url 'contact_us' %}" class="btn">Request Management Consultation</a>
       </div>
-
     </div>
   </div>
 </section>
 
+<div class="sections pt-3 property-service">
+  <section class="page-services-section ">
+    <div class="container">
+      <div class="page-services">
+        <div class="section-heading">
+          <h3>Our Property Management Ecosystem</h3>
+          <div class="section-line"></div>
+        </div>
+        <div class="page-services-content">
+          
+          <!-- Service Item 1 -->
+          <div class="row bg-white aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
+            <div class="col-12 col-lg-6 order-2 order-lg-1 service-item">
+              <h4>Smart Facility Operations</h4>
+              <p>
+                We execute proactive facility oversight designed to preserve structural assets, eliminate system down-times, and manage resource overhead. From routine maintenance tracking and preventive inspections to 24/7 technical breakdown support, we ensure your residential and commercial environments operate seamlessly.
+              </p>
+              <a href="{% url 'contact_us' %}">Contact Us</a>
+            </div>
+            <div class="col-12 col-lg-6 order-1 order-lg-2 service-img">
+              <img src="{% static 'img/facility-operations.jpeg' %}" alt="Smart Facility Management" loading="lazy" class="img-fluid" />
+            </div>
+          </div>
 
-<!-- =========================
-SERVICES SECTION
-========================= -->
-<section id="services" class="py-5">
-  <div class="container">
+          <!-- Service Item 2 -->
+          <div class="row bg-light aos-init aos-animate" data-aos="fade-right" data-aos-delay="200">
+            <div class="col-12 col-lg-6 order-2 order-lg-2 service-item">
+              <h4>Tenancy & Lease Optimizations</h4>
+              <p>
+                Protecting your cashflow requires precision selection. Our process covers target marketing, rigorous tenant screening, professional contract placement, automated billing, and seamless dispute mediation. We foster high renewal rates through responsive communication, keeping vacancies remarkably low.
+              </p>
+              <a href="{% url 'contact_us' %}">Contact Us</a>
+            </div>
+            <div class="col-12 col-lg-6 order-1 order-lg-1 service-img">
+              <img src="{% static 'img/lease-management.jpeg' %}" alt="Tenancy Services" loading="lazy" class="img-fluid" />
+            </div>
+          </div>
 
-    <div class="text-center mb-5">
-      <h2 class="fw-bold">Our Services</h2>
-      <p class="text-muted">End-to-end administrative and technical support solutions</p>
+          <!-- Service Item 3 -->
+          <div class="row bg-white aos-init aos-animate" data-aos="fade-right" data-aos-delay="200">
+            <div class="col-12 col-lg-6 order-2 order-lg-1 service-item">
+              <h4>Asset Valuation & Preservation</h4>
+              <p>
+                Properties are high-value long-term financial investments. We provide portfolio-level oversight including routine financial audit reports, local compliance reporting, tax-allocation record keeping, and strategic capital expenditure recommendations to ensure your real estate values appreciate ahead of the local market.
+              </p>
+              <a href="{% url 'contact_us' %}">Contact Us</a>
+            </div>
+            <div class="col-12 col-lg-6 order-1 order-lg-2 service-img">
+              <img src="{% static 'img/asset-preservation.jpeg' %}" alt="Asset Growth and Preservation" loading="lazy" class="img-fluid" />
+            </div>
+          </div>
+
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="row g-4">
-
-      <!-- Admin Support -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card h-100 shadow-sm border-0">
-          <div class="card-body">
-            <div class="mb-3 text-primary">
-              <i class="fas fa-headset fa-2x"></i>
+  <!-- Why Choose Us Section -->
+  <section class="why-choose-us ">
+    <div class="container">
+      <div class="why-us">
+        <div class="section-heading">
+          <h3>Why Choose Us</h3>
+          <div class="section-line"></div>
+        </div>
+        <div class="page-services-content">
+          <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+              <div class="page-card">
+                <div class="page-card-img">
+                  <img src="{% static 'svg/trusted.svg' %}" alt="Reliable Delivery" />
+                </div>
+                <div class="page-card-text">Maximizing Yields</div>
+              </div>
             </div>
-            <h5 class="card-title">Administrative Support</h5>
-            <p class="card-text text-muted">
-              Virtual assistance, email handling, data entry, scheduling, and document management.
-            </p>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="page-card">
+                <div class="page-card-img">
+                  <img src="{% static 'svg/customer-focused.svg' %}" alt="Customer Focused" />
+                </div>
+                <div class="page-card-text">Transparent Records</div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="page-card">
+                <div class="page-card-img">
+                  <img src="{% static 'svg/solutions.svg' %}" alt="Flexible Solutions" />
+                </div>
+                <div class="page-card-text">Proactive Upkeep</div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="page-card">
+                <div class="page-card-img">
+                  <img src="{% static 'svg/quality.svg' %}" alt="Quality" />
+                </div>
+                <div class="page-card-text">Strict Compliance</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
-      <!-- Software Dev -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card h-100 shadow-sm border-0">
-          <div class="card-body">
-            <div class="mb-3 text-primary">
-              <i class="fas fa-code fa-2x"></i>
-            </div>
-            <h5 class="card-title">Software Development</h5>
-            <p class="card-text text-muted">
-              Web apps, business websites, CRM systems, APIs, and custom automation tools.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Process Optimization -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card h-100 shadow-sm border-0">
-          <div class="card-body">
-            <div class="mb-3 text-primary">
-              <i class="fas fa-cogs fa-2x"></i>
-            </div>
-            <h5 class="card-title">Process Optimization</h5>
-            <p class="card-text text-muted">
-              Workflow automation, digital transformation, and business efficiency improvements.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Technical Support -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card h-100 shadow-sm border-0">
-          <div class="card-body">
-            <div class="mb-3 text-primary">
-              <i class="fas fa-database fa-2x"></i>
-            </div>
-            <h5 class="card-title">Technical Support</h5>
-            <p class="card-text text-muted">
-              Database management, system maintenance, troubleshooting, and data structuring.
-            </p>
-          </div>
-        </div>
-      </div>
-
     </div>
-  </div>
-</section>
+  </section>
+  <hr />
 
+  <!-- Portfolio Management Gallery Section -->
+  <section class="property-gallery-section">
+    <div class="container">
+      <div class="section-heading">
+        <h3>Managed Portfolio Showcase</h3>
+        <div class="section-line"></div>
+      </div>
+      <div class="gallery-grid-wrapper mt-5">
+        <div class="row g-4">
+          <!-- Static / Seed Layout Examples -->
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="gallery-card">
+              <div class="gallery-img-box">
+                <img src="{% static 'img/portfolio-1.jpeg' %}" alt="Commercial Office Tower Managed Portfolio" loading="lazy" />
+              </div>
+              <div class="gallery-card-overlay">
+                <span>Corporate Complexes</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="gallery-card">
+              <div class="gallery-img-box">
+                <img src="{% static 'img/portfolio-2.jpeg' %}" alt="Modern Residential Complex Estate" loading="lazy" />
+              </div>
+              <div class="gallery-card-overlay">
+                <span>Residential Estates</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="gallery-card">
+              <div class="gallery-img-box">
+                <img src="{% static 'img/portfolio-3.jpeg' %}" alt="Retail Centers Properties" loading="lazy" />
+              </div>
+              <div class="gallery-card-overlay">
+                <span>Mixed-Use Hubs</span>
+              </div>
+            </div>
+          </div>
 
-<!-- =========================
-CALL TO ACTION
-========================= -->
-<section class="py-5 bg-primary text-white">
-  <div class="container text-center">
+          <!-- Dynamic Database Framework Hook Loop -->
+          {% if property_gallery_items %}
+            {% for item in property_gallery_items %}
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="gallery-card">
+                <div class="gallery-img-box">
+                  <img src="{{ item.image.url }}" alt="{{ item.alt_text }}" loading="lazy" />
+                </div>
+                <div class="gallery-card-overlay">
+                  <span>{{ item.title }}</span>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          {% endif %}
 
-    <h2 class="fw-bold">Need a Custom Business Solution?</h2>
-    <p class="mt-3 mb-4">
-      Let’s build an efficient administrative or software system tailored to your business needs.
-    </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <a href="#contact" class="btn btn-light btn-lg">
-      Contact Us Today
-    </a>
+  <!-- CTA Box Section -->
+  <section class="partner page-partner-sect">
+    <div class="container">
+      <div class="cta-card">
+        <h2 class="cta-title">Seeking Strategic Property Management?</h2>
+        <p class="cta-description">
+          Maximize the performance, returns, and valuation stability of your real estate investments with Grace Global Consult handles operations.
+        </p>
+        <div class="cta-buttons">
+          <a href="{% url 'contact_us' %}" class="btn btn-primary">Partner With Us</a>
+          <a href="{% url 'contact_us' %}" class="btn btn-secondary">Request Asset Evaluation</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  </div>
-</section>
+  <!-- Other App Divisions Navigation Router Section -->
+  <section class="our-division-section">
+    <div class="container">
+      <div class="division-container">
+        <div class="section-heading">
+          <h3 class="division-section-title">Our Divisions</h3>
+          <div class="section-line"></div>
+        </div>
+        <div class="row g-4">
+          <div class="col-12 col-md-6">
+            <div class="division-card">
+              <div class="icon-box">
+                <img src="{% static 'svg/trusted.svg' %}" alt="Cleaning Services Icon" />
+              </div>
+              <div class="division-card-content">
+                <h4 class="division-card-title">Professional Cleaning Services</h4>
+                <p class="division-card-desc">
+                  Expert facility housekeeping, deep disinfection solutions and general domestic hygiene operations.
+                </p>
+                <a href="{% url 'cleaning_services' %}" class="division-card-link">
+                  Learn More <span class="arrow">&rarr;</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="division-card">
+              <div class="icon-box">
+                <img src="{% static 'svg/office-admin.svg' %}" alt="Administration Support Icon" />
+              </div>
+              <div class="division-card-content">
+                <h4 class="division-card-title">Office Admin Support</h4>
+                <p class="division-card-desc">
+                  Efficient office administration and support services for smooth operations.
+                </p>
+                <a href="{% url 'admin_services' %}" class="division-card-link">
+                  Learn More <span class="arrow">&rarr;</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="division-card">
+              <div class="icon-box">
+                <img src="{% static 'svg/hostel.svg' %}" alt="Grace Hostels Icon" />
+              </div>
+              <div class="division-card-content">
+                <h4 class="division-card-title">Grace Hostels</h4>
+                <p class="division-card-desc">
+                  Affordable, clean, and welcoming accommodation designed for comfort and community.
+                </p>
+                <a href="{% url 'hostels' %}" class="division-card-link">
+                  Learn More <span class="arrow">&rarr;</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
 {% endblock %}
-
-
-
-
-   

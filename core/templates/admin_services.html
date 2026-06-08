@@ -26,95 +26,58 @@
           <div class="section-line"></div>
         </div>
         <div class="page-services-content">
-          <div
-            class="row bg-white aos-init aos-animate"
-            data-aos="fade-right"
-            data-aos-delay="100"
-          >
+          <div class="row bg-white aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
             <div class="col-12 col-lg-6 order-2 order-lg-1 service-item">
               <h4>Administrative Support</h4>
               <p class="card-text text-muted">
-              Virtual assistance, email handling, data entry, scheduling, and document management.
-            </p>
+                Virtual assistance, email handling, data entry, scheduling, and document management.
+              </p>
               <a href="{% url 'contact_us' %}">Contact Us</a>
             </div>
             <div class="col-12 col-lg-6 order-1 order-lg-2 service-img">
-              <img
-                src="{% static 'img/admin-lady.jpeg' %}"
-                alt=""
-                loading="lazy"
-                class="img-fluid"
-              />
+              <img src="{% static 'img/admin-lady.jpeg' %}" alt="" loading="lazy" class="img-fluid" />
             </div>
           </div>
-          <div
-            class="row bg-light aos-init aos-animate"
-            data-aos="fade-right"
-            data-aos-delay="200"
-          >
+          <div class="row bg-light aos-init aos-animate" data-aos="fade-right" data-aos-delay="200">
             <div class="col-12 col-lg-6 order-2 order-lg-2 service-item">
               <h4>Software Development</h4>
               <p class="card-text text-muted">
-              Web apps, business websites, CRM systems, APIs, and custom automation tools.
-            </p>
+                Web apps, business websites, CRM systems, APIs, and custom automation tools.
+              </p>
               <a href="{% url 'contact_us' %}">Contact Us</a>
             </div>
             <div class="col-12 col-lg-6 order-1 order-lg-1 service-img">
-              <img
-                src="{% static 'img/web-dev.png' %}"
-                alt=""
-                loading="lazy"
-                class="img-fluid"
-              />
+              <img src="{% static 'img/web-dev.png' %}" alt="" loading="lazy" class="img-fluid" />
             </div>
           </div>
-          <div
-            class="row bg-white aos-init aos-animate"
-            data-aos="fade-right"
-            data-aos-delay="200"
-          >
+          <div class="row bg-white aos-init aos-animate" data-aos="fade-right" data-aos-delay="200">
             <div class="col-12 col-lg-6 order-2 order-lg-1 service-item">
               <h4>Process Optimization</h4>
               <p class="card-text text-muted">
-              Workflow automation, digital transformation, and business efficiency improvements.
-            </p>
+                Workflow automation, digital transformation, and business efficiency improvements.
+              </p>
               <a href="{% url 'contact_us' %}">Contact Us</a>
             </div>
             <div class="col-12 col-lg-6 order-1 order-lg-2 service-img">
-              <img
-                src="{% static 'img/optimization.png' %}"
-                alt=""
-                loading="lazy"
-                class="img-fluid"
-              />
+              <img src="{% static 'img/optimization.png' %}" alt="" loading="lazy" class="img-fluid" />
             </div>
           </div>
-          <div
-            class="row bg-white aos-init aos-animate"
-            data-aos="fade-right"
-            data-aos-delay="200"
-          >
+          <div class="row bg-white aos-init aos-animate" data-aos="fade-right" data-aos-delay="200">
             <div class="col-12 col-lg-6 order-2 order-lg-1 service-item">
               <h4>Technical Support</h4>
               <p class="card-text text-muted">
-              Database management, system maintenance, troubleshooting, and data structuring.
-            </p>
+                Database management, system maintenance, troubleshooting, and data structuring.
+              </p>
               <a href="{% url 'contact_us' %}">Contact Us</a>
             </div>
             <div class="col-12 col-lg-6 order-1 order-lg-2 service-img">
-              <img
-                src="{% static 'img/db-management.png' %}"
-                alt=""
-                loading="lazy"
-                class="img-fluid"
-              />
+              <img src="{% static 'img/db_management.png' %}" alt="" loading="lazy" class="img-fluid" />
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <hr />
   <section class="why-choose-us">
     <div class="container">
       <div class="why-us">
@@ -175,7 +138,6 @@
       </div>
     </div>
   </section>
-
   <section class="our-division-section">
     <div class="container">
       <div class="division-container">
@@ -184,24 +146,19 @@
           <div class="section-line"></div>
         </div>
         <div class="row g-4">
+
           <div class="col-12 col-md-6">
             <div class="division-card">
               <div class="icon-box">
-                <img
-                  src="{% static 'svg/cleaning.svg' %}"
-                  alt="cleaning-icon"
-                />
+                <img src="{% static 'svg/cleaning.svg' %}" alt="cleaning-icon" />
               </div>
               <div class="division-card-content">
-                <h4 class="division-card-title">Cleaning Services</h4>
+                <h4 class="division-card-title">General Cleaning</h4>
                 <p class="division-card-desc">
-                  Professional cleaning solutions for residential and commercial
-                  buildings.
+                  Professional cleaning services for offices and commercial spaces,
+                  ensuring a spotless, hygienic, and well-maintained environment.
                 </p>
-                <a
-                  href="{% url 'cleaning_services' %}"
-                  class="division-card-link"
-                >
+                <a href="{% url 'cleaning_services' %}" class="division-card-link">
                   Learn More <span class="arrow">&rarr;</span>
                 </a>
               </div>
@@ -210,20 +167,14 @@
           <div class="col-12 col-md-6">
             <div class="division-card">
               <div class="icon-box">
-                <img
-                  src="{% static 'svg/real-estate.svg' %}"
-                  alt="Property Icon"
-                />
+                <img src="{% static 'svg/real-estate.svg' %}" alt="Property Icon" />
               </div>
               <div class="division-card-content">
                 <h4 class="division-card-title">Property Services</h4>
                 <p class="division-card-desc">
                   Professional support for property owners and businesses.
                 </p>
-                <a
-                  href="{% url 'property_services' %}"
-                  class="division-card-link"
-                >
+                <a href="{% url 'property_services' %}" class="division-card-link">
                   Learn More <span class="arrow">&rarr;</span>
                 </a>
               </div>
@@ -247,21 +198,6 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <section class="newsletter d-block d-lg-none">
-    <div class="container">
-      <div class="newsletter-content">
-        <h3>Stay Updated</h3>
-        <span class="d-block d-md-none">Subscribe to our newsletter.</span>
-        <span class="d-none d-md-block"
-          >Subscribe to our newsletter for updates and offers.</span
-        >
-        <form action="">
-          <input type="text" name="" id="" placeholder="Enter your email" />
-          <button class="btn" type="submit">Subscribe</button>
-        </form>
       </div>
     </div>
   </section>

@@ -3,10 +3,9 @@ from django.http import JsonResponse
 from django.views.decorators.http import require_POST
 from django.core.validators import validate_email
 from django.core.exceptions import ValidationError
-from .models import NewsletterSubscriber
 from django.contrib import messages
 import json
-from .models import Booking, ContactMessage
+from .models import Booking, ContactMessage, NewsletterSubscriber, CleaningJobGallery
 from django.views.decorators.csrf import csrf_exempt
 from .models import ContactMessage
 
@@ -24,36 +23,6 @@ def about_us_view(request):
     return render(request, "about_us.html")
 
 
-# def contact_us_view(request):
-#     if request.method == "POST":
-#         name = request.POST.get("name")
-#         company = request.POST.get("company")
-#         email = request.POST.get("work-email")
-#         phone_number = request.POST.get("phone-number")
-#         message = request.POST.get("message")
-
-#         try:
-#             Consult.objects.create(
-#                 name=name,
-#                 company=company,
-#                 email=email,
-#                 phone_number=phone_number,
-#                 message=message,
-#             )
-
-#             messages.success(
-#                 request,
-#                 "Your message was successfully sent, sit back our response is on it's way to you!",
-#             )
-#             next_url = request.POST.get("next", "/")
-
-#             return redirect(next_url)
-
-#         except Exception as e:
-#             messages.error(request, f"An error occurred: {e}")
-#             return redirect("index")
-
-#     return render(request, "contact_us.html")
 
 
 def property_services_view(request):
@@ -61,8 +30,13 @@ def property_services_view(request):
 
 
 def cleaning_services_view(request):
-    return render(request, "cleaning_service.html")
-
+    # Fetch all gallery items from the database
+    gallery_items = CleaningJobGallery.objects.all()
+    
+    context = {
+        'gallery_items': gallery_items
+    }
+    return render(request, 'cleaning_service.html', context)
 
 def admin_services_view(request):
     return render(request, "admin_services.html")

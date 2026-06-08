@@ -56,7 +56,7 @@ button[disabled] {
   padding: 2rem 0rem;
   color: #fff;
   overflow: hidden;
-  height: 100vh;
+  height: 80vh;
 }
 
 .page-hero-contact .container {
@@ -206,6 +206,11 @@ button[disabled] {
 .form-title img {
   width: 35px;
   height: 35px;
+}
+
+.contact-form-container p{
+  color: #0a8f3d;
+  font-weight: 500;
 }
 
 .contact-form {

@@ -7,7 +7,7 @@
   padding: 2rem 0rem;
   color: #fff;
   overflow: hidden;
-  height: 100vh;
+  height: 80vh;
 }
 
 .page-hero-property .container {
@@ -218,7 +218,7 @@
 }
 
 .our-division-section {
-  margin: 5rem 0;
+  margin: 5rem 0 1rem;
   padding: 0 1rem;
 }
 

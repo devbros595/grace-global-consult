@@ -5,16 +5,39 @@
   font-family: "Poppins";
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px; /* Adjust this value to match your header's actual layout height */
+}
+
 body {
   background: #0b1f3a;
 }
 
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 0.7;
+  }
+}
 
-  header {
-  position: fixed;        /* Changed to fixed so it stays stuck while scrolling */
+.pulse-animation {
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+header {
+  position: fixed; /* Changed to fixed so it stays stuck while scrolling */
   top: 0;
-  left: 0;                
-  width: 100%;              
+  left: 0;
+  width: 100%;
   z-index: 1050;
   padding-top: 15px;
   margin: 0;
@@ -32,7 +55,7 @@ body {
 }
 
 .navbar-pill {
-  background-color: #F8FAFC;
+  background-color: #f8fafc;
   padding: 0.5rem 1rem;
   display: flex;
   justify-content: space-between;
@@ -98,9 +121,10 @@ body {
 }
 
 .navbar-links a.active {
+  color: #0a8f3d;
   font-weight: 600;
- border-bottom: 2px solid #c48200;
-  padding-bottom: 1rem;
+  border-bottom: 2px solid #0a8f3d;
+  padding-bottom: 0.5rem;
 }
 
 .request-quote {
@@ -111,18 +135,6 @@ body {
   margin: auto;
   text-align: center;
   padding: 2rem;
-}
-
-.request-quote-mobile a {
-  background: transparent;
-  border: 2px solid #03134f;
-  padding: 0.7rem;
-  display: block;
-  border-radius: 0.3rem;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 500;
-  color: #03134f;
 }
 
 .overlay {
@@ -184,31 +196,6 @@ body {
   .navbar-links a.active {
     padding-bottom: 0.5rem;
   }
-
-  .request-quote {
-    display: block;
-  }
-
-  .request-quote-mobile {
-    display: none;
-  }
-
-  .request-quote a {
-    background: #03134f;
-    padding: 0.7rem;
-    border-radius: 0.3rem;
-    border: 1.5px solid #03134f;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 500;
-    color: #ffffff;
-    transition: all 0.3s ease-in-out;
-  }
-
-  .request-quote a:hover {
-    background: transparent;
-    color: #000;
-  }
 }
 
 footer {
@@ -226,7 +213,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #0ccb55;
+  color: #0a8f3d;
 }
 
 .footer-wrapper {
@@ -248,7 +235,7 @@ footer a:hover {
   list-style: none;
 }
 
-.footer-logo{
+.footer-logo {
   padding-right: 2px;
 }
 
@@ -277,7 +264,7 @@ footer a:hover {
   text-transform: capitalize;
 }
 
-.via-email a{
+.via-email a {
   font-size: 14px;
 }
 
@@ -332,6 +319,125 @@ footer hr {
 
   footer {
     padding: 5rem 2.5rem 3rem;
-  
+  }
+}
+/* ==========================================
+   MOBILE ACCORDION DROPDOWN (< 1023px)
+   ========================================== */
+@media (max-width: 1023px) {
+  .navbar-links ul li.dropdown {
+    position: static !important;
+    display: block;
+    width: 100%;
+  }
+
+  .navbar-links .dropdown-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  /* HIDDEN BY DEFAULT ON MOBILE */
+  .navbar-links .dropdown-menu {
+    display: none;
+    position: static !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    padding: 0.5rem !important;
+    margin: 1rem 0 0 0 !important;
+    width: 100%;
+    border: none !important;
+  }
+
+  .navbar-links .dropdown.open .dropdown-menu {
+    display: block;
+  }
+
+  .navbar-links .dropdown-menu li {
+    margin-bottom: 1.5rem !important;
+    padding-left: 0.5rem !important;
+  }
+
+  .navbar-links .dropdown-menu li a {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    color: #0b1f3a !important;
+    margin-top: 0 !important;
+    display: inline-block; /* Inline-block respects the border-bottom width precisely */
+    text-decoration: none;
+    border: none !important;
+    transition: all 0.2s ease;
+  }
+
+  /* Matches your global `.navbar-links a.active` style rules perfectly */
+  .navbar-links .dropdown-menu li a.active {
+    font-weight: 600 !important;
+    color: #0a8f3d !important;
+    border: none !important;
+    padding-bottom: 0.5rem !important;
+  }
+}
+
+/* ==========================================
+   DESKTOP FLOATING DROPDOWN (>= 1024px)
+   ========================================== */
+@media (min-width: 1024px) {
+  .navbar-links ul li.dropdown {
+    position: relative;
+  }
+
+  .navbar-links .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+    background-color: #f8fafc;
+    min-width: 220px;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    padding: 0.75rem 0;
+    margin-top: 0.5rem;
+    z-index: 1100;
+  }
+
+  .navbar-links .dropdown-menu li {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+
+  .navbar-links .dropdown-menu li a {
+    display: block;
+    padding: 0.6rem 1.2rem;
+    color: #0b1f3a !important;
+    font-size: 14px !important;
+    font-weight: 400;
+    white-space: nowrap;
+    border-bottom: none !important; /* Removes default flat underline on desktop panel */
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+
+  /* Active styling inside the desktop floating block layout */
+  .navbar-links .dropdown-menu li a.active {
+    font-weight: 600 !important;
+    color: #0a8f3d !important;
+    background-color: #f1f5f9;
+    border-bottom: none !important;
+    padding-bottom: 0.6rem !important;
+  }
+
+  .navbar-links .dropdown-menu li a:hover {
+    background-color: #e2e8f0;
+    color: #c48200 !important;
+  }
+
+  .navbar-links li.dropdown:hover .dropdown-menu {
+    display: block;
   }
 }

@@ -7,12 +7,13 @@
   padding: 2rem 0rem;
   color: #fff;
   overflow: hidden;
-  height: 100vh;
+  height: 80vh;
 }
 
 .page-hero-cleaning .container {
   position: relative;
   z-index: 2;
+  height: 100%;
 }
 
 .page-hero-cleaning::before {
@@ -24,13 +25,16 @@
 }
 
 .page-hero-cleaning .page-hero-content {
+  position: absolute;
+  bottom: 3rem;
+  left: 1rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 1rem;
   text-shadow: 0 2px 2px rgb(0, 0, 0);
   padding: 0;
-  margin: 15rem auto 0;
+  margin: 0;
 }
 
 .page-hero-text h1 {
@@ -203,6 +207,70 @@
   border-color: rgba(255, 255, 255, 0.8);
 }
 
+/* Gallery Container Constraints */
+.cleaning-gallery-section {
+  padding: 1rem 0;
+}
+
+.cleaning-gallery-section .section-heading{
+  text-align: center;
+}
+
+
+.gallery-card {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  background-color: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery-img-box {
+  width: 100%;
+  height: 260px; /* Standardizes all loaded images to matching heights */
+  overflow: hidden;
+}
+
+.gallery-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  transition: transform 0.5s ease;
+}
+
+.gallery-card-overlay {
+  position: absolute;
+  bottom: -50px; /* Kept hidden below the frame boundary initially */
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 12px 16px;
+  border-top: 2px solid var(--primary-color, #007bff); /* Falls back safely */
+  transition: bottom 0.3s ease;
+  text-align: center;
+}
+
+.gallery-card-overlay span {
+  font-weight: 500;
+  color: #0b1f3a;
+  font-size: 16px;
+}
+
+.gallery-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.gallery-card:hover .gallery-img-box img {
+  transform: scale(1.08);
+}
+
+.gallery-card:hover .gallery-card-overlay {
+  bottom: 0;
+}
+
 
 
 .our-division-section .section-heading {
@@ -251,7 +319,7 @@
 }
 
 .our-division-section {
-  margin: 5rem 0;
+  margin: 5rem 0 1rem;
   padding: 0 1rem;
 }
 
