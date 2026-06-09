@@ -28,26 +28,82 @@
           <div class="section-line"></div>
         </div>
         <div class="page-services-content">
-          <!-- Clean vertical fade-up to protect layout flow -->
-          <div class="row bg-white" data-aos="fade-up" data-aos-duration="700">
-            <div class="col-12 col-lg-6 order-2 order-lg-1 service-item">
-              <h4>Real Estate Management</h4>
-              <p class="card-text text-muted">
-                Professional property oversight, valuation support, portfolio
-                marketing, and strategic asset management to maximize return on
-                investment.
-              </p>
-              <a href="{% url 'contact_us' %}">Contact Us</a>
+          <!-- Main container row handling vertical gap spacing smoothly -->
+          <div class="row g-4">
+            
+            <!-- Service 1: Real Estate Management -->
+            <div class="col-12" data-aos="fade-up" data-aos-duration="700">
+              <div class="row bg-white align-items-center py-4 px-3 rounded-3 shadow-sm border-light">
+                <div class="col-12 col-lg-6 order-2 order-lg-1 service-item">
+                  <h4>Real Estate Management</h4>
+                  <p class="card-text text-muted">
+                    Professional property oversight, valuation support, portfolio
+                    marketing, and strategic asset management to maximize return
+                    on investment.
+                  </p>
+                  <a href="{% url 'contact_us' %}" class="service-link">Contact Us</a>
+                </div>
+                <div class="col-12 col-lg-6 order-1 order-lg-2 service-img mb-3 mb-lg-0">
+                  <img
+                    src="{% static 'img/real_management.png' %}"
+                    alt="Modern real estate architecture"
+                    loading="lazy"
+                    class="img-fluid rounded"
+                  />
+                </div>
+              </div>
             </div>
-            <div class="col-12 col-lg-6 order-1 order-lg-2 service-img">
-              <!-- Don't forget to update this src path if you downloaded one of the images from earlier! -->
-              <img
-                src="{% static 'img/real_management.png' %}"
-                alt="Modern real estate architecture"
-                loading="lazy"
-                class="img-fluid"
-              />
+
+            <!-- Service 2: Airbnb Accommodation -->
+            <div class="col-12" data-aos="fade-up" data-aos-duration="700">
+              <div class="row bg-light align-items-center py-4 px-3 rounded-3 shadow-sm border-light">
+                <div class="col-12 col-lg-6 order-2 order-lg-2 service-item">
+                  <h4>Airbnb Accommodation</h4>
+                  <p class="text-muted">
+                    Enjoy comfortable and fully furnished Airbnb accommodation
+                    tailored for short-term stays. Whether you're traveling for
+                    business, leisure, or a temporary relocation, we provide
+                    clean, secure, and conveniently located spaces designed to
+                    make you feel at home.
+                  </p>
+                  <a href="{% url 'contact_us' %}" class="service-link">Contact Us</a>
+                </div>
+                <div class="col-12 col-lg-6 order-1 order-lg-1 service-img mb-3 mb-lg-0">
+                  <img
+                    src="{% static 'img/airbnb.jpeg' %}"
+                    alt="Cozy Airbnb interior space"
+                    loading="lazy"
+                    class="img-fluid rounded"
+                  />
+                </div>
+              </div>
             </div>
+
+            <!-- Service 3: Rent to Rent -->
+            <div class="col-12" data-aos="fade-up" data-aos-duration="700">
+              <div class="row bg-white align-items-center py-4 px-3 rounded-3 shadow-sm border-light">
+                <div class="col-12 col-lg-6 order-2 order-lg-1 service-item">
+                  <h4>Rent to Rent</h4>
+                  <p class="text-muted">
+                    Partner with us through our rent-to-rent program and enjoy
+                    guaranteed, reliable rental income without the stress of
+                    managing tenants. We lease, maintain, and professionally
+                    manage your property while ensuring it remains well-presented
+                    and profitable.
+                  </p>
+                  <a href="{% url 'contact_us' %}" class="service-link">Contact Us</a>
+                </div>
+                <div class="col-12 col-lg-6 order-1 order-lg-2 service-img mb-3 mb-lg-0">
+                  <img
+                    src="{% static 'img/rent-to-rent.jpeg' %}"
+                    alt="Modern residential building setup"
+                    loading="lazy"
+                    class="img-fluid rounded"
+                  />
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>

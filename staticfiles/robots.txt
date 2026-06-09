@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /secured@myadmin/   # Keeps Google from trying to crawl your login page
+
+Sitemap: https://www.graceglobalconsultancy.co.uk/sitemap.xml
