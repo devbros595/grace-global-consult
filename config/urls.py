@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+import os
 
 handler404 = "core.views.custom_404_view"
 
@@ -27,5 +28,5 @@ urlpatterns = [
 ]
 
 # This serves uploaded media files during local development testing (DEBUG=True)
-if settings.DEBUG:
+if settings.DEBUG or os.environ.get("RENDER"):
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
