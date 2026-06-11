@@ -34,6 +34,21 @@ ALLOWED_HOSTS = [
     "www.graceglobalconsultancy.co.uk",
 ]
 
+# --- Security Settings for Production (Render) ---
+if not DEBUG:
+    # Tells Django to trust the secure HTTPS headers forwarded by Render's routing layers
+    SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
+
+    # Ensures authentication and security cookies are only sent over encrypted HTTPS
+    SESSION_COOKIE_SECURE = True
+    CSRF_COOKIE_SECURE = True
+
+    # Explicitly tells Django to trust requests coming from your live domains
+    CSRF_TRUSTED_ORIGINS = [
+        "https://graceglobalconsultancy.co.uk",
+        "https://www.graceglobalconsultancy.co.uk",
+    ]
+
 
 # Application definition
 
