@@ -2,7 +2,6 @@
 <title>About Us | Graceglobalconsult</title>
 {% endblock %} {% block content %}
 
-<!-- Hero Section left un-modified -->
 <section class="page-hero-about">
   <div class="container">
     <div class="page-hero-content">
@@ -21,7 +20,6 @@
 </section>
 
 <div class="sections">
-  <!-- Who We Are Content -->
   <section class="who-we-are">
     <div class="container">
       <div class="who-we-are-content" data-aos="fade-up" data-aos-duration="800">
@@ -43,7 +41,6 @@
   </section>
   <hr />
 
-  <!-- Core Values Block -->
   <section class="who-we-are core-value">
     <div class="container">
       <div class="who-we-are-content">
@@ -75,8 +72,8 @@
                 <div class="value-item-text">
                   <span>Excellence</span>
                   <p>
-                    We committed to delivering high-quality services and that
-                    exceeds expectations.
+                    We are committed to delivering high-quality services
+                    that exceed expectations.
                   </p>
                 </div>
               </div>
@@ -116,7 +113,6 @@
   </section>
   <hr />
 
-  <!-- Why Choose Us Grid -->
   <section class="why-choose-us">
     <div class="container">
       <div class="why-us">
@@ -149,7 +145,7 @@
                 <img src="{% static 'svg/solutions.svg' %}" alt="icon" />
                 <span>Flexible Solutions</span>
                 <p class="d-none d-lg-block">
-                  Tailored services that fits your unique needs.
+                  Tailored services that fit your unique needs.
                 </p>
               </div>
             </div>
@@ -168,13 +164,12 @@
     </div>
   </section>
 
-  <!-- Mobile Only Banner -->
   <section class="partner d-block d-md-none" data-aos="zoom-in" data-aos-duration="700">
     <div class="container">
       <div class="partner-banner">
         <div class="banner-header">Partner with us or stay with us today.</div>
         <div class="banner-description">
-          Let Grace Global Consult Limited take care of needs.
+          Let Grace Global Consult Limited take care of your needs.
         </div>
         <div class="banner-cta">
           <a class="btn cta-primary" href="{% url 'book_now' %}">Book a Stay</a>
@@ -184,89 +179,84 @@
     </div>
   </section>
 
-  <!-- Mid/Large Screen Divisions Layout -->
-<section class="our-division-section">
-  <div class="container">
-    <div class="division-container">
-      <div class="section-heading" data-aos="fade-up" data-aos-duration="600">
-        <h3 class="division-section-title">Our Divisions</h3>
-        <div class="section-line"></div>
-      </div>
-      <div class="row g-4">
-        <!-- Card 1 -->
-        <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
-          <div class="division-card">
-            <div class="icon-box">
-              <img src="{% static 'svg/cleaning.svg' %}" alt="cleaning-icon" />
-            </div>
-            <div class="division-card-content">
-              <h4 class="division-card-title">General Cleaning</h4>
-              <p class="division-card-desc">
-                Professional cleaning services for offices and commercial spaces,
-                ensuring a spotless, hygienic, and well-maintained environment.
-              </p>
-              <a href="{% url 'cleaning_services' %}" class="division-card-link">
-                Learn More <span class="arrow">&rarr;</span>
-              </a>
+  <section class="our-division-section">
+    <div class="container">
+      <div class="division-container">
+        <div class="section-heading" data-aos="fade-up" data-aos-duration="600">
+          <h3 class="division-section-title">Our Divisions</h3>
+          <div class="section-line"></div>
+        </div>
+        <div class="row g-4">
+          <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
+            <div class="division-card">
+              <div class="icon-box">
+                <img src="{% static 'svg/cleaning.svg' %}" alt="cleaning-icon" />
+              </div>
+              <div class="division-card-content">
+                <h4 class="division-card-title">General Cleaning</h4>
+                <p class="division-card-desc">
+                  Professional cleaning services for offices and commercial spaces,
+                  ensuring a spotless, hygienic, and well-maintained environment.
+                </p>
+                <a href="{% url 'cleaning_services' %}" class="division-card-link">
+                  Learn More <span class="arrow">&rarr;</span>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Card 2 -->
-        <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="700">
-          <div class="division-card">
-            <div class="icon-box">
-              <img src="{% static 'svg/real-estate.svg' %}" alt="Property Icon" />
-            </div>
-            <div class="division-card-content">
-              <h4 class="division-card-title">Property Services</h4>
-              <p class="division-card-desc">
-                Professional support for property owners and businesses.
-              </p>
-              <a href="{% url 'property_services' %}" class="division-card-link">
-                Learn More <span class="arrow">&rarr;</span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <!-- Card 3 -->
-        <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
-          <div class="division-card">
-            <div class="icon-box">
-              <img src="{% static 'svg/office-admin.svg' %}" alt="Property Icon" />
-            </div>
-            <div class="division-card-content">
-              <h4 class="division-card-title">Admin Support</h4>
-              <p class="division-card-desc">
-                Efficient office administration and support services for smooth
-                operations.
-              </p>
-              <a href="{% url 'admin_services' %}" class="division-card-link">
-                Learn More <span class="arrow">&rarr;</span>
-              </a>
+          <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="700">
+            <div class="division-card">
+              <div class="icon-box">
+                <img src="{% static 'svg/real-estate.svg' %}" alt="Property Icon" />
+              </div>
+              <div class="division-card-content">
+                <h4 class="division-card-title">Property Services</h4>
+                <p class="division-card-desc">
+                  Professional support for property owners and businesses.
+                </p>
+                <a href="{% url 'property_services' %}" class="division-card-link">
+                  Learn More <span class="arrow">&rarr;</span>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Card 4 -->
-        <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="700">
-          <div class="division-card">
-            <div class="icon-box">
-              <img src="{% static 'svg/hostel.svg' %}" alt="Hostel Icon" />
+          <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
+            <div class="division-card">
+              <div class="icon-box">
+                <img src="{% static 'svg/office-admin.svg' %}" alt="Property Icon" />
+              </div>
+              <div class="division-card-content">
+                <h4 class="division-card-title">Admin Support</h4>
+                <p class="division-card-desc">
+                  Efficient office administration and support services for smooth
+                  operations.
+                </p>
+                <a href="{% url 'admin_services' %}" class="division-card-link">
+                  Learn More <span class="arrow">&rarr;</span>
+                </a>
+              </div>
             </div>
-            <div class="division-card-content">
-              <h4 class="division-card-title">Grace Hostels</h4>
-              <p class="division-card-desc">
-                Affordable, clean, and welcoming accommodation designed for
-                comfort and community.
-              </p>
-              <a href="{% url 'hostels' %}" class="division-card-link">
-                Learn More <span class="arrow">&rarr;</span>
-              </a>
+          </div>
+          <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="700">
+            <div class="division-card">
+              <div class="icon-box">
+                <img src="{% static 'svg/hostel.svg' %}" alt="Hostel Icon" />
+              </div>
+              <div class="division-card-content">
+                <h4 class="division-card-title">Grace Hostels</h4>
+                <p class="division-card-desc">
+                  Affordable, clean, and welcoming accommodation designed for
+                  comfort and community.
+                </p>
+                <a href="{% url 'hostels' %}" class="division-card-link">
+                  Learn More <span class="arrow">&rarr;</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 </div>
 {% endblock %}

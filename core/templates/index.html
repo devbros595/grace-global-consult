@@ -7,16 +7,16 @@
     <div class="swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <img src="{% static 'img/hostel-1.jpeg' %}" alt="Hostel" />
+          <img src="{% static 'img/hostel-1.jpeg' %}" alt="Grace Hostels Living Space" />
         </div>
         <div class="swiper-slide">
-          <img src="{% static 'img/worker.jpg' %}" alt="property" />
+          <img src="{% static 'img/worker.jpg' %}" alt="Property Maintenance Specialist" />
         </div>
         <div class="swiper-slide">
-          <img src="{% static 'img/property.png' %}" alt="cleaning" />
+          <img src="{% static 'img/property.png' %}" alt="Commercial Real Estate" />
         </div>
         <div class="swiper-slide">
-          <img src="{% static 'img/janitors.png' %}" alt="cleaning" />
+          <img src="{% static 'img/janitors.png' %}" alt="Professional Cleaning Crew" />
         </div>
       </div>
 
@@ -28,105 +28,78 @@
         <h2>Hospitality & Property<br />Service Solutions</h2>
         <p>
           Quality accommodation and reliable property support services tailored
-          to your need
+          to your needs.
         </p>
       </div>
       <div class="cta-btns">
         <a class="btn cta-primary" href="{% url 'book_now' %}">Book a Stay</a>
-        <a class="btn cta-secondary" href="{% url 'contact_us' %}"
-          >Request a Service</a
-        >
+        <a class="btn cta-secondary" href="{% url 'contact_us' %}">Request a Service</a>
       </div>
     </div>
   </div>
 </section>
+
 <div class="sections pb-0">
   <section class="divisions">
     <div class="container">
       <div class="our-divisions">
-        <div
-          class="text-center section-heading"
-          data-aos="fade-up"
-          data-aos-duration="600"
-        >
+        <div class="text-center section-heading" data-aos="fade-up" data-aos-duration="600">
           <h3>Our Divisions</h3>
           <div class="section-line mx-auto"></div>
         </div>
         <div class="section-content">
           <div class="row g-4">
-            <div
-              class="col-12 col-md-6 d-flex"
-              data-aos="fade-up"
-              data-aos-duration="800"
-            >
+            <div class="col-12 col-md-6 d-flex" data-aos="fade-up" data-aos-duration="800">
               <div class="card w-100">
                 <div class="card-body">
                   <div class="card-content">
                     <div class="card-icon">
-                      <img src="{% static 'svg/cleaning.svg' %}" alt="icon" />
+                      <img src="{% static 'svg/cleaning.svg' %}" alt="Cleaning Services Icon" />
                     </div>
                     <div class="card-details">
                       <h5 class="card-title">Cleaning Services</h5>
                       <p class="card-description">
-                        Professional cleaning solutions for homes and
-                        businesses.
+                        Professional cleaning solutions for homes and businesses.
                       </p>
                       <ul class="d-none d-lg-block">
                         <li>
                           <i class="fa-solid fa-check-double"></i>
-                          <span>
-                            Residential and commercial cleaning services
-                          </span>
+                          <span>Residential and commercial cleaning services</span>
                         </li>
                         <li>
                           <i class="fa-solid fa-check-double"></i>
-                          <span> Flexible scheduling to fit your needs </span>
+                          <span>Flexible scheduling to fit your needs</span>
                         </li>
                         <li>
                           <i class="fa-solid fa-check-double"></i>
-                          <span>
-                            High-quality cleaning products and equipment
-                          </span>
+                          <span>High-quality cleaning products and equipment</span>
                         </li>
                       </ul>
-                      <a
-                        class="learn-more-btn"
-                        href="{% url 'cleaning_services' %}"
-                        >Learn More
-                        <i
-                          class="fa-solid fa-angles-right ms-2"
-                          style="color: #d4b401"
-                        ></i
-                      ></a>
+                      <a class="learn-more-btn" href="{% url 'cleaning_services' %}">
+                        Learn More <i class="fa-solid fa-angles-right ms-2" style="color: #d4b401"></i>
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div
-              class="col-12 col-md-6 d-flex"
-              data-aos="fade-up"
-              data-aos-delay="200"
-              data-aos-duration="800"
-            >
+
+            <div class="col-12 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
               <div class="card w-100">
                 <div class="card-body">
                   <div class="card-content">
                     <div class="card-icon">
-                      <img
-                        src="{% static 'svg/real-estate.svg' %}"
-                        alt="icon"
-                      />
+                      <img src="{% static 'svg/real-estate.svg' %}" alt="Property Services Icon" />
                     </div>
                     <div class="card-details">
                       <h5 class="card-title">Property Services</h5>
                       <p class="card-description">
-                        Professional support for property owners and business.
+                        Professional support for property owners and businesses.
                       </p>
                       <ul class="d-none d-lg-block">
                         <li>
                           <i class="fa-solid fa-check-double"></i>
-                          <span>Real esate management</span>
+                          <span>Real estate management</span>
                         </li>
                         <li>
                           <i class="fa-solid fa-check-double"></i>
@@ -137,86 +110,56 @@
                           <span>Office administrative support</span>
                         </li>
                       </ul>
-                      <a
-                        class="learn-more-btn"
-                        href="{% url 'property_services' %}"
-                        >Learn More
-                        <i
-                          class="fa-solid fa-angles-right ms-2"
-                          style="color: #d4b401"
-                        ></i
-                      ></a>
+                      <a class="learn-more-btn" href="{% url 'property_services' %}">
+                        Learn More <i class="fa-solid fa-angles-right ms-2" style="color: #d4b401"></i>
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div
-              class="col-12 col-md-6 d-flex"
-              data-aos="fade-up"
-              data-aos-duration="800"
-            >
+
+            <div class="col-12 col-md-6 d-flex" data-aos="fade-up" data-aos-duration="800">
               <div class="card w-100">
                 <div class="card-body">
                   <div class="card-content">
                     <div class="card-icon">
-                      <img
-                        src="{% static 'svg/office-admin.svg' %}"
-                        alt="icon"
-                      />
+                      <img src="{% static 'svg/office-admin.svg' %}" alt="Office Admin Support Icon" />
                     </div>
                     <div class="card-details">
-                      <h5 class="card-title">Office Admin Support</h5>
+                      <h5 class="card-title">Office Administrative Support</h5>
                       <p class="card-description">
-                        Reliable office support services for businesses of all
-                        sizes.
+                        Reliable office support services for businesses of all sizes.
                       </p>
                       <ul class="d-none d-lg-block">
                         <li>
                           <i class="fa-solid fa-check-double"></i>
-                          <span>
-                            Software and IT support for smooth operations.
-                          </span>
+                          <span>Software and IT support for smooth operations.</span>
                         </li>
                         <li>
                           <i class="fa-solid fa-check-double"></i>
-                          <span>
-                            Efficient document management and organization
-                          </span>
+                          <span>Efficient document management and organization</span>
                         </li>
                         <li>
                           <i class="fa-solid fa-check-double"></i>
-                          <span>
-                            Skilled administrative professionals to support your
-                            team
-                          </span>
+                          <span>Skilled administrative professionals to support your team</span>
                         </li>
                       </ul>
-                      <a
-                        class="learn-more-btn"
-                        href="{% url 'admin_services' %}"
-                        >Learn More
-                        <i
-                          class="fa-solid fa-angles-right ms-2"
-                          style="color: #d4b401"
-                        ></i
-                      ></a>
+                      <a class="learn-more-btn" href="{% url 'admin_services' %}">
+                        Learn More <i class="fa-solid fa-angles-right ms-2" style="color: #d4b401"></i>
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div
-              class="col-12 col-md-6 d-flex"
-              data-aos="fade-up"
-              data-aos-delay="200"
-              data-aos-duration="800"
-            >
+
+            <div class="col-12 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
               <div class="card w-100">
                 <div class="card-body">
                   <div class="card-content">
                     <div class="card-icon">
-                      <img src="{% static 'svg/hostel.svg' %}" alt="icon" />
+                      <img src="{% static 'svg/hostel.svg' %}" alt="Hostels Icon" />
                     </div>
                     <div class="card-details">
                       <h5 class="card-title">Hostels</h5>
@@ -224,8 +167,7 @@
                         Affordable, clean and welcoming youth accommodation.
                       </p>
                       <p class="card-description d-none d-lg-block">
-                        Affordable, clean and welcoming youth accommodation
-                        designed for comfort and community.
+                        Affordable, clean and welcoming youth accommodation designed for comfort and community.
                       </p>
                       <ul class="d-none d-lg-block">
                         <li>
@@ -241,13 +183,9 @@
                           <span>Ideal for travellers, students and groups</span>
                         </li>
                       </ul>
-                      <a class="learn-more-btn" href="{% url 'hostels' %}"
-                        >Learn More
-                        <i
-                          class="fa-solid fa-angles-right ms-2"
-                          style="color: #d4b401"
-                        ></i
-                      ></a>
+                      <a class="learn-more-btn" href="{% url 'hostels' %}">
+                        Learn More <i class="fa-solid fa-angles-right ms-2" style="color: #d4b401"></i>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -260,147 +198,89 @@
     </div>
   </section>
 
-  <!-- Counter/Stats Section: Staggered zoom-in effect -->
   <section class="company-stat d-none d-md-block">
     <div class="stat-container">
-      <div
-        class="stat-item"
-        data-aos="zoom-in"
-        data-aos-delay="100"
-        data-aos-duration="600"
-      >
+      <div class="stat-item" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="600">
         <div class="stat-icon">
           <i class="fa-solid fa-user-group fa-2xl" style="color: #d4b401"></i>
         </div>
         <div class="stat-num">
           <h3 class="counter" data-target="500">0</h3>
         </div>
-        <div class="stat-text">
-          <span>Happy Guests</span>
-        </div>
+        <div class="stat-text"><span>Happy Guests</span></div>
       </div>
 
-      <div
-        class="stat-item"
-        data-aos="zoom-in"
-        data-aos-delay="200"
-        data-aos-duration="600"
-      >
+      <div class="stat-item" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="600">
         <div class="stat-icon">
           <i class="fa-regular fa-building fa-2xl" style="color: #d4b401"></i>
         </div>
         <div class="stat-num">
           <h3 class="counter" data-target="20">0</h3>
         </div>
-        <div class="stat-text">
-          <span>Properties Managed</span>
-        </div>
+        <div class="stat-text"><span>Properties Managed</span></div>
       </div>
 
-      <div
-        class="stat-item"
-        data-aos="zoom-in"
-        data-aos-delay="300"
-        data-aos-duration="600"
-      >
+      <div class="stat-item" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="600">
         <div class="stat-icon">
-          <i
-            class="fa-regular fa-calendar-plus fa-2xl"
-            style="color: #d4b401"
-          ></i>
+          <i class="fa-regular fa-calendar-plus fa-2xl" style="color: #d4b401"></i>
         </div>
         <div class="stat-num">
           <h3 class="counter" data-target="10">0</h3>
         </div>
-        <div class="stat-text">
-          <span>Years Experience</span>
-        </div>
+        <div class="stat-text"><span>Years Experience</span></div>
       </div>
 
-      <div
-        class="stat-item"
-        data-aos="zoom-in"
-        data-aos-delay="400"
-        data-aos-duration="600"
-      >
+      <div class="stat-item" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="600">
         <div class="stat-icon">
           <i class="fa-solid fa-headset fa-2xl" style="color: #d4b401"></i>
         </div>
         <div class="stat-num">
           <h3>24/7</h3>
         </div>
-        <div class="stat-text">
-          <span>Customer Support</span>
-        </div>
+        <div class="stat-text"><span>Customer Support</span></div>
       </div>
     </div>
   </section>
 
-  <!-- What We Offer Section (Large Screens) -->
   <section class="what-we-offer d-none d-lg-block">
     <div class="why-us">
-      <div
-        class="text-center section-heading"
-        data-aos="fade-up"
-        data-aos-duration="600"
-      >
+      <div class="text-center section-heading" data-aos="fade-up" data-aos-duration="600">
         <h3>What We Offer</h3>
         <div class="section-line mx-auto"></div>
       </div>
       <div class="why-us-content">
-        <div
-          class="why-us-item"
-          data-aos="fade-up"
-          data-aos-delay="100"
-          data-aos-duration="600"
-        >
+        <div class="why-us-item" data-aos="fade-up" data-aos-delay="100" data-aos-duration="600">
           <div class="why-us-icon">
-            <img src="{% static 'svg/bed.svg' %}" alt="icon" />
+            <img src="{% static 'svg/bed.svg' %}" alt="Bedroom Icon" />
           </div>
-          <h5>Clean & Comfortable Room</h5>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <h5>Clean & Comfortable Rooms</h5>
+          <p>Thoughtfully configured living spaces designed tailored for rest.</p>
         </div>
-        <div
-          class="why-us-item"
-          data-aos="fade-up"
-          data-aos-delay="200"
-          data-aos-duration="600"
-        >
+        <div class="why-us-item" data-aos="fade-up" data-aos-delay="200" data-aos-duration="600">
           <div class="why-us-icon">
-            <img src="{% static 'svg/key.svg' %}" alt="icon" />
+            <img src="{% static 'svg/key.svg' %}" alt="Key Icon" />
           </div>
           <h5>Shared & Private Options</h5>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <p>Flexible room variations matching your operational or individual setup.</p>
         </div>
-        <div
-          class="why-us-item"
-          data-aos="fade-up"
-          data-aos-delay="300"
-          data-aos-duration="600"
-        >
+        <div class="why-us-item" data-aos="fade-up" data-aos-delay="300" data-aos-duration="600">
           <div class="why-us-icon">
-            <img src="{% static 'svg/secure-shield.svg' %}" alt="icon" />
+            <img src="{% static 'svg/secure-shield.svg' %}" alt="Secure Shield Icon" />
           </div>
           <h5>Secure Environment</h5>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <p>24/7 onsite round-the-clock monitoring for absolute safety.</p>
         </div>
-        <div
-          class="why-us-item"
-          data-aos="fade-up"
-          data-aos-delay="400"
-          data-aos-duration="600"
-        >
+        <div class="why-us-item" data-aos="fade-up" data-aos-delay="400" data-aos-duration="600">
           <div class="why-us-icon">
-            <img src="{% static 'svg/friendly.svg' %}" alt="icon" />
+            <img src="{% static 'svg/friendly.svg' %}" alt="Supportive Staff Icon" />
           </div>
           <h5>Friendly & Supportive Staff</h5>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <p>Our expert support team remains always on-call to assist your operations.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Side-by-Side Comparison Panels -->
   <section class="why-section">
     <div class="why-us-lg shadow" data-aos="fade-right" data-aos-duration="800">
       <h5>Why Choose Us?</h5>
@@ -423,115 +303,65 @@
             <span>Commitment to quality and efficiency</span>
           </li>
         </ul>
-        <img src="{% static 'svg/question.svg' %}" alt="" />
+        <img src="{% static 'svg/question.svg' %}" alt="Help Query Icon" />
       </div>
     </div>
     <div class="who-for shadow" data-aos="fade-left" data-aos-duration="800">
       <h5>Who It's For</h5>
       <div class="d-flex align-items-end justify-content-between">
         <ul>
-          <li>
-            <i class="fa-solid fa-check"></i>
-            <span>Students</span>
-          </li>
-          <li>
-            <i class="fa-solid fa-check"></i>
-            <span>Travelers</span>
-          </li>
-          <li>
-            <i class="fa-solid fa-check"></i>
-            <span>Backpackers</span>
-          </li>
-          <li>
-            <i class="fa-solid fa-check"></i>
-            <span>Groups</span>
-          </li>
+          <li><i class="fa-solid fa-check"></i><span>Students</span></li>
+          <li><i class="fa-solid fa-check"></i><span>Travelers</span></li>
+          <li><i class="fa-solid fa-check"></i><span>Backpackers</span></li>
+          <li><i class="fa-solid fa-check"></i><span>Groups</span></li>
         </ul>
-        <img src="{% static 'svg/users.svg' %}" alt="" />
+        <img src="{% static 'svg/users.svg' %}" alt="Target Audiences Icon" />
       </div>
     </div>
   </section>
 
-  <!-- Why Choose Us (Mid Screens) -->
   <section class="why-choose-us d-none d-md-block d-lg-none">
     <div class="why-us">
-      <div
-        class="text-center section-heading"
-        data-aos="fade-up"
-        data-aos-duration="600"
-      >
+      <div class="text-center section-heading" data-aos="fade-up" data-aos-duration="600">
         <h3>Why Choose Us</h3>
         <div class="section-line mx-auto"></div>
       </div>
       <div class="why-us-content">
-        <div
-          class="why-us-item"
-          data-aos="fade-up"
-          data-aos-delay="100"
-          data-aos-duration="600"
-        >
+        <div class="why-us-item" data-aos="fade-up" data-aos-delay="100" data-aos-duration="600">
           <div class="why-us-icon">
-            <img src="{% static 'svg/trusted.svg' %}" alt="icon" />
+            <img src="{% static 'svg/trusted.svg' %}" alt="Trusted Icon" />
           </div>
           <div class="why-us-item-title">Reliable & Professional</div>
-          <div class="why-us-item-text">
-            We deliver top notch services you can trust.
-          </div>
+          <div class="why-us-item-text">We deliver top notch services you can trust.</div>
         </div>
-        <div
-          class="why-us-item"
-          data-aos="fade-up"
-          data-aos-delay="200"
-          data-aos-duration="600"
-        >
+        <div class="why-us-item" data-aos="fade-up" data-aos-delay="200" data-aos-duration="600">
           <div class="why-us-icon">
-            <img src="{% static 'svg/customer-focused.svg' %}" alt="icon" />
+            <img src="{% static 'svg/customer-focused.svg' %}" alt="Customer Focused Icon" />
           </div>
           <div class="why-us-item-title">Customer Focused</div>
-          <div class="why-us-item-text">
-            We put our clients and guests first in everyting we do.
-          </div>
+          <div class="why-us-item-text">We put our clients and guests first in everything we do.</div>
         </div>
-        <div
-          class="why-us-item"
-          data-aos="fade-up"
-          data-aos-delay="300"
-          data-aos-duration="600"
-        >
+        <div class="why-us-item" data-aos="fade-up" data-aos-delay="300" data-aos-duration="600">
           <div class="why-us-icon">
-            <img src="{% static 'svg/solutions.svg' %}" alt="icon" />
+            <img src="{% static 'svg/solutions.svg' %}" alt="Solutions Icon" />
           </div>
           <div class="why-us-item-title">Flexible Solutions</div>
-          <div class="why-us-item-text">
-            Tailored services that fit your unique needs.
-          </div>
+          <div class="why-us-item-text">Tailored services that fit your unique needs.</div>
         </div>
-        <div
-          class="why-us-item"
-          data-aos="fade-up"
-          data-aos-delay="400"
-          data-aos-duration="600"
-        >
+        <div class="why-us-item" data-aos="fade-up" data-aos-delay="400" data-aos-duration="600">
           <div class="why-us-icon">
-            <img src="{% static 'svg/quality.svg' %}" alt="icon" />
+            <img src="{% static 'svg/quality.svg' %}" alt="Quality Icon" />
           </div>
           <div class="why-us-item-title">Quality & Efficiency</div>
-          <div class="why-us-item-text">
-            We are committed to excellence in every detail.
-          </div>
+          <div class="why-us-item-text">We are committed to excellence in every detail.</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Why Choose Us (Mobile Layout) -->
   <section class="why-choose-us d-block d-md-none">
     <div class="why-us">
-      <div
-        class="text-center section-heading"
-        data-aos="fade-up"
-        data-aos-duration="600"
-      >
+      <div class="text-center section-heading" data-aos="fade-up" data-aos-duration="600">
         <h3>Why Choose Us</h3>
         <div class="section-line mx-auto"></div>
       </div>
@@ -539,17 +369,15 @@
         <div class="card" data-aos="fade-up" data-aos-delay="100">
           <div class="card-content">
             <div class="card-icon">
-              <img src="{% static 'svg/trusted.svg' %}" alt="icon" />
+              <img src="{% static 'svg/trusted.svg' %}" alt="Trusted Icon" />
             </div>
-            <div class="card-title">
-              <span>Reliable & Professional</span>
-            </div>
+            <div class="card-title"><span>Reliable & Professional</span></div>
           </div>
         </div>
         <div class="card" data-aos="fade-up" data-aos-delay="200">
           <div class="card-content">
             <div class="card-icon">
-              <img src="{% static 'svg/customer-focused.svg' %}" alt="icon" />
+              <img src="{% static 'svg/customer-focused.svg' %}" alt="Customer Focused Icon" />
             </div>
             <div class="card-title">Customer Focused</div>
           </div>
@@ -557,512 +385,181 @@
         <div class="card" data-aos="fade-up" data-aos-delay="300">
           <div class="card-content">
             <div class="card-icon">
-              <img src="{% static 'svg/solutions.svg' %}" alt="icon" />
+              <img src="{% static 'svg/solutions.svg' %}" alt="Solutions Icon" />
             </div>
             <div class="card-title">Flexible Solutions</div>
           </div>
         </div>
         <div class="card" data-aos="fade-up" data-aos-delay="400">
           <div class="card-content">
-            <img src="{% static 'svg/quality.svg' %}" alt="icon" />
-            <div class="card-title">
-              <span>Quality & Efficiency</span>
+            <div class="card-icon">
+              <img src="{% static 'svg/quality.svg' %}" alt="Quality Icon" />
             </div>
+            <div class="card-title"><span>Quality & Efficiency</span></div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Partner Banner (Mobile) -->
-  <section
-    class="partner d-block d-md-none"
-    data-aos="zoom-in"
-    data-aos-duration="800"
-  >
+  <section class="partner d-block d-md-none" data-aos="zoom-in" data-aos-duration="800">
     <div class="container">
       <div class="partner-banner">
         <div class="banner-header">Partner with us or stay with us today.</div>
-        <div class="banner-description">
-          Let Grace Global Consult Limited take care of needs.
-        </div>
+        <div class="banner-description">Let Grace Global Consult Limited take care of your needs.</div>
         <div class="banner-cta">
           <a class="btn cta-primary" href="{% url 'book_now' %}">Book a Stay</a>
-          <a class="btn cta-secondary" href="{% url 'contact_us' %}"
-            >Request a Service</a
-          >
+          <a class="btn cta-secondary" href="{% url 'contact_us' %}">Request a Service</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Featured Hostels Section -->
   <section class="featured-hostels">
     <div class="container">
-      <div
-        class="text-center section-heading"
-        data-aos="fade-up"
-        data-aos-duration="600"
-      >
+      <div class="text-center section-heading" data-aos="fade-up" data-aos-duration="600">
         <h3>Featured Hostels</h3>
         <div class="section-line mx-auto"></div>
       </div>
-      <div
-        class="hostel-scroll d-flex align-items-center justify-content-start gap-4"
-      >
-        <div
-          class="hostel-card"
-          data-aos="fade-up"
-          data-aos-delay="100"
-          data-aos-duration="600"
-        >
-          <img src="{% static 'img/hostel-1.jpeg' %}" alt="" />
+      <div class="hostel-scroll d-flex align-items-center justify-content-start gap-4">
+        <div class="hostel-card" data-aos="fade-up" data-aos-delay="100" data-aos-duration="600">
+          <img src="{% static 'img/hostel-1.jpeg' %}" alt="Grace Hostel 1 Preview" />
           <h6 class="mt-2">Grace Hostel 1</h6>
         </div>
-
-        <div
-          class="hostel-card"
-          data-aos="fade-up"
-          data-aos-delay="200"
-          data-aos-duration="600"
-        >
-          <img src="{% static 'img/hostel-2.jpeg' %}" alt="" />
+        <div class="hostel-card" data-aos="fade-up" data-aos-delay="200" data-aos-duration="600">
+          <img src="{% static 'img/hostel-2.jpeg' %}" alt="Grace Hostel 2 Preview" />
           <h6 class="mt-2">Grace Hostel 2</h6>
         </div>
-
-        <div
-          class="hostel-card"
-          data-aos="fade-up"
-          data-aos-delay="300"
-          data-aos-duration="600"
-        >
-          <img src="{% static 'img/hostel-3.jpeg' %}" alt="" />
+        <div class="hostel-card" data-aos="fade-up" data-aos-delay="300" data-aos-duration="600">
+          <img src="{% static 'img/hostel-3.jpeg' %}" alt="Grace Hostel 3 Preview" />
           <h6 class="mt-2">Grace Hostel 3</h6>
         </div>
-        <div
-          class="hostel-card"
-          data-aos="fade-up"
-          data-aos-delay="400"
-          data-aos-duration="600"
-        >
-          <img src="{% static 'img/hostel-4.jpeg' %}" alt="" />
+        <div class="hostel-card" data-aos="fade-up" data-aos-delay="400" data-aos-duration="600">
+          <img src="{% static 'img/hostel-4.jpeg' %}" alt="Grace Hostel 4 Preview" />
           <h6 class="mt-2">Grace Hostel 4</h6>
         </div>
         <div class="hostel-card link d-block d-md-none">
-          <a href="{% url 'hostels' %}"
-            >View All
-            <i class="fa-solid fa-angles-right ms-2" style="color: #d4b401"></i
-          ></a>
+          <a href="{% url 'hostels' %}">
+            View All <i class="fa-solid fa-angles-right ms-2" style="color: #d4b401"></i>
+          </a>
         </div>
       </div>
       <div class="d-none d-md-block" data-aos="fade-up" data-aos-duration="600">
-        <a href="{% url 'hostels' %}"
-          >View All
-          <i class="fa-solid fa-angles-right ms-2" style="color: #d4b401"></i
-        ></a>
+        <a href="{% url 'hostels' %}">
+          View All <i class="fa-solid fa-angles-right ms-2" style="color: #d4b401"></i>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- Testimonials Section (Mobile/Mid Screen Carousel) -->
-  <section
-    class="testimonials d-block d-lg-none"
-    data-aos="fade-up"
-    data-aos-duration="800"
-  >
+  <section class="testimonials d-block d-lg-none" data-aos="fade-up" data-aos-duration="800">
     <div class="container">
       <div class="text-center section-heading">
         <h4>What Our Clients Say</h4>
       </div>
-      <div
-        id="testimonialCarousel"
-        class="carousel slide"
-        data-bs-ride="carousel"
-        data-bs-interval="5000"
-      >
-        <!-- Slides -->
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
         <div class="carousel-inner shadow">
-          <!-- Review 1: Property / Rent-to-Rent -->
           <div class="carousel-item active">
             <div class="testimonial-card">
-              <div class="quote-icon">
-                <i class="fa-solid fa-quote-left" style="color: #ccc"></i>
-              </div>
+              <div class="quote-icon"><i class="fa-solid fa-quote-left" style="color: #ccc"></i></div>
               <p>
-                Partnering with Grace Global on their rent-to-rent scheme has
-                been amazing. My property is beautifully maintained, and my
-                rental income is completely guaranteed every month without any
-                tenant stress.
+                Partnering with Grace Global on their rent-to-rent scheme has been amazing. My property is beautifully 
+                maintained, and my rental income is completely guaranteed every month without any tenant stress.
               </p>
-              <div class="text-end quote-icon">
-                <i class="fa-solid fa-quote-right" style="color: #ccc"></i>
-              </div>
+              <div class="text-end quote-icon"><i class="fa-solid fa-quote-right" style="color: #ccc"></i></div>
               <h6>— David K., Property Owner</h6>
             </div>
           </div>
-
-          <!-- Review 2: Corporate / General Cleaning -->
           <div class="carousel-item">
             <div class="testimonial-card">
-              <div class="quote-icon">
-                <i class="fa-solid fa-quote-left" style="color: #ccc"></i>
-              </div>
+              <div class="quote-icon"><i class="fa-solid fa-quote-left" style="color: #ccc"></i></div>
               <p>
-                Highly efficient and thorough cleaning team! They handle our
-                entire commercial space with great attention to detail.
-                Exceptional customer service and flexible solutions whenever we
-                need short-notice support.
+                Highly efficient and thorough cleaning team! They handle our entire commercial space with great attention 
+                to detail. Exceptional customer service and flexible solutions whenever we need short-notice support.
               </p>
-              <div class="text-end quote-icon">
-                <i class="fa-solid fa-quote-right" style="color: #ccc"></i>
-              </div>
+              <div class="text-end quote-icon"><i class="fa-solid fa-quote-right" style="color: #ccc"></i></div>
               <h6>— Sarah M., Operations Director</h6>
             </div>
           </div>
-
-          <!-- Review 3: Accommodation / Hostels -->
           <div class="carousel-item">
             <div class="testimonial-card">
-              <div class="quote-icon">
-                <i class="fa-solid fa-quote-left" style="color: #ccc"></i>
-              </div>
+              <div class="quote-icon"><i class="fa-solid fa-quote-left" style="color: #ccc"></i></div>
               <p>
-                Finding clean and affordable student housing was a challenge
-                until I contacted them. The hostel facilities are secure,
-                modern, and perfectly set up for a warm community environment.
-                Highly recommended!
+                Finding clean and affordable student housing was a challenge until I contacted them. The hostel facilities 
+                are secure, modern, and perfectly set up for a warm community environment. Highly recommended!
               </p>
-              <div class="text-end quote-icon">
-                <i class="fa-solid fa-quote-right" style="color: #ccc"></i>
-              </div>
+              <div class="text-end quote-icon"><i class="fa-solid fa-quote-right" style="color: #ccc"></i></div>
               <h6>— Samuel O., Grace Hostels Resident</h6>
             </div>
           </div>
         </div>
-
-        <!-- Indicators -->
         <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#testimonialCarousel"
-            data-bs-slide-to="0"
-            class="active"
-          ></button>
-
-          <button
-            type="button"
-            data-bs-target="#testimonialCarousel"
-            data-bs-slide-to="1"
-          ></button>
-
-          <button
-            type="button"
-            data-bs-target="#testimonialCarousel"
-            data-bs-slide-to="2"
-          ></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"></button>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Testimonials Section (Large Screen Grid Carousel) -->
-  <section
-    class="testimonials d-none d-lg-block"
-    data-aos="fade-up"
-    data-aos-duration="800"
-  >
+  <section class="testimonials d-none d-lg-block" data-aos="fade-up" data-aos-duration="800">
     <div class="container">
       <div class="text-center section-heading">
         <h3>What Our Clients Say</h3>
       </div>
-      <div
-        id="testimonialCarousel"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <!-- Slides -->
+      <div id="testimonialCarouselLg" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
         <div class="carousel-inner">
-          <div class="carousel-item active gap-3">
+          <div class="carousel-item active">
             <div class="d-flex gap-3">
               <div class="testimonial-card">
-                <div class="quote-icon">
-                  <i class="fa-solid fa-quote-left" style="color: #ccc"></i>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Praesent libero.
-                </p>
-                <div class="text-end quote-icon">
-                  <i class="fa-solid fa-quote-right" style="color: #ccc"></i>
-                </div>
-                <h6>— Client Name</h6>
+                <div class="quote-icon"><i class="fa-solid fa-quote-left" style="color: #ccc"></i></div>
+                <p>Partnering with Grace Global on their rent-to-rent scheme has been amazing. My property is beautifully maintained.</p>
+                <div class="text-end quote-icon"><i class="fa-solid fa-quote-right" style="color: #ccc"></i></div>
+                <h6>— David K., Property Owner</h6>
               </div>
               <div class="testimonial-card">
-                <div class="quote-icon">
-                  <i class="fa-solid fa-quote-left" style="color: #ccc"></i>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Praesent libero.
-                </p>
-                <div class="text-end quote-icon">
-                  <i class="fa-solid fa-quote-right" style="color: #ccc"></i>
-                </div>
-                <h6>— Client Name</h6>
+                <div class="quote-icon"><i class="fa-solid fa-quote-left" style="color: #ccc"></i></div>
+                <p>Highly efficient and thorough cleaning team! They handle our entire commercial space with great attention to detail.</p>
+                <div class="text-end quote-icon"><i class="fa-solid fa-quote-right" style="color: #ccc"></i></div>
+                <h6>— Sarah M., Operations Director</h6>
               </div>
               <div class="testimonial-card">
-                <div class="quote-icon">
-                  <i class="fa-solid fa-quote-left" style="color: #ccc"></i>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Praesent libero.
-                </p>
-                <div class="text-end quote-icon">
-                  <i class="fa-solid fa-quote-right" style="color: #ccc"></i>
-                </div>
-                <h6>— Client Name</h6>
+                <div class="quote-icon"><i class="fa-solid fa-quote-left" style="color: #ccc"></i></div>
+                <p>Finding clean and affordable student housing was easy here. The hostel facilities are secure and modern.</p>
+                <div class="text-end quote-icon"><i class="fa-solid fa-quote-right" style="color: #ccc"></i></div>
+                <h6>— Samuel O., Hostels Resident</h6>
               </div>
             </div>
           </div>
-          <div class="carousel-item gap-3">
+          <div class="carousel-item">
             <div class="d-flex gap-3">
               <div class="testimonial-card">
-                <div class="quote-icon">
-                  <i class="fa-solid fa-quote-left" style="color: #ccc"></i>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Praesent libero.
-                </p>
-                <div class="text-end quote-icon">
-                  <i class="fa-solid fa-quote-right" style="color: #ccc"></i>
-                </div>
-                <h6>— Client Name</h6>
+                <div class="quote-icon"><i class="fa-solid fa-quote-left" style="color: #ccc"></i></div>
+                <p>Excellent communication and unparalleled professionalism from start to finish. Highly recommended service!</p>
+                <div class="text-end quote-icon"><i class="fa-solid fa-quote-right" style="color: #ccc"></i></div>
+                <h6>— James L., Business Owner</h6>
               </div>
               <div class="testimonial-card">
-                <div class="quote-icon">
-                  <i class="fa-solid fa-quote-left" style="color: #ccc"></i>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Praesent libero.
-                </p>
-                <div class="text-end quote-icon">
-                  <i class="fa-solid fa-quote-right" style="color: #ccc"></i>
-                </div>
-                <h6>— Client Name</h6>
+                <div class="quote-icon"><i class="fa-solid fa-quote-left" style="color: #ccc"></i></div>
+                <p>Their admin support division streamlined our entire file management system seamlessly over a single weekend.</p>
+                <div class="text-end quote-icon"><i class="fa-solid fa-quote-right" style="color: #ccc"></i></div>
+                <h6>— Elena R., Office Manager</h6>
               </div>
               <div class="testimonial-card">
-                <div class="quote-icon">
-                  <i class="fa-solid fa-quote-left" style="color: #ccc"></i>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Praesent libero.
-                </p>
-                <div class="text-end quote-icon">
-                  <i class="fa-solid fa-quote-right" style="color: #ccc"></i>
-                </div>
-                <h6>— Client Name</h6>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item gap-3">
-            <div class="d-flex gap-3">
-              <div class="testimonial-card">
-                <div class="quote-icon">
-                  <i class="fa-solid fa-quote-left" style="color: #ccc"></i>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Praesent libero.
-                </p>
-                <div class="text-end quote-icon">
-                  <i class="fa-solid fa-quote-right" style="color: #ccc"></i>
-                </div>
-                <h6>— Client Name</h6>
-              </div>
-              <div class="testimonial-card">
-                <div class="quote-icon">
-                  <i class="fa-solid fa-quote-left" style="color: #ccc"></i>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Praesent libero.
-                </p>
-                <div class="text-end quote-icon">
-                  <i class="fa-solid fa-quote-right" style="color: #ccc"></i>
-                </div>
-                <h6>— Client Name</h6>
-              </div>
-              <div class="testimonial-card">
-                <div class="quote-icon">
-                  <i class="fa-solid fa-quote-left" style="color: #ccc"></i>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Praesent libero.
-                </p>
-                <div class="text-end quote-icon">
-                  <i class="fa-solid fa-quote-right" style="color: #ccc"></i>
-                </div>
-                <h6>— Client Name</h6>
+                <div class="quote-icon"><i class="fa-solid fa-quote-left" style="color: #ccc"></i></div>
+                <p>Prompt, helpful, and dependable. They really understand how to manage facilities with care.</p>
+                <div class="text-end quote-icon"><i class="fa-solid fa-quote-right" style="color: #ccc"></i></div>
+                <h6>— Marcus T., Investor</h6>
               </div>
             </div>
           </div>
         </div>
-        <!-- Indicators -->
         <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#testimonialCarousel"
-            data-bs-slide-to="0"
-            class="active"
-          ></button>
-
-          <button
-            type="button"
-            data-bs-target="#testimonialCarousel"
-            data-bs-slide-to="1"
-          ></button>
-
-          <button
-            type="button"
-            data-bs-target="#testimonialCarousel"
-            data-bs-slide-to="2"
-          ></button>
+          <button type="button" data-bs-target="#testimonialCarouselLg" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#testimonialCarouselLg" data-bs-slide-to="1"></button>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Mini Hero Banners -->
-  <section
-    class="d-none d-md-block d-lg-none mini-hero"
-    data-aos="zoom-in"
-    data-aos-duration="800"
-  >
-    <div class="container">
-      <div class="mini-hero-content">
-        <div class="hero-header">
-          Book your stay or request our services today.
-        </div>
-        <div class="hero-description">
-          We are here to make your experience exceptional and hassle free.
-        </div>
-        <div class="banner-cta">
-          <a class="btn cta-primary" href="#">Book a Stay</a>
-          <a class="btn cta-secondary" href="#">Request a Service</a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section
-    class="d-none d-lg-block mini-hero-lg"
-    data-aos="zoom-in"
-    data-aos-duration="800"
-  >
-    <div class="container">
-      <div class="mini-hero-content">
-        <img src="{% static 'svg/care.svg' %}" alt="icon" />
-        <h4>
-          Let us handle your property and<br />
-          operational needs while you focus on growth.
-        </h4>
-        <a href="#">Request a Service</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Newsletter Sections -->
-  <section
-    class="newsletter d-block d-lg-none"
-    data-aos="fade-up"
-    data-aos-duration="600"
-  >
-    <div class="container">
-      <div class="newsletter-content">
-        <h3>Stay Updated</h3>
-
-        <span class="d-block d-md-none"> Subscribe to our newsletter. </span>
-
-        <span class="d-none d-md-block">
-          Subscribe to our newsletter for updates and offers.
-        </span>
-
-        {% include "includes/newsletter.html" %}
-      </div>
-    </div>
-  </section>
-  <section
-    class="newsletter-lg d-none d-lg-block"
-    data-aos="fade-up"
-    data-aos-duration="600"
-  >
-    <div class="d-flex justify-content-between align-items-center gap-3">
-      <div class="d-flex flex-column gap-2">
-        <h4>Stay Updated</h4>
-
-        <span> Subscribe to our newsletter for updates and offers. </span>
-      </div>
-
-      {% include "includes/newsletter.html" %}
     </div>
   </section>
 </div>
-
-<!-- Form script continued below -->
-<script>
-  document.querySelectorAll(".newsletter-form").forEach((form) => {
-    form.addEventListener("submit", async function (e) {
-      e.preventDefault();
-
-      const emailInput = form.querySelector(".newsletter-email");
-      const messageBox = form.querySelector(".newsletter-message");
-
-      try {
-        const response = await fetch("{% url 'subscribe_newsletter' %}", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            "X-CSRFToken": form.querySelector("[name=csrfmiddlewaretoken]")
-              .value,
-          },
-          body: JSON.stringify({
-            email: emailInput.value,
-          }),
-        });
-
-        const data = await response.json();
-
-        messageBox.textContent = data.message;
-        messageBox.classList.remove("success", "error", "fade-out");
-        messageBox.classList.add("show");
-
-        if (data.success) {
-          form.reset();
-          messageBox.classList.add("success");
-        } else {
-          messageBox.classList.add("error");
-        }
-
-        // Fade out after 4 seconds
-        setTimeout(() => {
-          messageBox.classList.add("fade-out");
-        }, 4000);
-
-        // Reset classes after fade animation
-        setTimeout(() => {
-          messageBox.classList.remove("show", "success", "error", "fade-out");
-          messageBox.textContent = "";
-        }, 4500);
-      } catch (error) {
-        messageBox.textContent = "Unable to subscribe. Please try again.";
-        messageBox.classList.remove("success", "error", "fade-out");
-        messageBox.classList.add("show", "error");
-      }
-    });
-  });
-</script>
 {% endblock %}

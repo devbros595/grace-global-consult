@@ -10,12 +10,10 @@ class NewsletterSubscriber(models.Model):
         return self.email
 
 
-
 class Booking(models.Model):
     check_in = models.DateField()
     check_out = models.DateField()
     guests = models.PositiveIntegerField()
-
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
@@ -32,11 +30,13 @@ class ContactMessage(models.Model):
     def __str__(self):
         return f"{self.name} - {self.subject}"
 
-from django.db import models
 
 class CleaningJobGallery(models.Model):
     title = models.CharField(max_length=150, help_text="e.g., Commercial Office, Kitchen Deep Clean")
-    image = models.ImageField(upload_to='static/cleaning_gallery/', help_text="Upload the job photo here")
+    
+    # CORRECTED: Changed from static directory path to a clean media sub-folder target path
+    image = models.ImageField(upload_to='cleaning_gallery/', help_text="Upload the job photo here")
+    
     alt_text = models.CharField(max_length=200, blank=True, help_text="Description for search engines and screen readers")
     created_at = models.DateTimeField(auto_now_add=True)
 

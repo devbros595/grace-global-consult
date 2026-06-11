@@ -1,14 +1,13 @@
 {% extends "base.html" %} {% load static %} {% block title %}
 <title>Hostels | Grace Global Consult</title>
 {% endblock %} {% block content %}
-<!-- Hero Section left un-modified -->
 <section class="page-hero-hostel">
   <div class="container">
     <div class="page-hero-content">
       <div class="page-hero-text">
         <h1>Discover Our<br />Youth Hostels.</h1>
         <p>
-          Comfortable, secure and community oriented accommodation.
+          Comfortable, secure, and community-oriented accommodation.
         </p>
       </div>
       <div class="page-hero-cta">
@@ -19,7 +18,6 @@
 </section>
 
 <div class="sections">
-  <!-- Hostel Categories Segment -->
   <section class="hostel-category-section">
     <div class="container">
       <div class="hostel-category">
@@ -32,7 +30,7 @@
             <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
               <div class="hostel-card">
                 <div class="hostel-card-img">
-                  <img src="{% static 'svg/group.svg' %}" alt="icon" />
+                  <img src="{% static 'svg/group.svg' %}" alt="Group Hostels Icon" />
                 </div>
                 <div class="hostel-card-content">
                   <div class="hostel-card-text">
@@ -46,7 +44,7 @@
             <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="700">
               <div class="hostel-card">
                 <div class="hostel-card-img">
-                  <img src="{% static 'svg/single-user.svg' %}" alt="icon" />
+                  <img src="{% static 'svg/single-user.svg' %}" alt="Solo Hostels Icon" />
                 </div>
                 <div class="hostel-card-content">
                   <div class="hostel-card-text">
@@ -63,7 +61,6 @@
   </section>
   <hr />
 
-  <!-- Amenities Block -->
   <section class="amenities-category-section">
     <div class="container">
       <div class="amenities-category">
@@ -76,7 +73,7 @@
             <div class="col-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="600">
               <div class="amenities-card">
                 <div class="amenities-card-img">
-                  <img src="{% static 'svg/wifi.svg' %}" alt="icon" />
+                  <img src="{% static 'svg/wifi.svg' %}" alt="Wi-Fi Icon" />
                 </div>
                 <div class="amenities-card-text">
                   <span>Free Wifi</span>
@@ -88,7 +85,7 @@
             <div class="col-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="600">
               <div class="amenities-card">
                 <div class="amenities-card-img">
-                  <img src="{% static 'svg/security.svg' %}" alt="icon" />
+                  <img src="{% static 'svg/security.svg' %}" alt="Security Icon" />
                 </div>
                 <div class="amenities-card-text">
                   <span>24/7 Security</span>
@@ -100,7 +97,7 @@
             <div class="col-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="600">
               <div class="amenities-card">
                 <div class="amenities-card-img">
-                  <img src="{% static 'svg/social.svg' %}" alt="icon" />
+                  <img src="{% static 'svg/social.svg' %}" alt="Common Areas Icon" />
                 </div>
                 <div class="amenities-card-text">
                   <span>Social Common Areas</span>
@@ -112,7 +109,7 @@
             <div class="col-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="600">
               <div class="amenities-card">
                 <div class="amenities-card-img">
-                  <img src="{% static 'svg/laundry.svg' %}" alt="icon" />
+                  <img src="{% static 'svg/laundry.svg' %}" alt="Laundry Icon" />
                 </div>
                 <div class="amenities-card-text">
                   <span>On-Site Laundry</span>
@@ -126,7 +123,6 @@
     </div>
   </section>
 
-  <!-- Featured Hostels Presentation Layout -->
   <section class="featured-hostels">
     <div class="container">
       <div class="text-center section-heading" data-aos="fade-up" data-aos-duration="600">
@@ -136,28 +132,29 @@
       
       <div class="hostel-scroll d-flex align-items-center justify-content-start gap-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
         <div class="hostel-card">
-          <img src="{% static 'img/hostel-1.jpeg' %}" alt="" />
+          <img src="{% static 'img/hostel-1.jpeg' %}" alt="Grace Hostel 1 Showcase" />
           <h6>Grace Hostel 1</h6>
         </div>
 
         <div class="hostel-card">
-          <img src="{% static 'img/hostel-2.jpeg' %}" alt="" />
+          <img src="{% static 'img/hostel-2.jpeg' %}" alt="Grace Hostel 2 Showcase" />
           <h6>Grace Hostel 2</h6>
         </div>
 
         <div class="hostel-card">
-          <img src="{% static 'img/hostel-3.jpeg' %}" alt="" />
+          <img src="{% static 'img/hostel-3.jpeg' %}" alt="Grace Hostel 3 Showcase" />
           <h6>Grace Hostel 3</h6>
         </div>
         
         <div class="hostel-card">
-          <img src="{% static 'img/hostel-4.jpeg' %}" alt="" />
+          <img src="{% static 'img/hostel-4.jpeg' %}" alt="Grace Hostel 4 Showcase" />
           <h6>Grace Hostel 4</h6>
         </div>
         
         <div class="hostel-card link d-block d-md-none">
-          <a href="{% url 'book_now' %}">View All
-            <i class="fa-solid fa-angles-right ms-2" style="color: #d4b401"></i></a>
+          <a href="{% url 'book_now' %}">
+            View All <i class="fa-solid fa-angles-right ms-2" style="color: #d4b401"></i>
+          </a>
         </div>
       </div>
       
@@ -169,8 +166,7 @@
   </section>
   <hr />
 
-  <!-- Value Proposition Block -->
-  <section class="amenities-category-section">
+  <section class="why-us-category-section">
     <div class="container">
       <div class="amenities-category">
         <div class="section-heading" data-aos="fade-up" data-aos-duration="600">
@@ -182,7 +178,7 @@
             <div class="col-12" data-aos="fade-up" data-aos-delay="100" data-aos-duration="600">
               <div class="amenities-card">
                 <div class="amenities-card-img">
-                  <img src="{% static 'svg/community.svg' %}" alt="icon" />
+                  <img src="{% static 'svg/community.svg' %}" alt="Community Icon" />
                 </div>
                 <div class="amenities-card-text">
                   <span>Community</span>
@@ -194,7 +190,7 @@
             <div class="col-12" data-aos="fade-up" data-aos-delay="200" data-aos-duration="600">
               <div class="amenities-card">
                 <div class="amenities-card-img">
-                  <img src="{% static 'svg/happy.svg' %}" alt="icon" />
+                  <img src="{% static 'svg/happy.svg' %}" alt="Comfort Icon" />
                 </div>
                 <div class="amenities-card-text">
                   <span>Comfort</span>
@@ -206,7 +202,7 @@
             <div class="col-12" data-aos="fade-up" data-aos-delay="300" data-aos-duration="600">
               <div class="amenities-card">
                 <div class="amenities-card-img">
-                  <img src="{% static 'svg/support.svg' %}" alt="icon" />
+                  <img src="{% static 'svg/support.svg' %}" alt="Support Icon" />
                 </div>
                 <div class="amenities-card-text">
                   <span>Support</span>
@@ -220,7 +216,6 @@
     </div>
   </section>
 
-  <!-- Cross-Division Navigation Layout Links -->
   <section class="our-division-section">
     <div class="container">
       <div class="division-container">
@@ -253,7 +248,7 @@
                 <img src="{% static 'svg/office-admin.svg' %}" alt="Admin Icon" />
               </div>
               <div class="division-card-content">
-                <h4 class="division-card-title">Admin Support</h4>
+                <h4 class="division-card-title">Office Admin Support</h4>
                 <p class="division-card-desc">
                   Efficient office administration and support services for smooth
                   operations.

@@ -1,14 +1,13 @@
 {% extends "base.html" %} {% load static %} {% block title %}
 <title>Contact Us | Grace Global Consult</title>
 {% endblock %} {% block content %}
-<!-- Hero Section left un-modified -->
 <section class="page-hero-contact">
   <div class="container">
     <div class="page-hero-content">
       <div class="page-hero-text">
         <h1>Contact Us</h1>
         <p>
-          We'd love to hear from you. <br />Reach out to us for inquires,
+          We'd love to hear from you. <br />Reach out to us for inquiries,
           partnerships and support.
         </p>
       </div>
@@ -28,7 +27,6 @@
           <div class="section-line"></div>
         </div>
         
-        <!-- Contact Information Cards -->
         <div class="contact-card-container">
           <div class="row g-3">
             <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="600">
@@ -50,7 +48,7 @@
                 </div>
                 <div class="contact-card-text">
                   <span>Email</span>
-                  <a href="mailto:info@gracegblobalconsultancy.co.uk">info@gracegblobalconsultancy.co.uk</a>
+                  <a href="mailto:info@graceglobalconsultancy.co.uk">info@graceglobalconsultancy.co.uk</a>
                 </div>
               </div>
             </div>
@@ -62,7 +60,7 @@
                 </div>
                 <div class="contact-card-text">
                   <span>Address</span>
-                  <p>Flat 1, hatters court 9 king luton LU1 2DW.</p>
+                  <p>Flat 1, Hatters Court, 9 King Street, Luton, LU1 2DW.</p>
                 </div>
               </div>
             </div>
@@ -85,7 +83,6 @@
           </div>
         </div>
 
-        <!-- Interactive Contact Form Container -->
         <div id="contact-form-container" class="contact-form-container" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
           <div class="form-title">
             <img src="{% static 'svg/send.svg' %}" alt="send-icon" />
@@ -111,7 +108,6 @@
               <textarea name="message" placeholder="Message" rows="5" required class="form-control"></textarea>
             </div>
 
-            <!-- RESPONSE BOX -->
             <div id="formResponse"></div>
 
             <button type="submit" class="btn-submit" id="submitBtn">
@@ -124,7 +120,6 @@
     </div>
   </section>
 
-  <!-- CTA Banner -->
   <section class="partner page-partner-sect" data-aos="zoom-in" data-aos-duration="700">
     <div class="container">
       <div class="cta-card">
@@ -134,8 +129,8 @@
           operational needs.
         </p>
         <div class="cta-buttons">
-          <a href="#" class="btn btn-primary">Contact Us</a>
-          <a href="#" class="btn btn-secondary">Request Service</a>
+          <a href="#contact-form-container" class="btn btn-primary">Contact Us</a>
+          <a href="#contact-form-container" class="btn btn-secondary">Request Service</a>
         </div>
       </div>
     </div>

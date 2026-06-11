@@ -1,7 +1,6 @@
 {% extends "base.html" %} {% load static %} {% block title %}
-<title>Admin Services | Grace Global Consult</title>
+<title>Office Administrative Services | Grace Global Consult</title>
 {% endblock %} {% block content %}
-<!-- Hero Section left un-modified -->
 <section class="page-hero-admin">
   <div class="container">
     <div class="page-hero-content">
@@ -24,14 +23,13 @@
     <div class="container">
       <div class="page-services">
         <div class="section-heading" data-aos="fade-up" data-aos-duration="600">
-          <h3>Admin Services</h3>
+          <h3>Office Administrative Services</h3>
           <div class="section-line"></div>
         </div>
         <div class="page-services-content">
-          <!-- Clean vertical fade-up to protect layout flow -->
           <div class="row bg-white" data-aos="fade-up" data-aos-duration="700">
             <div class="col-12 col-lg-6 order-2 order-lg-1 service-item">
-              <h4>Administrative Support</h4>
+              <h4>Office Administrative Support</h4>
               <p class="card-text text-muted">
                 Virtual assistance, email handling, data entry, scheduling, and document management.
               </p>
@@ -43,14 +41,14 @@
           </div>
           
           <div class="row bg-light" data-aos="fade-up" data-aos-duration="700">
-            <div class="col-12 col-lg-6 order-2 order-lg-2 service-item">
+            <div class="col-12 col-lg-6 order-2 order-lg-1 service-item">
               <h4>Software Development</h4>
               <p class="card-text text-muted">
                 Web apps, business websites, CRM systems, APIs, and custom automation tools.
               </p>
               <a href="{% url 'contact_us' %}">Contact Us</a>
             </div>
-            <div class="col-12 col-lg-6 order-1 order-lg-1 service-img">
+            <div class="col-12 col-lg-6 order-1 order-lg-2 service-img">
               <img src="{% static 'img/web-dev.png' %}" alt="" loading="lazy" class="img-fluid" />
             </div>
           </div>
@@ -94,7 +92,7 @@
         </div>
         <div class="page-services-content">
           <div class="row g-4">
-            <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="600">
+            <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="600">
               <div class="page-card">
                 <div class="page-card-img">
                   <img src="{% static 'svg/trusted.svg' %}" alt="" />
