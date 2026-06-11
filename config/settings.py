@@ -151,10 +151,6 @@ STATICFILES_DIRS = [BASE_DIR / "static"]
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
-# --- Add Media Files Configuration Below ---
 MEDIA_URL = "/media/"
-
-if os.environ.get("RENDER"):
-    MEDIA_ROOT = "/data/media"
-else:
-    MEDIA_ROOT = BASE_DIR / "media"
+MEDIA_ROOT = "/opt/render/project/src/media"
+os.makedirs(MEDIA_ROOT, exist_ok=True)
